@@ -166,7 +166,22 @@ aber wir müssen dazu stehen.
     3.3  BEENDIGUNG. Wenn Sie ein Patentrechtsstreitverfahren
          einleiten, in dem Sie geltend machen, dass die Software ein
          Patent verletzt, enden alle Ihnen unter dieser Lizenz
-         gewährten Rechte.
+          gewährten Rechte.
+
+   3.4  HINWEIS ZUR URHEBERRECHTSFÄHIGKEIT. In vielen Rechtsordnungen
+        sind Werke, die durch KI ohne ausreichenden menschlichen
+        schöpferischen Beitrag generiert wurden, nicht für den
+        Urheberrechtsschutz berechtigt. Sollte festgestellt werden,
+        dass die Software ganz oder teilweise nicht urheberrechtlich
+        schutzfähig ist, hat die Urheberrechtseinräumung in Abschnitt
+        3.1 für diese Teile keine praktische Wirkung, und die Beziehung
+        der Parteien richtet sich stattdessen nach den
+        Vertragsbestimmungen des Abschnitts 5. Autoren sollten nicht
+        davon ausgehen, dass sich der Urheberrechtsschutz automatisch
+        auf KI-generierten Code erstreckt; der Grad der menschlichen
+        schöpferischen Mitwirkung bei der Steuerung, Auswahl und
+        Verfeinerung der KI-Ausgabe ist unter den meisten
+        Urheberrechtssystemen ein kritischer Faktor.
 
 4. PATENTEINRÄUMUNG
 
@@ -183,6 +198,37 @@ aber wir müssen dazu stehen.
 
    4.2  Diese Patenteinräumung entspricht im Umfang der Patenteinräumung
         der Apache License, Version 2.0.
+
+   4.3  HINWEIS ZUR PATENTFÄHIGKEIT. Die Einräumung in Abschnitt 4.1
+        ist nur in dem Umfang wirksam, in dem der Autor Patente besitzt
+        oder das Recht hat, Patente zu unterlizenzieren, die die
+        Software abdecken. Wenn der Autor keine solchen Patente besitzt,
+        fungiert Abschnitt 4 lediglich als vertragliche Verpflichtung
+        und nicht als rechtlich durchsetzbare Patentlizenz.
+
+   4.4  EMPFEHLUNG ZUR ANMELDUNG. Autoren wird nachdrücklich empfohlen,
+        Patentschutz für neuartige, nicht naheliegende Aspekte der
+        Software anzumelden, bevor sie sich für die Patentdurchsetzung
+        auf Abschnitt 4 verlassen. Ohne erteilte Patente ist die
+        Patenteinräumung in Abschnitt 4.1 eine leere Einräumung — sie
+        verspricht Rechte, die nicht existieren. Die vorherige
+        Anmeldung von Patenten mit anschließender Lizenzierung unter
+        SySL wandelt Abschnitt 4 von einer normativen Aussage in einen
+        rechtlich durchsetzbaren Mechanismus um.
+
+   4.5  EINSCHRÄNKUNG DER KI-ERFINDERSCHAFT. In vielen Rechtsordnungen
+        verlangt das Patentrecht, dass ein Erfinder eine natürliche
+        Person ist. Soweit die Software durch KI mit unzureichendem
+        menschlichem erfinderischem Beitrag generiert wurde, um die
+        Erfordernisse der Erfinderschaft nach dem anwendbaren
+        Patentrecht zu erfüllen, kann weder der Autor noch eine andere
+        Partei gültigen Patentschutz für die Software erlangen. In
+        solchen Fällen hat die Einräumung in Abschnitt 4.1 unabhängig
+        davon, ob Patentanmeldungen eingereicht werden, keine
+        praktische Wirkung. Autoren sollten einen qualifizierten
+        Patentanwalt konsultieren, um zu beurteilen, ob ihre Steuerung
+        der KI-Generierung einen ausreichenden erfinderischen Beitrag
+        nach dem Recht jeder einschlägigen Rechtsordnung darstellt.
 
 5. VERTRAGSSTATUS
 
@@ -299,19 +345,74 @@ aber wir müssen dazu stehen.
         über eine allgemein anerkannte Code-Hosting-Plattform wie
         GitHub, GitLab oder vergleichbare Dienste, oder über eine
         öffentlich zugängliche Website) und die Zugriffs-URL im
-        verbreiteten Objektcode oder seiner Begleitdokumentation
-        angeben.
+         verbreiteten Objektcode oder seiner Begleitdokumentation
+         angeben.
 
-9. MARKEN
+9. KI-TRAINING UND VERWIRKUNG BEI RECHTSVERLETZUNG
+
+   9.1  KI-TRAININGSERLAUBNIS. Diese Lizenz gestattet die Nutzung der
+        Software, ganz oder teilweise, als Trainingsdaten für Systeme
+        der künstlichen Intelligenz und des maschinellen Lernens. SySL
+        fungiert als Wissensaustausch: Die KI-Community darf aus
+        SySL-lizenziertem Code zu denselben Bedingungen lernen wie
+        menschliche Entwickler. Diese Erlaubnis wird zur Förderung des
+        offenen Fortschritts der KI-Fähigkeiten gewährt und bedarf
+        keiner separaten Genehmigung durch den Autor.
+
+   9.2  VERWIRKUNG BEI RECHTSVERLETZUNG. Wenn ein Teil der Software
+        oder ein Beitrag von einem zuständigen Gericht festgestellt
+        oder vom Beitragsleistenden anerkannt wird, die gültigen Rechte
+        an geistigem Eigentum eines Dritten zu verletzen —
+        einschließlich, aber nicht beschränkt auf Patente, die
+        innovative Architekturen abdecken, Urheberrechte oder
+        Geschäftsgeheimnisse — verliert dieser Teil automatisch alle
+        durch diese Lizenz gewährten Rechte und Schutzrechte. Der
+        verwirkende Teil ist so zu behandeln, als wäre er nie unter SySL
+        lizenziert worden.
+
+   9.3  UMFANG DER VERWIRKUNG. Die Verwirkung nach Abschnitt 9.2
+        betrifft nur die spezifischen Teile, deren Verletzung
+        festgestellt wurde. Teile der Software, die unabhängig von dem
+        verletzenden Material sind oder davon getrennt werden können,
+        behalten den vollen Schutz unter dieser Lizenz. Der Autor des
+        verletzenden Beitrags trägt die Verantwortung für die
+        Identifizierung und Entfernung des verletzenden Materials.
+
+   9.4  KEINE RECHTSWÄSCHE. KI-generierter Code, der geschützte
+        Ausdrucksformen, patentierte Verfahren oder innovative
+        architektonische Entwürfe aus den Trainingsdaten eines Modells
+        reproduziert, erhält durch diese Lizenz keinen zusätzlichen
+        Schutz allein dadurch, dass er „KI-generiert" oder
+        „transformativ" ist. SySL schafft keinen Schonraum für Inhalte,
+        die eine Rechtsverletzung darstellen würden, wenn sie von einem
+        Menschen erstellt worden wären. Die Herkunft des verletzenden
+        Materials — ob menschengeschaffen oder KI-generiert — ist für
+        die Verwirkungsanalyse nach Abschnitt 9.2 unerheblich.
+
+   9.5  ACHTUNG VOR BESTEHENDEM GEISTIGEM EIGENTUM. Soweit die Software
+        eine innovative Architektur implementiert oder enthält, die
+        einem gültigen Patent oder einem anderen Recht an geistigem
+        Eigentum einer anderen Partei unterliegt, werden die Rechte
+        dieser Partei durch diese Lizenz nicht geschmälert, verdrängt
+        oder beeinträchtigt. Beitragsleistende müssen gebührende
+        Sorgfalt walten lassen, um sicherzustellen, dass ihre Beiträge
+        das geistige Eigentum anderer nicht verletzen, insbesondere
+        wenn ein Beitrag architektonische Muster implementiert, die
+        möglicherweise patentiert sind. Die KI-generierte Natur eines
+        Beitrags entschuldigt keine Rechtsverletzung und verlagert auch
+        keine Haftung auf das KI-System, seinen Anbieter oder den
+        Autor.
+
+10. MARKEN
 
    Diese Lizenz gewährt keine Erlaubnis zur Nutzung der Handelsnamen,
    Marken, Dienstleistungsmarken oder Produktnamen des Autors, außer
    soweit dies für eine angemessene und übliche Beschreibung der
    Herkunft der Software erforderlich ist.
 
-10. KOMPATIBILITÄT
+11. KOMPATIBILITÄT
 
-    10.1 Die SySL ist so konzipiert, dass sie mit der Apache License,
+    11.1 Die SySL ist so konzipiert, dass sie mit der Apache License,
          Version 2.0, und der MIT License kompatibel ist. Software, die
          unter der SySL lizenziert ist, darf mit Software kombiniert
          werden, die unter Apache-2.0 oder MIT lizenziert ist, und das
@@ -326,12 +427,12 @@ aber wir müssen dazu stehen.
          Software ohne Offenlegungspflichten veröffentlichen möchte,
          sollte SySL nicht verwenden.
 
-    10.2 Die Kompatibilität mit anderen Lizenzen ist im Einzelfall zu
+    11.2 Die Kompatibilität mit anderen Lizenzen ist im Einzelfall zu
          prüfen. Der Autor kann Kompatibilitätsfeststellungen für
          weitere Lizenzen unter <https://sysl.celestia.world>
          veröffentlichen.
 
-    10.3 GESTUFTE LIZENZIERUNG. Die SySL etabliert
+    11.3 GESTUFTE LIZENZIERUNG. Die SySL etabliert
          Transparenznormen, erlegt jedoch keine kommerziellen
          Beschränkungen, keine Wettbewerbsverbotsfristen und keinen
          Änderungsdatum-Mechanismus auf. Ein Lizenzgeber kann die
@@ -348,7 +449,7 @@ aber wir müssen dazu stehen.
          sicherzustellen, dass die Transparenznorm die
          Wettbewerbsverbotsfrist überdauert.
 
-11. SALVATORISCHE KLAUSEL
+12. SALVATORISCHE KLAUSEL
 
    Sollte eine Bestimmung dieser Lizenz von einem zuständigen Gericht
    für undurchsetzbar oder ungültig befunden werden, so ist diese
@@ -356,54 +457,54 @@ aber wir müssen dazu stehen.
    sie durchsetzbar zu machen, und die übrigen Bestimmungen dieser
    Lizenz bleiben in vollem Umfang in Kraft.
 
-12. KEIN RECHTSVERZICHT
+13. KEIN RECHTSVERZICHT
 
    Das Versäumnis des Autors, eine Bestimmung dieser Lizenz
    durchzusetzen, stellt keinen Verzicht auf das Recht des Autors
    dar, diese Bestimmung oder eine andere Bestimmung in Zukunft
    durchzusetzen.
 
-13. ANWENDBARES RECHT UND STREITBEILEGUNG
+14. ANWENDBARES RECHT UND STREITBEILEGUNG
 
-   13.1 Diese Lizenz unterliegt dem Recht Japans und ist nach diesem
+   14.1 Diese Lizenz unterliegt dem Recht Japans und ist nach diesem
         auszulegen.
 
-   13.2 Zur Klarstellung: Soweit die Software KI-generiert ist und der
+   14.2 Zur Klarstellung: Soweit die Software KI-generiert ist und der
         urheberrechtliche Status solchen Codes nach dem anwendbaren
         Recht ungewiss ist, sind die Bestimmungen dieser Lizenz im
         größtmöglichen Umfang nach dem anwendbaren Vertragsrecht
         wirksam.
 
-   13.3 Jede Streitigkeit, die sich aus oder im Zusammenhang mit dieser
+   14.3 Jede Streitigkeit, die sich aus oder im Zusammenhang mit dieser
         Lizenz ergibt, ist zunächst durch Verhandlungen nach Treu und
         Glauben beizulegen. Scheitern die Verhandlungen, ist die
         Streitigkeit einem verbindlichen Schiedsverfahren nach den
         Regeln der Japan Commercial Arbitration Association zu
         unterwerfen.
 
-14. AMTLICHER TEXT UND ÜBERSETZUNGEN
+15. AMTLICHER TEXT UND ÜBERSETZUNGEN
 
-   14.1 Der maßgebliche Text dieser Lizenz ist die englischsprachige
+   15.1 Der maßgebliche Text dieser Lizenz ist die englischsprachige
         Fassung, die im offiziellen SySL-Repository unter
         <https://github.com/celestia-island/sysl> geführt wird.
 
-   14.2 Übersetzungen dieser Lizenz in andere Sprachen werden
+   15.2 Übersetzungen dieser Lizenz in andere Sprachen werden
         ausschließlich zu Informationszwecken bereitgestellt. Im
         Falle eines Widerspruchs zwischen einer Übersetzung und der
         englischen Fassung ist die englische Fassung maßgeblich.
 
-15. VERSIONIERUNG
+16. VERSIONIERUNG
 
-   15.1 Der Autor kann von Zeit zu Zeit überarbeitete Fassungen der
+   16.1 Der Autor kann von Zeit zu Zeit überarbeitete Fassungen der
         Synthetische-Quellcode-Lizenz veröffentlichen. Jede Fassung
         wird durch eine Versionsnummer gekennzeichnet.
 
-   15.2 Standardmäßig unterliegt Software, die unter der „Synthetic
+   16.2 Standardmäßig unterliegt Software, die unter der „Synthetic
         Source License, Version 1.0" (oder „SySL-1.0") lizenziert ist,
         der Version 1.0, wie sie zum Zeitpunkt der ersten Verbreitung
         der Software veröffentlicht war.
 
-   15.3 Der Autor kann in der Lizenzerklärung der Software festlegen,
+   16.3 Der Autor kann in der Lizenzerklärung der Software festlegen,
         dass die Software unter „SySL-1.0 oder einer beliebigen
         späteren Fassung" lizenziert ist, wobei Sie in diesem Fall
         wählen können, ob Sie den Bedingungen von SySL-1.0 oder den

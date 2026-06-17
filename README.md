@@ -38,7 +38,9 @@ SySL is the first step: a license that is honest about what the code is, who mad
 |---------|-------------|
 | **AI Disclosure** | Every copy and derivative must disclose AI generation and models used |
 | **Dual Legal Basis** | Functions as both copyright license and independent contract |
-| **Patent Grant** | Equivalent to Apache-2.0 patent protection |
+| **Patent Grant** | Equivalent to Apache-2.0 patent protection — **only effective if the Author holds issued patents; file before relying on this** |
+| **AI Training Permission** | Code may be freely used as AI training data — knowledge exchange, not a one-way ratchet |
+| **Infringement Forfeiture** | Code that infringes others' valid IP **automatically loses all SySL protection** — no IP laundering |
 | **Apache-2.0 Compatible** | SySL code can be combined with Apache-2.0 code |
 | **Layered Licensing** | Coexists with BUSL-1.1 for commercial protection (dual-license) |
 | **Synthetic Copyleft** | Derivatives must preserve AI disclosure (transparency obligation, not source-sharing) |
@@ -49,12 +51,13 @@ SySL is the first step: a license that is honest about what the code is, who mad
 
 To use SySL for your project:
 
-1. Copy `LICENSE.txt` into your repository root.
-2. Create an `AI_DISCLOSURE` (or `AI_DISCLOSURE.md`) file describing:
+1. **File patents first** (strongly recommended): if your AI-directed software contains novel, non-obvious inventions, file patent applications *before* publishing. The patent grant in §4 only has legal force if you hold issued patents. Without patents, §4 is a gentleman's agreement — still useful as a norm, but not legally enforceable. See [§4.3–4.5](./LICENSE.txt) for details.
+2. Copy `LICENSE.txt` into your repository root.
+3. Create an `AI_DISCLOSURE` (or `AI_DISCLOSURE.md`) file describing:
    - Which AI models were used
    - Approximate tokens consumed
    - The proportion of AI-generated vs. human-written code
-3. Add a badge to your README:
+4. Add a badge to your README:
 
 ```markdown
 [![License: SySL 1.0](https://img.shields.io/badge/license-SySL%201.0-blue)](https://github.com/celestia-island/sysl)

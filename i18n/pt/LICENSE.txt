@@ -158,6 +158,20 @@ devemos declarar isso.
          que o Software infringe qualquer patente, todos os direitos
          concedidos a Você sob esta licença serão rescindidos.
 
+   3.4  AVISO DE ELEGIBILIDADE PARA DIREITOS AUTORAIS. Em muitas
+        jurisdições, obras geradas por IA sem contribuição criativa
+        humana suficiente não são elegíveis para proteção por direitos
+        autorais. Se o Software for considerado não protegível por
+        direitos autorais no todo ou em parte, a concessão de direitos
+        autorais da Seção 3.1 não terá efeito prático para essas
+        porções, e a relação entre as partes será, em vez disso,
+        regida pelas disposições contratuais da Seção 5. Os Autores
+        não devem presumir que a proteção por direitos autorais se
+        estenda automaticamente ao código Gerado por IA; o grau de
+        participação criativa humana na direção, seleção e refinamento
+        da saída da IA é um fator crítico na maioria dos regimes de
+        direitos autorais.
+
 4. CONCESSÃO DE PATENTE
 
    4.1  Sujeito aos termos desta licença, o Autor concede a Você uma
@@ -171,6 +185,35 @@ devemos declarar isso.
 
    4.2  Esta concessão de patente é equivalente em escopo à concessão de
         patente da Licença Apache, Versão 2.0.
+
+   4.3  AVISO DE ELEGIBILIDADE PARA PATENTES. A concessão da Seção 4.1
+        é eficaz apenas na medida em que o Autor detenha ou tenha o
+        direito de sublicenciar patentes que cubram o Software. Se o
+        Autor não detiver quaisquer tais patentes, a Seção 4 opera
+        apenas como um pacto contratual, e não como uma licença de
+        patente juridicamente exigível.
+
+   4.4  RECOMENDAÇÃO DE DEPÓSITO. Os Autores são fortemente encorajados
+        a depositar pedidos de proteção por patente sobre aspectos
+        novos e não óbvios do Software antes de confiar na Seção 4
+        para a fiscalização de patentes. Sem patentes concedidas, a
+        concessão de patente da Seção 4.1 é uma concessão vazia — ela
+        promete direitos que não existem. Depositar patentes primeiro
+        e, então, licenciar sob a SySL transforma a Seção 4 de uma
+        declaração normativa em um mecanismo juridicamente exigível.
+
+   4.5  LIMITAÇÃO DE AUTORIA DE INVENÇÃO POR IA. Em muitas jurisdições,
+        a lei de patentes exige que o inventor seja uma pessoa física.
+        Quando o Software é gerado por IA com contribuição inventiva
+        humana insuficiente para satisfazer os requisitos de autoria
+        de invenção da lei de patentes aplicável, nem o Autor nem
+        qualquer outra parte poderão obter proteção válida por patente
+        para o Software. Nesses casos, a concessão da Seção 4.1 não
+        terá efeito prático, independentemente de serem depositados
+        pedidos de patente. Os Autores devem consultar um advogado de
+        patentes qualificado para avaliar se a sua direção da geração
+        por IA constitui contribuição inventiva suficiente sob a lei
+        de cada jurisdição relevante.
 
 5. NATUREZA CONTRATUAL
 
@@ -276,18 +319,70 @@ devemos declarar isso.
         uma plataforma de hospedagem de código geralmente reconhecida,
         como GitHub, GitLab ou equivalente, ou por meio de um site
         publicamente acessível) e incluir a URL de acesso no código-objeto
-        Distribuído ou em sua documentação acompanhante.
+         Distribuído ou em sua documentação acompanhante.
 
-9. MARCAS REGISTRADAS
+9. TREINAMENTO DE IA E PERDA POR VIOLAÇÃO
+
+   9.1  PERMISSÃO DE TREINAMENTO DE IA. Esta licença permite o uso do
+        Software, no todo ou em parte, como dados de treinamento para
+        sistemas de inteligência artificial e aprendizado de máquina.
+        A SySL opera como uma troca de conhecimento: a comunidade de
+        IA pode aprender com código licenciado sob a SySL nos mesmos
+        termos que desenvolvedores humanos. Esta permissão é concedida
+        para promover o avanço aberto das capacidades de IA e não
+        exige autorização separada do Autor.
+
+   9.2  PERDA POR VIOLAÇÃO. Se qualquer porção do Software ou de uma
+        Contribuição for considerada por um tribunal de jurisdição
+        competente, ou reconhecida pelo contribuidor, como infringindo
+        os direitos válidos de propriedade intelectual de um terceiro
+        — incluindo, mas não se limitando a, patentes que cubram
+        arquiteturas inovadoras, direitos autorais ou segredos
+        comerciais — essa porção perderá automaticamente todos os
+        direitos e proteções concedidos por esta licença. A porção
+        perdida será tratada como se nunca tivesse sido licenciada sob
+        a SySL.
+
+   9.3  ESCOPO DA PERDA. A perda da Seção 9.2 aplica-se apenas às
+        porções específicas consideradas infratoras. As porções do
+        Software que sejam independentes do material infrator, ou
+        separáveis dele, retêm plena proteção sob esta licença. O
+        autor da Contribuição infratora assume a responsabilidade por
+        identificar e remover o material infrator.
+
+   9.4  SEM LAVAGEM DE PROPRIEDADE INTELECTUAL. O código Gerado por IA
+        que reproduza expressão protegida, métodos patenteados ou
+        designs arquiteturais inovadores a partir dos dados de
+        treinamento de um Modelo não ganha nenhuma proteção adicional
+        sob esta licença em virtude de ser "Gerado por IA" ou
+        "transformador". A SySL não cria um porto seguro para conteúdo
+        que seria infrator se produzido por um humano. A origem do
+        material infrator — seja de autoria humana ou Gerado por IA —
+        é irrelevante para a análise de perda sob a Seção 9.2.
+
+   9.5  RESPEITO PELA PROPRIEDADE INTELECTUAL ANTERIOR. Quando o
+        Software implementa ou incorpora uma arquitetura inovadora
+        que esteja sujeita a uma patente válida de outra parte ou a
+        outro direito de propriedade intelectual, os direitos dessa
+        parte não são diminuídos, substituídos ou afetados por esta
+        licença. Os Contribuidores devem realizar a devida diligência
+        para garantir que suas Contribuições não infrinjam a
+        propriedade intelectual de terceiros, particularmente quando
+        uma Contribuição implementa padrões arquiteturais que possam
+        ser patenteados. A natureza Gerada por IA de uma Contribuição
+        não desculpa a violação, nem transfere a responsabilidade para
+        o sistema de IA, seu provedor ou o Autor.
+
+10. MARCAS REGISTRADAS
 
     Esta licença não concede permissão para usar nomes comerciais,
     marcas registradas, marcas de serviço ou nomes de produtos do
     Autor, exceto conforme necessário para uso razoável e costumeiro
     na descrição da origem do Software.
 
-10. COMPATIBILIDADE
+11. COMPATIBILIDADE
 
-    10.1 A SySL foi projetada para ser compatível com a Licença Apache,
+    11.1 A SySL foi projetada para ser compatível com a Licença Apache,
          Versão 2.0, e com a Licença MIT. Software licenciado sob a
          SySL pode ser combinado com software licenciado sob Apache-2.0
          ou MIT, e o trabalho combinado pode ser Distribuído sob os
@@ -301,11 +396,11 @@ devemos declarar isso.
          Licenciante que deseje disponibilizar Software Gerado por IA
          sem obrigações de divulgação não deve utilizar a SySL.
 
-    10.2 A compatibilidade com outras licenças deve ser avaliada caso a
+    11.2 A compatibilidade com outras licenças deve ser avaliada caso a
          caso. O Autor poderá publicar determinações de compatibilidade
          para licenças adicionais em <https://sysl.celestia.world>.
 
-    10.3 LICENCIAMENTO EM CAMADAS. A SySL estabelece normas de
+    11.3 LICENCIAMENTO EM CAMADAS. A SySL estabelece normas de
          transparência, mas não impõe restrições comerciais, períodos
          de não concorrência nem mecanismo de mudança de data. Um
          Licenciante pode oferecer o Software sob a SySL juntamente
@@ -320,7 +415,7 @@ devemos declarar isso.
          Licença de Mudança para garantir que a norma de transparência
          sobreviva ao período de não concorrência.
 
-11. SEPARABILIDADE
+12. SEPARABILIDADE
 
     Se qualquer disposição desta licença for considerada inexequível
     ou inválida por um tribunal de jurisdição competente, tal
@@ -328,51 +423,51 @@ devemos declarar isso.
     torná-la exequível, e as demais disposições desta licença
     permanecerão em pleno vigor e efeito.
 
-12. NÃO RENÚNCIA
+13. NÃO RENÚNCIA
 
     A falha do Autor em exigir o cumprimento de qualquer disposição
     desta licença não constituirá renúncia ao direito do Autor de
     exigir tal disposição ou qualquer outra disposição no futuro.
 
-13. LEI APLICÁVEL E RESOLUÇÃO DE DISPUTAS
+14. LEI APLICÁVEL E RESOLUÇÃO DE DISPUTAS
 
-   13.1 Esta licença será regida e interpretada de acordo com as leis
+   14.1 Esta licença será regida e interpretada de acordo com as leis
         do Japão.
 
-   13.2 Para evitar dúvidas, quando o Software for Gerado por IA e a
+   14.2 Para evitar dúvidas, quando o Software for Gerado por IA e a
         situação dos direitos autorais de tal código for incerta sob
         a lei aplicável, as disposições desta licença receberão o
         máximo efeito possível sob a lei contratual aplicável.
 
-   13.3 Qualquer disputa decorrente ou relacionada a esta licença
+   14.3 Qualquer disputa decorrente ou relacionada a esta licença
         será primeiramente resolvida por meio de negociação de boa-fé.
         Se a negociação falhar, a disputa será submetida a arbitragem
         vinculativa de acordo com as regras da Associação de
         Arbitragem Comercial do Japão (Japan Commercial Arbitration
         Association).
 
-14. TEXTO OFICIAL E TRADUÇÕES
+15. TEXTO OFICIAL E TRADUÇÕES
 
-   14.1 O texto autoritativo desta licença é a versão em inglês
+   15.1 O texto autoritativo desta licença é a versão em inglês
         mantida no repositório oficial da SySL em
         <https://github.com/celestia-island/sysl>.
 
-   14.2 As traduções desta licença para outros idiomas são fornecidas
+   15.2 As traduções desta licença para outros idiomas são fornecidas
         apenas para fins informativos. Em caso de conflito entre uma
         tradução e a versão em inglês, a versão em inglês prevalecerá.
 
-15. VERSIONAMENTO
+16. VERSIONAMENTO
 
-   15.1 O Autor poderá publicar versões revisadas da Licença de Código
+   16.1 O Autor poderá publicar versões revisadas da Licença de Código
         Sintético periodicamente. Cada versão será distinguida por um
         número de versão.
 
-   15.2 Por padrão, o Software licenciado sob a "Licença de Código
+   16.2 Por padrão, o Software licenciado sob a "Licença de Código
         Sintético, Versão 1.0" (ou "SySL-1.0") é regido pela Versão
         1.0 conforme publicada na data em que o Software foi
         Distribuído pela primeira vez.
 
-   15.3 O Autor poderá, na declaração de licença do Software,
+   16.3 O Autor poderá, na declaração de licença do Software,
         especificar que o Software é licenciado sob "SySL-1.0 ou
         qualquer versão posterior", caso em que Você poderá optar
         por seguir os termos da SySL-1.0 ou os termos de qualquer

@@ -8,7 +8,9 @@
 | **Type** | Synthetic Source | Permissive | Permissive + Patent | Strong Copyleft | Delayed Open Source |
 | **Copyright required** | No (contract fallback) | Yes | Yes | Yes | Yes |
 | **AI-aware** | Yes (core design) | No | No | No | No |
-| **Patent grant** | Yes (Apache-scope) | No | Yes | Yes | No |
+| **Patent grant** | Yes (conditional: only if Author holds patents) | No | Yes | Yes | No |
+| **AI training allowed** | Yes (explicit, §9.1) | Silent | Silent | Silent | Silent |
+| **Infringement forfeiture** | Yes (§9.2, auto-forfeit) | No | No | No | No |
 | **Copyleft** | Disclosure only | No | No | Yes (strong) | No |
 | **Commercial use** | Yes (with disclosure) | Yes | Yes | Yes (with source) | Non-compete period |
 | **Distribution terms** | Keep AI disclosure | Keep copyright notice | Keep copyright + patent notice | Distribute under GPL | Compatible with FSL |
