@@ -24,3 +24,36 @@
 .fade-leave-to {
   opacity: 0;
 }
+
+// --- Global print styles ---
+@media print {
+  // Hide everything by default
+  body * {
+    visibility: hidden;
+  }
+
+  // Show only the print area and its children
+  .print-area,
+  .print-area * {
+    visibility: visible;
+  }
+
+  // Position the print area at the top of the page
+  .print-area {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+
+  // Force light theme colors for print
+  .print-area {
+    background: #fff !important;
+    color: #000 !important;
+  }
+
+  // Hide non-printable elements
+  .no-print {
+    display: none !important;
+  }
+}

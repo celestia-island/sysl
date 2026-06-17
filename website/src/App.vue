@@ -6,8 +6,8 @@ import ScrollToTop from "@/components/ScrollToTop.vue";
 </script>
 
 <template>
-  <a href="#main-content" class="skip-link">Skip to content</a>
-  <AppHeader />
+  <a href="#main-content" class="skip-link no-print">Skip to content</a>
+  <AppHeader class="no-print" />
   <main id="main-content">
     <RouterView v-slot="{ Component }">
       <Transition name="fade" mode="out-in">
@@ -15,8 +15,8 @@ import ScrollToTop from "@/components/ScrollToTop.vue";
       </Transition>
     </RouterView>
   </main>
-  <AppFooter />
-  <ScrollToTop />
+  <AppFooter class="no-print" />
+  <ScrollToTop class="no-print" />
 </template>
 
 <style scoped lang="scss">

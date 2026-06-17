@@ -32,11 +32,36 @@ const activeLang = computed(() => languages.find((l) => l.code === activeCode.va
 const showDropdown = ref(false);
 const switcherRef = ref<HTMLElement | null>(null);
 const triggerRef = ref<HTMLButtonElement | null>(null);
+const copied = ref(false);
 
 function selectLang(code: string) {
   activeCode.value = code;
   showDropdown.value = false;
   triggerRef.value?.focus();
+}
+
+async function copyText() {
+  try {
+    await navigator.clipboard.writeText(activeLang.value.text);
+    copied.value = true;
+    setTimeout(() => (copied.value = false), 2000);
+  } catch {
+    // Fallback for older browsers
+    const ta = document.createElement("textarea");
+    ta.value = activeLang.value.text;
+    ta.style.position = "fixed";
+    ta.style.opacity = "0";
+    document.body.appendChild(ta);
+    ta.select();
+    document.execCommand("copy");
+    document.body.removeChild(ta);
+    copied.value = true;
+    setTimeout(() => (copied.value = false), 2000);
+  }
+}
+
+function printText() {
+  window.print();
 }
 
 function onDocClick(e: MouseEvent) {
@@ -81,50 +106,78 @@ const renderLines = computed<RenderLine[]>(() => {
 
 <template>
   <div class="license-page">
-    <div class="license-meta">
+    <div class="license-meta no-print">
       <span class="license-meta__version">Version 1.0</span>
-      <div ref="switcherRef" class="lang-switcher">
+      <div class="license-meta__actions">
         <button
-          ref="triggerRef"
-          class="lang-switcher__trigger"
-          @click="showDropdown = !showDropdown"
-          :aria-expanded="showDropdown"
-          aria-haspopup="listbox"
-          aria-label="Select language"
+          class="meta-btn"
+          @click="copyText"
+          :aria-label="copied ? 'Copied' : 'Copy license text'"
+          :title="copied ? 'Copied!' : 'Copy license text'"
         >
-          <span>{{ activeLang.label }}</span>
-          <svg class="lang-switcher__arrow" width="10" height="10" viewBox="0 0 12 12" aria-hidden="true">
-            <path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <svg v-if="copied" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="20 6 9 17 4 12"/>
           </svg>
+          <svg v-else width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+          </svg>
+          <span class="meta-btn__label">{{ copied ? "Copied" : "Copy" }}</span>
         </button>
-        <ul
-          v-if="showDropdown"
-          class="lang-switcher__dropdown"
-          role="listbox"
+
+        <button
+          class="meta-btn"
+          @click="printText"
+          aria-label="Print license text"
+          title="Print license text"
         >
-          <li
-            v-for="lang in languages"
-            :key="lang.code"
-            role="option"
-            :aria-selected="lang.code === activeCode"
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="6 9 6 2 18 2 18 9"/>
+            <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/>
+            <rect x="6" y="14" width="12" height="8"/>
+          </svg>
+          <span class="meta-btn__label">Print</span>
+        </button>
+
+        <div ref="switcherRef" class="lang-switcher">
+          <button
+            ref="triggerRef"
+            class="lang-switcher__trigger"
+            @click="showDropdown = !showDropdown"
+            :aria-expanded="showDropdown"
+            aria-haspopup="listbox"
+            aria-label="Select language"
           >
-            <button
-              class="lang-switcher__option"
-              :class="{ 'lang-switcher__option--active': lang.code === activeCode }"
-              @click="selectLang(lang.code)"
+            <span>{{ activeLang.label }}</span>
+            <svg class="lang-switcher__arrow" width="10" height="10" viewBox="0 0 12 12" aria-hidden="true">
+              <path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <ul v-if="showDropdown" class="lang-switcher__dropdown" role="listbox">
+            <li
+              v-for="lang in languages"
+              :key="lang.code"
+              role="option"
+              :aria-selected="lang.code === activeCode"
             >
-              {{ lang.label }}
-            </button>
-          </li>
-        </ul>
+              <button
+                class="lang-switcher__option"
+                :class="{ 'lang-switcher__option--active': lang.code === activeCode }"
+                @click="selectLang(lang.code)"
+              >
+                {{ lang.label }}
+              </button>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
 
-    <p v-if="activeLang.code !== 'en'" class="license-notice" role="note">
+    <p v-if="activeLang.code !== 'en'" class="license-notice no-print" role="note">
       Informational translation. The English version is legally binding.
     </p>
 
-    <div class="license-center">
+    <div class="license-center print-area">
       <div
         class="license-text"
         :class="{ 'license-text--rtl': activeLang.rtl }"
@@ -154,6 +207,7 @@ const renderLines = computed<RenderLine[]>(() => {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: var(--sp-3);
   padding: var(--sp-3) 0;
   border-bottom: 1px solid var(--border-color);
 }
@@ -161,6 +215,43 @@ const renderLines = computed<RenderLine[]>(() => {
 .license-meta__version {
   font-size: var(--text-sm);
   color: var(--text-tertiary);
+  white-space: nowrap;
+}
+
+.license-meta__actions {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+}
+
+// --- Meta buttons (copy / print) ---
+.meta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-1);
+  padding: var(--sp-1) var(--sp-2);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius);
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+  background: var(--bg-secondary);
+  font-family: inherit;
+  transition: color var(--t-fast), border-color var(--t-fast);
+
+  &:hover {
+    color: var(--text-primary);
+    border-color: var(--text-tertiary);
+  }
+  &:focus-visible {
+    outline: 2px solid var(--link-color);
+    outline-offset: 2px;
+  }
+}
+
+.meta-btn__label {
+  @media (max-width: 640px) {
+    display: none;
+  }
 }
 
 .license-notice {
@@ -195,7 +286,6 @@ const renderLines = computed<RenderLine[]>(() => {
 
 .lang-switcher__arrow {
   color: var(--text-tertiary);
-  transition: transform var(--t-fast);
 }
 
 .lang-switcher__dropdown {
@@ -232,7 +322,7 @@ const renderLines = computed<RenderLine[]>(() => {
   &--active { color: var(--text-primary); font-weight: 600; }
 }
 
-// --- License text: flex center the entire block ---
+// --- License text ---
 .license-center {
   display: flex;
   justify-content: center;
@@ -244,11 +334,6 @@ const renderLines = computed<RenderLine[]>(() => {
   font-size: var(--text-sm);
   line-height: 1.9;
   color: var(--text-primary);
-
-  @media (max-width: 768px) {
-    font-size: 0.8rem;
-    line-height: 1.7;
-  }
 }
 
 .license-line {
@@ -281,6 +366,51 @@ const renderLines = computed<RenderLine[]>(() => {
 
   &--center {
     text-align: center;
+  }
+}
+
+// --- Responsive ---
+@media (max-width: 768px) {
+  .license-text {
+    font-size: 0.8rem;
+    line-height: 1.7;
+  }
+}
+
+@media (max-width: 640px) {
+  .license-meta {
+    flex-wrap: wrap;
+    gap: var(--sp-2);
+  }
+
+  .license-meta__actions {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+}
+
+// --- Print: only show license text ---
+@media print {
+  .license-page {
+    padding: 0;
+  }
+
+  .license-center {
+    display: block;
+  }
+
+  .license-text {
+    font-family: serif;
+    font-size: 11pt;
+    line-height: 1.6;
+    color: #000;
+  }
+
+  .license-line {
+    &--rule {
+      color: transparent;
+      border-bottom: 1px solid #000;
+    }
   }
 }
 </style>
