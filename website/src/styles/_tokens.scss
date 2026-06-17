@@ -8,15 +8,8 @@
   --brand: #5b5b8a;
 
   // --- Typography ---
-  // Latin serif first, CJK serif (Songti/Mincho) as fallback for CJK glyphs
-  --font-serif:
-    "Times New Roman", Times, "Liberation Serif",
-    "Noto Serif CJK SC", "Source Han Serif SC", "SimSun", "宋体",
-    "Songti SC", "STSong",
-    "Noto Serif CJK JP", "Hiragino Mincho ProN", "Yu Mincho",
-    "Noto Serif CJK KR",
-    serif;
-  --font-mono: "Courier New", Courier, "DejaVu Sans Mono", ui-monospace, monospace;
+  --font-serif: serif;
+  --font-mono: "Courier New", monospace;
 
   --text-xs: 0.75rem;
   --text-sm: 0.875rem;

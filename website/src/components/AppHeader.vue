@@ -6,7 +6,6 @@ const navLinks = [
   { to: "/", label: "License" },
   { to: "/faq", label: "FAQ" },
   { to: "/compare", label: "Compare" },
-  { to: "/adopt", label: "Adopters" },
 ];
 </script>
 

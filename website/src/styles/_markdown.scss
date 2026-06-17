@@ -1,10 +1,9 @@
 // =========================================================================
 //  Markdown / Prose rendering styles
-//  Traditional print typography for FAQ, Comparison, Adopters
 // =========================================================================
 
 .prose {
-  max-width: var(--prose-max);
+  max-width: var(--content-max);
   margin: 0 auto;
   line-height: var(--leading-relaxed);
   color: var(--text-primary);
@@ -89,17 +88,21 @@
     }
   }
 
+  // --- Tables: scrollable wrapper, proper alignment ---
   table {
+    display: block;
+    overflow-x: auto;
     width: 100%;
     border-collapse: collapse;
     margin-bottom: var(--sp-6);
     font-size: var(--text-sm);
+    -webkit-overflow-scrolling: touch;
 
     th {
-      text-align: left;
       font-weight: 700;
       padding: var(--sp-2) var(--sp-3);
       border-bottom: 2px solid var(--table-border);
+      white-space: nowrap;
     }
 
     td {

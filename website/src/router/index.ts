@@ -25,12 +25,6 @@ const router = createRouter({
       component: () => import("@/views/CompareView.vue"),
       meta: { title: "Comparison — SySL" },
     },
-    {
-      path: "/adopt",
-      name: "adopt",
-      component: () => import("@/views/AdoptView.vue"),
-      meta: { title: "Adopters — SySL" },
-    },
   ],
   scrollBehavior(_to, _from, saved) {
     return saved || { top: 0 };

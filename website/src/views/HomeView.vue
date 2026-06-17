@@ -61,11 +61,22 @@ onUnmounted(() => {
   document.removeEventListener("keydown", onKeydown);
 });
 
-const lines = computed(() => activeLang.value.text.split("\n"));
-function isRule(line: string): boolean {
-  const t = line.trim();
-  return t.length >= 10 && /^[-=─━]+$/.test(t);
+interface RenderLine {
+  text: string;
+  type: "normal" | "rule" | "center" | "blank";
 }
+
+const renderLines = computed<RenderLine[]>(() => {
+  const raw = activeLang.value.text.split("\n");
+  return raw.map((line) => {
+    if (line.length === 0) return { text: "", type: "blank" as const };
+    const t = line.trim();
+    if (t.length >= 10 && /^[-=─━]+$/.test(t)) return { text: t, type: "rule" as const };
+    const lead = line.match(/^(\s*)/)?.[1].length ?? 0;
+    if (lead >= 15) return { text: t, type: "center" as const };
+    return { text: line, type: "normal" as const };
+  });
+});
 </script>
 
 <template>
@@ -82,18 +93,18 @@ function isRule(line: string): boolean {
           aria-label="Select language"
         >
           <span>{{ activeLang.label }}</span>
-          <span class="lang-switcher__arrow" aria-hidden="true">{{ showDropdown ? "▲" : "▼" }}</span>
+          <svg class="lang-switcher__arrow" width="10" height="10" viewBox="0 0 12 12" aria-hidden="true">
+            <path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
         </button>
         <ul
           v-if="showDropdown"
           class="lang-switcher__dropdown"
           role="listbox"
-          :aria-activedescendant="'lang-' + activeCode"
         >
           <li
             v-for="lang in languages"
             :key="lang.code"
-            :id="'lang-' + lang.code"
             role="option"
             :aria-selected="lang.code === activeCode"
           >
@@ -113,36 +124,37 @@ function isRule(line: string): boolean {
       Informational translation. The English version is legally binding.
     </p>
 
-    <div
-      class="license-text"
-      :class="{ 'license-text--rtl': activeLang.rtl }"
-      :dir="activeLang.rtl ? 'rtl' : 'ltr'"
-      :lang="activeLang.code"
-    >
+    <div class="license-center">
       <div
-        v-for="(line, i) in lines"
-        :key="i"
-        class="license-line"
-        :class="{ 'license-line--rule': isRule(line) }"
-      >{{ line.length === 0 ? "\u00A0" : line }}</div>
+        class="license-text"
+        :class="{ 'license-text--rtl': activeLang.rtl }"
+        :dir="activeLang.rtl ? 'rtl' : 'ltr'"
+        :lang="activeLang.code"
+      >
+        <div
+          v-for="(rl, i) in renderLines"
+          :key="i"
+          class="license-line"
+          :class="'license-line--' + rl.type"
+        >{{ rl.type === "blank" ? "\u00A0" : rl.text }}</div>
+      </div>
     </div>
   </div>
 </template>
 
 <style scoped lang="scss">
 .license-page {
-  max-width: var(--content-max);
-  margin: 0 auto;
   padding: 0 var(--sp-6) var(--sp-16);
 }
 
 // --- Meta bar ---
 .license-meta {
+  max-width: var(--content-max);
+  margin: 0 auto var(--sp-4);
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: var(--sp-3) 0;
-  margin-bottom: var(--sp-4);
   border-bottom: 1px solid var(--border-color);
 }
 
@@ -152,10 +164,11 @@ function isRule(line: string): boolean {
 }
 
 .license-notice {
+  max-width: var(--content-max);
+  margin: 0 auto var(--sp-6);
   font-size: var(--text-sm);
   color: var(--text-tertiary);
   font-style: italic;
-  margin-bottom: var(--sp-6);
 }
 
 // --- Language switcher ---
@@ -176,19 +189,13 @@ function isRule(line: string): boolean {
   font-family: inherit;
   transition: border-color var(--t-fast);
 
-  &:hover {
-    border-color: var(--text-tertiary);
-  }
-
-  &:focus-visible {
-    outline: 2px solid var(--link-color);
-    outline-offset: 2px;
-  }
+  &:hover { border-color: var(--text-tertiary); }
+  &:focus-visible { outline: 2px solid var(--link-color); outline-offset: 2px; }
 }
 
 .lang-switcher__arrow {
-  font-size: 0.6em;
   color: var(--text-tertiary);
+  transition: transform var(--t-fast);
 }
 
 .lang-switcher__dropdown {
@@ -204,9 +211,7 @@ function isRule(line: string): boolean {
   margin: 0;
   z-index: 50;
 
-  li {
-    list-style: none;
-  }
+  li { list-style: none; }
 }
 
 .lang-switcher__option {
@@ -219,21 +224,23 @@ function isRule(line: string): boolean {
   text-align: left;
   transition: background var(--t-fast), color var(--t-fast);
 
-  &:hover,
-  &:focus-visible {
+  &:hover, &:focus-visible {
     background: var(--bg-tertiary);
     color: var(--text-primary);
     outline: none;
   }
-
-  &--active {
-    color: var(--text-primary);
-    font-weight: 600;
-  }
+  &--active { color: var(--text-primary); font-weight: 600; }
 }
 
-// --- License text ---
+// --- License text: flex center the entire block ---
+.license-center {
+  display: flex;
+  justify-content: center;
+}
+
 .license-text {
+  flex: 0 1 auto;
+  max-width: 100%;
   font-size: var(--text-sm);
   line-height: 1.9;
   color: var(--text-primary);
@@ -249,6 +256,11 @@ function isRule(line: string): boolean {
   word-wrap: break-word;
   min-height: 1em;
 
+  &--center {
+    text-align: center;
+    white-space: pre-wrap;
+  }
+
   &--rule {
     color: transparent;
     border-bottom: 1px solid var(--border-strong);
@@ -257,10 +269,18 @@ function isRule(line: string): boolean {
     margin: var(--sp-4) 0;
     user-select: all;
   }
+
+  &--blank {
+    min-height: 1em;
+  }
 }
 
 .license-text--rtl .license-line {
   text-align: right;
   direction: rtl;
+
+  &--center {
+    text-align: center;
+  }
 }
 </style>
