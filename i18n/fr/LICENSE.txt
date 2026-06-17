@@ -171,11 +171,11 @@ Ces normes ne constituent pas des restrictions à la liberté. Elles sont le fon
 
 14. DROIT APPLICABLE ET RÈGLEMENT DES DIFFÉRENDS
 
-   14.1 La présente licence est régie et interprétée conformément aux lois du Japon.
+   14.1 La présente licence est régi par les principes généraux du droit international d'auteur et interprété de manière à offrir la protection la plus large compatible avec les termes des présentes.
 
    14.2 Pour éviter toute ambiguïté, lorsque le Logiciel est Généré par IA et que le statut de droit d'auteur de ce code est incertain en vertu du droit applicable, les dispositions de la présente licence se verront conférer leur plein effet en vertu du droit des contrats applicable.
 
-   14.3 Tout différend découlant de la présente licence ou en relation avec celle-ci sera d'abord résolu par une négociation de bonne foi. Si la négociation échoue, le différend sera soumis à un arbitrage contraignant conformément aux règles de la Japan Commercial Arbitration Association.
+   14.3 le différend sera soumis à un arbitrage contraignant conformément aux règles d'une institution d'arbitrage internationalement reconnue à convenir entre les parties.
 
 15. TEXTE OFFICIEL ET TRADUCTIONS
 

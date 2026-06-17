@@ -26,7 +26,7 @@ SySL fills this vacuum. It operates as both a copyright license (if copyright ex
 
 ## Why does this matter?
 
-In 2026, AI models routinely generate entire codebases. The [](https://github.com/celestia-island/) project---a multi-agent AI orchestration platform---is a 100% AI-generated codebase comprising over 850,000 lines of Rust, 56 crates, and 2,200+ tests. It took one person 4.3 months using 100 billion tokens of AI generation.
+In 2026, AI models routinely generate entire codebases. Real-world projects now exist where AI generates 100% of the source code—entire applications, libraries, and systems, built by individuals directing AI models rather than writing code by hand.
 
 This is not a hypothetical. AI-generated software is here. The legal framework needs to catch up.
 
@@ -107,7 +107,7 @@ Projects that have adopted SySL:
 
 | Project | Description | Since |
 |---------|-------------|-------|
-| [](https://github.com/celestia-island/) | Multi-agent AI orchestration platform | 2026-06 |
+|  | Multi-agent AI orchestration platform | 2026-06 |
 | [shittim-chest](https://github.com/celestia-island/shittim-chest) | AI platform web shell | 2026-06 |
 | [evernight](https://github.com/celestia-island/evernight) | Cross-platform remote control library | 2026-06 |
 

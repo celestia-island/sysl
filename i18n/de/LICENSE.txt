@@ -171,11 +171,11 @@ Diese Normen sind keine Freiheitsbeschränkungen. Sie sind das Fundament eines n
 
 14. ANWENDBARES RECHT UND STREITBEILEGUNG
 
-   14.1 Diese Lizenz unterliegt dem Recht Japans und ist nach diesem auszulegen.
+   14.1 Diese Lizenz unterliegt den allgemeinen Grundsätzen des internationalen Urheberrechts und ist so auszulegen, dass sie den weitestmöglichen Schutz im Einklang mit den hierin enthaltenen Bestimmungen bietet.
 
    14.2 Zur Klarstellung: Soweit die Software KI-generiert ist und der urheberrechtliche Status solchen Codes nach dem anwendbaren Recht ungewiss ist, sind die Bestimmungen dieser Lizenz im größtmöglichen Umfang nach dem anwendbaren Vertragsrecht wirksam.
 
-   14.3 Jede Streitigkeit, die sich aus oder im Zusammenhang mit dieser Lizenz ergibt, ist zunächst durch Verhandlungen nach Treu und Glauben beizulegen. Scheitern die Verhandlungen, ist die Streitigkeit einem verbindlichen Schiedsverfahren nach den Regeln der Japan Commercial Arbitration Association zu unterwerfen.
+   14.3 ist die Streitigkeit einem verbindlichen Schiedsverfahren nach den Regeln einer international anerkannten Schiedsinstitution zu unterwerfen, über die sich die Parteien einigen.
 
 15. AMTLICHER TEXT UND ÜBERSETZUNGEN
 

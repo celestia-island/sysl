@@ -26,7 +26,7 @@ SySL 填补了这一真空。它同时作为著作权许可（若存在著作权
 
 ## 这为什么重要？
 
-在 2026 年，AI 模型已能常规性地生成整个代码库。[](https://github.com/celestia-island/) 项目——一个多智能体 AI 编排平台——是一个 100% AI 生成的代码库，包含超过 850,000 行 Rust 代码、56 个 crate 和 2,200 余项测试。一个人耗费 4.3 个月，使用了 1000 亿个 token 的 AI 生成。
+在 2026 年，AI 模型已能常规性地生成整个代码库。现实中已存在由 AI 100% 生成源代码的项目——完整的应用、库和系统，由引导 AI 模型的个人构建，而非手工编写。
 
 这不是假想场景。AI 生成的软件已经到来。法律框架需要跟上。
 
@@ -106,7 +106,7 @@ SySL is available in the following languages. The English version is legally bin
 
 | 项目 | 描述 | 自 |
 |---------|-------------|-------|
-| [](https://github.com/celestia-island/) | 多智能体 AI 编排平台 | 2026-06 |
+|  | 多智能体 AI 编排平台 | 2026-06 |
 | [shittim-chest](https://github.com/celestia-island/shittim-chest) | AI 平台 Web Shell | 2026-06 |
 | [evernight](https://github.com/celestia-island/evernight) | 跨平台远程控制库 | 2026-06 |
 

@@ -26,7 +26,7 @@ SySL llena este vacío. Opera tanto como una licencia de derechos de autor (si e
 
 ## ¿Por qué es importante esto?
 
-En 2026, los modelos de IA generan rutinariamente bases de código completas. El proyecto [](https://github.com/celestia-island/) —una plataforma de orquestación de IA multiagente— es una base de código 100% generada por IA que comprende más de 850.000 líneas de Rust, 56 crates y más de 2.200 pruebas. Le tomó a una persona 4,3 meses utilizando 100 mil millones de tokens de generación de IA.
+En 2026, los modelos de IA generan rutinariamente bases de código completas. Ya existen proyectos reales donde la IA genera el 100 % del código fuente—aplicaciones, bibliotecas y sistemas completos, construidos por individuos que dirigen modelos de IA en lugar de escribir código a mano.
 
 Esto no es una hipótesis. El software generado por IA ya está aquí. El marco legal necesita ponerse al día.
 
@@ -106,7 +106,7 @@ Proyectos que han adoptado SySL:
 
 | Proyecto | Descripción | Desde |
 |---------|-------------|-------|
-| [](https://github.com/celestia-island/) | Plataforma de orquestación de IA multiagente | 2026-06 |
+|  | Plataforma de orquestación de IA multiagente | 2026-06 |
 | [shittim-chest](https://github.com/celestia-island/shittim-chest) | Shell web de plataforma de IA | 2026-06 |
 | [evernight](https://github.com/celestia-island/evernight) | Biblioteca de control remoto multiplataforma | 2026-06 |
 
