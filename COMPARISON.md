@@ -51,7 +51,7 @@
 
 **When to choose SySL**: You want maximum adoption with a transparency norm. There is no non-compete period and no automatic conversion.
 
-**Key difference**: BUSL is a defensive license (protect the business). SySL is a transparency license (establish a social norm). They serve different purposes and can coexist via dual-licensing (SySL §10.3). For AI-generated projects using both, BUSL's Change License should be set to SySL — not Apache-2.0 — otherwise the transparency norm evaporates when the non-compete period ends.
+**Key difference**: BUSL is a defensive license (protect the business). SySL is a transparency license (establish a social norm). They serve different purposes and can coexist via dual-licensing (SySL §11.3). For AI-generated projects using both, BUSL's Change License should be set to SySL — not Apache-2.0 — otherwise the transparency norm evaporates when the non-compete period ends.
 
 ## Compatibility Matrix
 

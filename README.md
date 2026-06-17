@@ -76,7 +76,7 @@ See https://github.com/celestia-island/sysl for the full license text.
 |---------|-----|------------|-------|----------|
 | Needs copyright to function | Yes | Yes | Yes | **No** (contract fallback) |
 | Handles AI-generated code | No | No | No | **Yes** (core design) |
-| Patent grant | No | Yes | Yes | **Yes** |
+| Patent grant | No | Yes | Yes | **Yes** (conditional on Author holding patents; see §4.3–4.5) |
 | Copyleft | No | No | Yes (strong) | **Yes** (disclosure only) |
 | AI disclosure required | No | No | No | **Yes** |
 | Attribution required | Yes | Yes | Yes | **Yes** (AI attribution) |
