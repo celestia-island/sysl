@@ -1,6 +1,6 @@
 # Synthetic Source License (SySL)
 
-**The first software license designed for code that is 100% AI-generated.**
+**A novel software license designed for AI-generated code — operating as a binding contract independent of copyright.**
 
 [![License](https://img.shields.io/badge/license-SySL%201.0-blue)](./LICENSE.txt)
 
@@ -85,21 +85,21 @@ See [COMPARISON.md](./COMPARISON.md) for a detailed analysis.
 
 ## Languages
 
-SySL is available in the following languages. The English version is legally binding; translations are informational.
+SySL is available in the following languages. The English version is legally binding; translations are provided for informational purposes only.
 
-| Language | README | LICENSE | FAQ |
-|----------|--------|---------|-----|
-| English (binding) | [README.md](./README.md) | [LICENSE.txt](./LICENSE.txt) | [FAQ.md](./FAQ.md) |
-| 简体中文 | [i18n/zhs/README.md](./i18n/zhs/README.md) | [i18n/zhs/LICENSE.txt](./i18n/zhs/LICENSE.txt) | [i18n/zhs/FAQ.md](./i18n/zhs/FAQ.md) |
-| 繁體中文 | [i18n/zht/README.md](./i18n/zht/README.md) | [i18n/zht/LICENSE.txt](./i18n/zht/LICENSE.txt) | [i18n/zht/FAQ.md](./i18n/zht/FAQ.md) |
-| 日本語 | [i18n/ja/README.md](./i18n/ja/README.md) | [i18n/ja/LICENSE.txt](./i18n/ja/LICENSE.txt) | [i18n/ja/FAQ.md](./i18n/ja/FAQ.md) |
-| 한국어 | [i18n/ko/README.md](./i18n/ko/README.md) | [i18n/ko/LICENSE.txt](./i18n/ko/LICENSE.txt) | [i18n/ko/FAQ.md](./i18n/ko/FAQ.md) |
-| Français | [i18n/fr/README.md](./i18n/fr/README.md) | [i18n/fr/LICENSE.txt](./i18n/fr/LICENSE.txt) | [i18n/fr/FAQ.md](./i18n/fr/FAQ.md) |
-| Español | [i18n/es/README.md](./i18n/es/README.md) | [i18n/es/LICENSE.txt](./i18n/es/LICENSE.txt) | [i18n/es/FAQ.md](./i18n/es/FAQ.md) |
-| Русский | [i18n/ru/README.md](./i18n/ru/README.md) | [i18n/ru/LICENSE.txt](./i18n/ru/LICENSE.txt) | [i18n/ru/FAQ.md](./i18n/ru/FAQ.md) |
-| Deutsch | [i18n/de/README.md](./i18n/de/README.md) | [i18n/de/LICENSE.txt](./i18n/de/LICENSE.txt) | [i18n/de/FAQ.md](./i18n/de/FAQ.md) |
-| Português | [i18n/pt/README.md](./i18n/pt/README.md) | [i18n/pt/LICENSE.txt](./i18n/pt/LICENSE.txt) | [i18n/pt/FAQ.md](./i18n/pt/FAQ.md) |
-| العربية | [i18n/ar/README.md](./i18n/ar/README.md) | [i18n/ar/LICENSE.txt](./i18n/ar/LICENSE.txt) | [i18n/ar/FAQ.md](./i18n/ar/FAQ.md) |
+| Language | README | LICENSE | FAQ | COMPARISON |
+|----------|--------|---------|-----|------------|
+| English (binding) | [README.md](./README.md) | [LICENSE.txt](./LICENSE.txt) | [FAQ.md](./FAQ.md) | [COMPARISON.md](./COMPARISON.md) |
+| 简体中文 | [README.md](./i18n/zhs/README.md) | [LICENSE.txt](./i18n/zhs/LICENSE.txt) | [FAQ.md](./i18n/zhs/FAQ.md) | [COMPARISON.md](./i18n/zhs/COMPARISON.md) |
+| 繁體中文 | [README.md](./i18n/zht/README.md) | [LICENSE.txt](./i18n/zht/LICENSE.txt) | [FAQ.md](./i18n/zht/FAQ.md) | [COMPARISON.md](./i18n/zht/COMPARISON.md) |
+| 日本語 | [README.md](./i18n/ja/README.md) | [LICENSE.txt](./i18n/ja/LICENSE.txt) | [FAQ.md](./i18n/ja/FAQ.md) | [COMPARISON.md](./i18n/ja/COMPARISON.md) |
+| 한국어 | [README.md](./i18n/ko/README.md) | [LICENSE.txt](./i18n/ko/LICENSE.txt) | [FAQ.md](./i18n/ko/FAQ.md) | [COMPARISON.md](./i18n/ko/COMPARISON.md) |
+| Français | [README.md](./i18n/fr/README.md) | [LICENSE.txt](./i18n/fr/LICENSE.txt) | [FAQ.md](./i18n/fr/FAQ.md) | [COMPARISON.md](./i18n/fr/COMPARISON.md) |
+| Español | [README.md](./i18n/es/README.md) | [LICENSE.txt](./i18n/es/LICENSE.txt) | [FAQ.md](./i18n/es/FAQ.md) | [COMPARISON.md](./i18n/es/COMPARISON.md) |
+| Русский | [README.md](./i18n/ru/README.md) | [LICENSE.txt](./i18n/ru/LICENSE.txt) | [FAQ.md](./i18n/ru/FAQ.md) | [COMPARISON.md](./i18n/ru/COMPARISON.md) |
+| Deutsch | [README.md](./i18n/de/README.md) | [LICENSE.txt](./i18n/de/LICENSE.txt) | [FAQ.md](./i18n/de/FAQ.md) | [COMPARISON.md](./i18n/de/COMPARISON.md) |
+| Português | [README.md](./i18n/pt/README.md) | [LICENSE.txt](./i18n/pt/LICENSE.txt) | [FAQ.md](./i18n/pt/FAQ.md) | [COMPARISON.md](./i18n/pt/COMPARISON.md) |
+| العربية | [README.md](./i18n/ar/README.md) | [LICENSE.txt](./i18n/ar/LICENSE.txt) | [FAQ.md](./i18n/ar/FAQ.md) | [COMPARISON.md](./i18n/ar/COMPARISON.md) |
 
 ## Adopters
 
