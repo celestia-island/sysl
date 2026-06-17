@@ -57,7 +57,7 @@ SySL is designed to be enforceable under two independent legal theories:
 1. **Copyright law**: if the AI-generated code is found to be copyrightable, SySL operates as a traditional copyright license.
 2. **Contract law**: if the code is not copyrightable, SySL operates as a binding contract. By using the software, you agree to the terms.
 
-The dual-basis approach is modeled on Sentry's Fair Source License (FSL), which has been adopted by multiple companies and has not been successfully challenged.
+The dual-basis approach is modeled on the Functional Source License (FSL, part of Sentry's Fair Source initiative), which has been adopted by multiple companies and has not been successfully challenged.
 
 ### What happens if copyright law changes?
 
