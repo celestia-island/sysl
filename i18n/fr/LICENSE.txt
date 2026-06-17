@@ -64,7 +64,7 @@ Ces normes ne constituent pas des restrictions à la liberté. Elles sont le fon
 
         (b) quel(s) Modèle(s) a/ont été utilisé(s), le cas échéant ;
 
-        (c) la proportion approximative de contenu Généré par IA au sein de la Contribution.
+        Une Contribution qui ne fait qu’un usage accessoire ou supplémentaire d’un modèle d’IA (tel que des ajustements mineurs de formatage ou de brèves complétions de texte) peut satisfaire aux obligations de divulgation de la présente Section par le seul message de commit associé, sans exiger de divulgation dans le fichier source lui-même.
 
    2.4  AVIS DANS LE CODE OBJET. Si Vous distribuez le Logiciel ou une Œuvre dérivée uniquement sous forme de code objet ou exécutable, Vous devez inclure l'avis requis par la Section 2.1 à un emplacement visible par les utilisateurs finaux (tel qu'une boîte de dialogue « À propos » ou la documentation jointe).
 

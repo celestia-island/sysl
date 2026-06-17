@@ -67,7 +67,7 @@ Estas normas não são restrições à liberdade. Elas são o fundamento de um n
 
         (b) qual Modelo ou Modelos foram utilizados, se houver;
 
-        (c) a proporção aproximada de conteúdo Gerado por IA dentro da Contribuição.
+        Uma Contribuição que faça apenas uso incidental ou complementar de um modelo de IA (como pequenos ajustes de formatação ou breves completamentos de texto) pode satisfazer as obrigações de divulgação desta Seção apenas por meio da mensagem de commit associada, sem exigir divulgação no próprio arquivo fonte.
 
    2.4  AVISO EM CÓDIGO-OBJETO. Se Você distribuir o Software ou um Trabalho Derivado exclusivamente na forma de código-objeto ou executável, Você deve incluir o aviso exigido pela Seção 2.1 em um local visível para os usuários finais (como uma caixa de diálogo "Sobre" ou na documentação que acompanha).
 

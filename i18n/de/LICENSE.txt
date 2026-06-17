@@ -66,7 +66,7 @@ Diese Normen sind keine Freiheitsbeschränkungen. Sie sind das Fundament eines n
 
         (b) welches Modell oder welche Modelle gegebenenfalls verwendet wurden;
 
-        (c) der ungefähre Anteil des KI-generierten Inhalts innerhalb des Beitrags.
+        Ein Beitrag, der ein KI-Modell nur beiläufig oder ergänzend verwendet (z. B. für geringfügige Formatierungsanpassungen oder kurze Textvervollständigungen), kann die Offenlegungspflichten dieses Abschnitts allein durch die zugehörige Commit-Nachricht erfüllen, ohne dass eine Offenlegung in der Quelldatei selbst erforderlich ist.
 
    2.4  OBJEKTCODE-HINWEIS. Wenn Sie die Software oder ein Abgeleitetes Werk ausschließlich in Objektcode oder ausführbarer Form verbreiten, müssen Sie den nach Abschnitt 2.1 erforderlichen Hinweis an einer für Endnutzer sichtbaren Stelle (wie einem „Über"-Dialog oder der Begleitdokumentation) anbringen.
 
