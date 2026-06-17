@@ -1,6 +1,6 @@
 # Synthetic Source License (SySL)
 
-**The first software license designed for code that is 100% AI-generated.**
+**A novel software license designed for AI-generated code — operating as a binding contract independent of copyright.**
 
 [![License](https://img.shields.io/badge/license-SySL%201.0-blue)](./LICENSE.txt)
 
