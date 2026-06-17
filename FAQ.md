@@ -40,6 +40,15 @@ Yes. SySL is explicitly compatible with Apache-2.0. The combined work may be dis
 
 Compatibility with GPL has not been formally analyzed. Both licenses have copyleft-like obligations (source disclosure for GPL, AI disclosure for SySL). If you need to combine SySL code with GPL code, consult legal counsel or open an issue for a compatibility analysis.
 
+### Can SySL be used together with BUSL?
+
+Yes. SySL is designed for layered licensing. A licensor may offer software under both SySL and BUSL-1.1 simultaneously (dual-licensing). The two licenses serve different purposes:
+
+- **BUSL-1.1**: protects commercial use during a development period, then converts to open source.
+- **SySL**: establishes the transparency norm that AI generation must be disclosed.
+
+Users may choose which license to follow. See Section 10.3 of the license for the formal layered licensing provision.
+
 ### Do I need to disclose AI usage if I only use the software internally?
 
 No. The disclosure requirements in Section 2 apply when you **distribute** the software (provide a copy to a third party). Internal use within a single organization, including SaaS deployment where you provide a service rather than a copy of the software, does not constitute distribution under SySL.
@@ -65,7 +74,13 @@ If a court or legislature rules that AI-generated code is copyrightable, SySL's 
 
 ### Who is the "Author" under SySL?
 
-The Author is the human or humans who directed the AI generation process: architecture design, prompt engineering, constraint specification, quality assurance, and integration. This reflects the reality that AI-generated code is not authored by the AI itself, but by the humans who guide and curate its output.
+The Author is determined in three tiers, depending on who directed the AI generation:
+
+1. **Direct direction**: the human who directly wrote prompts, designed the architecture, and guided the AI.
+2. **Indirect direction**: if an AI system (not a human) directly directed the generation, the human who designed, configured, or deployed that AI system.
+3. **No human involvement**: if no human was involved at any level, the entity that first published the software.
+
+This multi-tier approach acknowledges that AI systems (like 's own agent fleet) may autonomously direct code generation in the future. The definition ensures there is always a legal anchor for the contract.
 
 ### Why is governing law set to Japan?
 

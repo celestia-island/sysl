@@ -40,6 +40,7 @@ SySL is the first step: a license that is honest about what the code is, who mad
 | **Dual Legal Basis** | Functions as both copyright license and independent contract |
 | **Patent Grant** | Equivalent to Apache-2.0 patent protection |
 | **Apache-2.0 Compatible** | SySL code can be combined with Apache-2.0 code |
+| **Layered Licensing** | Coexists with BUSL-1.1 for commercial protection (dual-license) |
 | **Synthetic Copyleft** | Derivatives must preserve AI disclosure (transparency obligation, not source-sharing) |
 | **AI-Specific Disclaimer** | Explicitly disclaims AI-unique failure modes |
 | **Multi-language** | Available in 11 languages (English legally binding) |

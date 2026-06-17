@@ -49,9 +49,21 @@ must say so.
    or system, including large language models, code generation models,
    and any other machine learning system.
 
-   "Author" means the human or humans who directed the AI generation
-   process through architecture design, prompt engineering, constraint
-   specification, quality assurance, and integration.
+   "Author" means:
+
+        (a) the human or humans who directly directed the AI
+            generation process through architecture design, prompt
+            engineering, constraint specification, quality assurance,
+            and integration; or
+
+        (b) if no human directly directed the AI generation, the
+            human or humans who designed, configured, or deployed
+            the AI system that autonomously directed the generation
+            (the "Operator"); or
+
+        (c) if no human was involved at any level in directing the
+            generation, the individual or legal entity that first
+            Distributed the Software under this license.
 
    "Model" means the specific AI system or systems used to generate
    the Software.
@@ -267,6 +279,16 @@ must say so.
         case-by-case basis. The Author may publish compatibility
         determinations for additional licenses at the official
         SySL website.
+
+   10.3 LAYERED LICENSING. The SySL establishes transparency norms
+        but imposes no commercial restrictions, no non-compete
+        periods, and no change-date mechanism. A Licensor may offer
+        the Software under SySL alongside additional licenses that
+        impose such restrictions (for example, dual-licensing with
+        the Business Source License 1.1). In such cases, You may
+        choose which license terms to follow: the SySL (requiring
+        only disclosure) or the additional license (imposing further
+        restrictions). The SySL text itself remains unmodified.
 
 11. SEVERABILITY
 
