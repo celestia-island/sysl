@@ -11,8 +11,8 @@ Translations into other languages are provided for informational purposes only. 
 | Code | Language | Status | Last Verified |
 |------|----------|--------|---------------|
 | `en` | English | Binding | 2026-06-17 |
-| `zh-Hans` | 简体中文 | Informational | 2026-06-17 |
-| `zh-Hant` | 繁體中文 | Informational | 2026-06-17 |
+| `zhs` | 简体中文 | Informational | 2026-06-17 |
+| `zht` | 繁體中文 | Informational | 2026-06-17 |
 | `ja` | 日本語 | Informational | 2026-06-17 |
 | `ko` | 한국어 | Informational | 2026-06-17 |
 | `fr` | Français | Informational | 2026-06-17 |
@@ -26,7 +26,7 @@ Translations into other languages are provided for informational purposes only. 
 
 ### For New Languages
 
-1. Create a directory under `l10n/` using the [BCP 47](https://tools.ietf.org/html/bcp47) language tag (e.g., `l10n/it/` for Italian).
+1. Create a directory under `i18n/` using the ISO 639-1 or BCP 47 language tag (e.g., `i18n/it/` for Italian).
 2. Copy and translate the following files:
    - `LICENSE.txt` — the full license text
    - `README.md` — the project README

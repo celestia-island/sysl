@@ -16,7 +16,7 @@ jobs:
         run: |
           set -e
           # English source files (mandatory)
-          for f in LICENSE.txt README.md FAQ.md COMPARISON.md ADOPTERS.md badge.svg l10n/README.md; do
+          for f in LICENSE.txt README.md FAQ.md COMPARISON.md ADOPTERS.md badge.svg i18n/README.md; do
             test -f "$f" || { echo "MISSING: $f"; exit 1; }
           done
           echo "All English source files present."
@@ -24,10 +24,10 @@ jobs:
       - name: Check translations exist for all supported languages
         run: |
           set -e
-          LANGS="zh-Hans zh-Hant ja ko fr es ru de pt ar"
+          LANGS="zhs zht ja ko fr es ru de pt ar"
           for lang in $LANGS; do
             for f in LICENSE.txt README.md FAQ.md; do
-              path="l10n/${lang}/${f}"
+              path="i18n/${lang}/${f}"
               test -f "$path" || { echo "MISSING: $path"; exit 1; }
             done
           done
@@ -60,10 +60,10 @@ jobs:
       - name: Check translation files are not empty
         run: |
           set -e
-          LANGS="zh-Hans zh-Hant ja ko fr es ru de pt ar"
+          LANGS="zhs zht ja ko fr es ru de pt ar"
           for lang in $LANGS; do
             for f in LICENSE.txt README.md FAQ.md; do
-              path="l10n/${lang}/${f}"
+              path="i18n/${lang}/${f}"
               lines=$(wc -l < "$path")
               test "$lines" -gt 10 || { echo "TOO SHORT: $path ($lines lines)"; exit 1; }
             done

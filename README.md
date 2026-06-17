@@ -87,16 +87,16 @@ SySL is available in the following languages. The English version is legally bin
 | Language | README | LICENSE | FAQ |
 |----------|--------|---------|-----|
 | English (binding) | [README.md](./README.md) | [LICENSE.txt](./LICENSE.txt) | [FAQ.md](./FAQ.md) |
-| 简体中文 | [l10n/zh-Hans/README.md](./l10n/zh-Hans/README.md) | [l10n/zh-Hans/LICENSE.txt](./l10n/zh-Hans/LICENSE.txt) | [l10n/zh-Hans/FAQ.md](./l10n/zh-Hans/FAQ.md) |
-| 繁體中文 | [l10n/zh-Hant/README.md](./l10n/zh-Hant/README.md) | [l10n/zh-Hant/LICENSE.txt](./l10n/zh-Hant/LICENSE.txt) | [l10n/zh-Hant/FAQ.md](./l10n/zh-Hant/FAQ.md) |
-| 日本語 | [l10n/ja/README.md](./l10n/ja/README.md) | [l10n/ja/LICENSE.txt](./l10n/ja/LICENSE.txt) | [l10n/ja/FAQ.md](./l10n/ja/FAQ.md) |
-| 한국어 | [l10n/ko/README.md](./l10n/ko/README.md) | [l10n/ko/LICENSE.txt](./l10n/ko/LICENSE.txt) | [l10n/ko/FAQ.md](./l10n/ko/FAQ.md) |
-| Français | [l10n/fr/README.md](./l10n/fr/README.md) | [l10n/fr/LICENSE.txt](./l10n/fr/LICENSE.txt) | [l10n/fr/FAQ.md](./l10n/fr/FAQ.md) |
-| Español | [l10n/es/README.md](./l10n/es/README.md) | [l10n/es/LICENSE.txt](./l10n/es/LICENSE.txt) | [l10n/es/FAQ.md](./l10n/es/FAQ.md) |
-| Русский | [l10n/ru/README.md](./l10n/ru/README.md) | [l10n/ru/LICENSE.txt](./l10n/ru/LICENSE.txt) | [l10n/ru/FAQ.md](./l10n/ru/FAQ.md) |
-| Deutsch | [l10n/de/README.md](./l10n/de/README.md) | [l10n/de/LICENSE.txt](./l10n/de/LICENSE.txt) | [l10n/de/FAQ.md](./l10n/de/FAQ.md) |
-| Português | [l10n/pt/README.md](./l10n/pt/README.md) | [l10n/pt/LICENSE.txt](./l10n/pt/LICENSE.txt) | [l10n/pt/FAQ.md](./l10n/pt/FAQ.md) |
-| العربية | [l10n/ar/README.md](./l10n/ar/README.md) | [l10n/ar/LICENSE.txt](./l10n/ar/LICENSE.txt) | [l10n/ar/FAQ.md](./l10n/ar/FAQ.md) |
+| 简体中文 | [i18n/zhs/README.md](./i18n/zhs/README.md) | [i18n/zhs/LICENSE.txt](./i18n/zhs/LICENSE.txt) | [i18n/zhs/FAQ.md](./i18n/zhs/FAQ.md) |
+| 繁體中文 | [i18n/zht/README.md](./i18n/zht/README.md) | [i18n/zht/LICENSE.txt](./i18n/zht/LICENSE.txt) | [i18n/zht/FAQ.md](./i18n/zht/FAQ.md) |
+| 日本語 | [i18n/ja/README.md](./i18n/ja/README.md) | [i18n/ja/LICENSE.txt](./i18n/ja/LICENSE.txt) | [i18n/ja/FAQ.md](./i18n/ja/FAQ.md) |
+| 한국어 | [i18n/ko/README.md](./i18n/ko/README.md) | [i18n/ko/LICENSE.txt](./i18n/ko/LICENSE.txt) | [i18n/ko/FAQ.md](./i18n/ko/FAQ.md) |
+| Français | [i18n/fr/README.md](./i18n/fr/README.md) | [i18n/fr/LICENSE.txt](./i18n/fr/LICENSE.txt) | [i18n/fr/FAQ.md](./i18n/fr/FAQ.md) |
+| Español | [i18n/es/README.md](./i18n/es/README.md) | [i18n/es/LICENSE.txt](./i18n/es/LICENSE.txt) | [i18n/es/FAQ.md](./i18n/es/FAQ.md) |
+| Русский | [i18n/ru/README.md](./i18n/ru/README.md) | [i18n/ru/LICENSE.txt](./i18n/ru/LICENSE.txt) | [i18n/ru/FAQ.md](./i18n/ru/FAQ.md) |
+| Deutsch | [i18n/de/README.md](./i18n/de/README.md) | [i18n/de/LICENSE.txt](./i18n/de/LICENSE.txt) | [i18n/de/FAQ.md](./i18n/de/FAQ.md) |
+| Português | [i18n/pt/README.md](./i18n/pt/README.md) | [i18n/pt/LICENSE.txt](./i18n/pt/LICENSE.txt) | [i18n/pt/FAQ.md](./i18n/pt/FAQ.md) |
+| العربية | [i18n/ar/README.md](./i18n/ar/README.md) | [i18n/ar/LICENSE.txt](./i18n/ar/LICENSE.txt) | [i18n/ar/FAQ.md](./i18n/ar/FAQ.md) |
 
 ## Adopters
 
