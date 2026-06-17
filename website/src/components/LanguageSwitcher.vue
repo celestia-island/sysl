@@ -1,5 +1,8 @@
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from "vue";
+import { useLangStore } from "@/composables/useLangStore";
+
+const langStore = useLangStore();
 
 interface Lang {
   code: string;
@@ -21,6 +24,7 @@ const triggerRef = ref<HTMLButtonElement | null>(null);
 
 function select(code: string) {
   emit("update:modelValue", code);
+  langStore.setLang(code);
   showDropdown.value = false;
   triggerRef.value?.focus();
 }

@@ -212,3 +212,15 @@ Pour appliquer la Licence de Source Synthétique à votre œuvre, joignez l'avis
 Créez en outre un fichier nommé AI_DISCLOSURE (ou AI_DISCLOSURE.md) à la racine de votre dépôt décrivant les modèles d'IA utilisés, le nombre approximatif de jetons consommés et la proportion de contenu généré par IA. Voir la Section 2.2 de la Licence pour l'exigence complète.
 
 Pour placer votre logiciel sous licence « SySL-1.0 ou toute version ultérieure », vous pouvez inclure la mention « ou (à votre choix) toute version ultérieure » dans l'avis type ci-dessus. Si vous n'incluez pas cette mention, votre logiciel n'est concédé que sous la Version 1.0.
+                           DIVULGATION DES MODÈLES
+                      (À remplir par le concédant)
+
+Auteur humain:
+  [Nom de la personne ayant dirigé la génération par IA]
+
+Modèles d’IA utilisés:
+  Énumérez tous les modèles ayant contribué à la génération du Logiciel. Pour chaque modèle, indiquez le nom du modèle, l’organisation qui le fournit et l’URL du site web officiel du fournisseur.
+
+  [Nom du modèle] — [Fournisseur / Organisation] — [URL du site web du fournisseur]
+
+  [Nom du modèle] — [Fournisseur / Organisation] — [URL du site web du fournisseur]

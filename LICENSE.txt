@@ -214,3 +214,15 @@ To apply the Synthetic Source License to your work, attach the following boilerp
 In addition, create a file named AI_DISCLOSURE (or AI_DISCLOSURE.md) at your repository root describing the AI models used, approximate tokens consumed, and the proportion of AI-generated content. See Section 2.2 of the License for the full requirement.
 
 To license your software under "SySL-1.0 or any later version," you may include the phrase "or (at your option) any later version" in the boilerplate notice above. If you do not include this phrase, your software is licensed only under Version 1.0.
+                           MODEL DISCLOSURE
+                      (To be completed by Licensor)
+
+Human Author:
+  [Name of the human who directed the AI generation]
+
+AI Models Used:
+  List every model that contributed to generating the Software. For each model, include the model name, the organization that provides the model, and the vendor’s official website URL.
+
+  [Model Name] — [Vendor / Organization] — [Vendor Website URL]
+
+  [Model Name] — [Vendor / Organization] — [Vendor Website URL]

@@ -212,3 +212,15 @@ Um die Synthetische-Quellcode-Lizenz auf Ihr Werk anzuwenden, fügen Sie den fol
 Erstellen Sie außerdem eine Datei mit dem Namen AI_DISCLOSURE (oder AI_DISCLOSURE.md) im Wurzelverzeichnis Ihres Repositorys, die die verwendeten KI-Modelle, den ungefähren Token-Verbrauch und den Anteil KI-generierten Inhalts beschreibt. Siehe Abschnitt 2.2 der Lizenz für die vollständigen Anforderungen.
 
 Um Ihre Software unter „SySL-1.0 oder einer beliebigen späteren Fassung" zu lizenzieren, können Sie den Zusatz „oder (nach Ihrer Wahl) jeder späteren Fassung" in den obigen Standardhinweis aufnehmen. Wenn Sie diesen Zusatz nicht aufnehmen, ist Ihre Software ausschließlich unter Version 1.0 lizenziert.
+                           MODELLOFFENLEGUNG
+                      (Vom Lizenzgeber auszufüllen)
+
+Menschlicher Urheber:
+  [Name der Person, die die KI-Generierung geleitet hat]
+
+Verwendete KI-Modelle:
+  Listen Sie alle Modelle auf, die zur Generierung der Software beigetragen haben. Geben Sie für jedes Modell den Modellnamen, die bereitstellende Organisation und die URL der offiziellen Website des Anbieters an.
+
+  [Modellname] — [Anbieter / Organisation] — [Anbieter-Website-URL]
+
+  [Modellname] — [Anbieter / Organisation] — [Anbieter-Website-URL]

@@ -1,5 +1,8 @@
 <script setup lang="ts">
 import { ref, computed, onMounted, onUnmounted } from "vue";
+import { useLangStore } from "@/composables/useLangStore";
+
+const langStore = useLangStore();
 
 import enText from "../../../LICENSE.txt?raw";
 import zhsText from "../../../i18n/zhs/LICENSE.txt?raw";
@@ -27,7 +30,7 @@ const languages = [
   { code: "ar", label: "العربية", text: arText, rtl: true },
 ];
 
-const activeCode = ref("en");
+const activeCode = ref(langStore.state.code);
 const activeLang = computed(() => languages.find((l) => l.code === activeCode.value)!);
 const showDropdown = ref(false);
 const switcherRef = ref<HTMLElement | null>(null);
@@ -36,6 +39,7 @@ const copied = ref(false);
 
 function selectLang(code: string) {
   activeCode.value = code;
+  langStore.setLang(code);
   showDropdown.value = false;
   triggerRef.value?.focus();
 }

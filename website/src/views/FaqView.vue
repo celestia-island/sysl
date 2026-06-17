@@ -2,6 +2,7 @@
 import { ref, computed } from "vue";
 import LanguageSwitcher from "@/components/LanguageSwitcher.vue";
 import { renderMarkdown } from "@/composables/useMarkdown";
+import { useLangStore } from "@/composables/useLangStore";
 
 import en from "../../../FAQ.md?raw";
 import zhs from "../../../i18n/zhs/FAQ.md?raw";
@@ -29,7 +30,7 @@ const langs = [
   { code: "ar", label: "العربية", md: ar, rtl: true },
 ];
 
-const active = ref("en");
+const active = ref(useLangStore().state.code);
 const activeLang = computed(() => langs.find((l) => l.code === active.value)!);
 const html = computed(() => renderMarkdown(activeLang.value.md));
 </script>

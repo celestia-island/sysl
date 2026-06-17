@@ -1,12 +1,16 @@
 <script setup lang="ts">
+import { computed } from "vue";
 import { RouterLink } from "vue-router";
 import ThemeToggle from "@/components/ThemeToggle.vue";
+import { useNavLabels } from "@/composables/useLangStore";
 
-const navLinks = [
-  { to: "/", label: "License" },
-  { to: "/faq", label: "FAQ" },
-  { to: "/compare", label: "Compare" },
-];
+const labels = useNavLabels();
+
+const navLinks = computed(() => [
+  { to: "/", label: labels.license() },
+  { to: "/faq", label: labels.faq() },
+  { to: "/compare", label: labels.compare() },
+]);
 </script>
 
 <template>
