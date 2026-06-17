@@ -102,12 +102,21 @@ interface RenderBlock {
 
 const renderBlocks = computed<RenderBlock[]>(() => {
   const raw = activeLang.value.text.split("\n");
-  const lines = raw.map((line): RenderLine => {
+
+  // Find first section-rule to treat everything before it as preamble (centered)
+  const firstRuleIdx = raw.findIndex((l) => {
+    const t = l.trim();
+    return t.length >= 10 && /^[-=─━]+$/.test(t);
+  });
+
+  const lines = raw.map((line, idx): RenderLine => {
     if (line.length === 0) return { text: "", type: "blank" as const };
     const t = line.trim();
     if (t.length >= 10 && /^[-=─━]+$/.test(t)) return { text: t, type: "rule" as const };
     const lead = line.match(/^(\s*)/)?.[1].length ?? 0;
     if (lead >= 15) return { text: t, type: "center" as const };
+    // Everything before the first rule (copyright/permission lines) is centered
+    if (firstRuleIdx >= 0 && idx <= firstRuleIdx) return { text: t, type: "center" as const };
     return { text: line, type: "normal" as const };
   });
 
@@ -390,7 +399,7 @@ const renderBlocks = computed<RenderBlock[]>(() => {
 // --- Paragraph blocks ---
 .lb-para {
   margin: 0 0 var(--sp-4);
-  text-indent: 0;
+  text-indent: 2em;
 
   &:last-child { margin-bottom: 0; }
 }
