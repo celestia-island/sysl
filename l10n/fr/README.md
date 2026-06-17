@@ -1,6 +1,6 @@
 # Licence de Source Synthétique (SySL)
 
-**La première licence open source conçue pour les logiciels dont le code est généré à 100 % par IA.**
+**La première licence logicielle conçue pour les logiciels dont le code est généré à 100 % par IA.**
 
 [![License](https://img.shields.io/badge/license-SySL%201.0-blue)](./LICENSE.txt)
 
@@ -40,7 +40,8 @@ La SySL est la première étape : une licence qui est honnête sur ce qu'est le 
 | **Double fondement juridique** | Fonctionne à la fois comme licence de droit d'auteur et comme contrat indépendant |
 | **Concession de brevets** | Protection par brevet équivalente à Apache-2.0 |
 | **Compatible Apache-2.0** | Le code SySL peut être combiné avec du code Apache-2.0 |
-| **Copyleft synthétique** | Les œuvres dérivées doivent préserver la divulgation de l'IA (pas le code source, seulement la divulgation) |
+| **Licences superposées** | Coexiste avec BUSL-1.1 pour la protection commerciale (double licence) |
+| **Copyleft synthétique** | Les œuvres dérivées doivent préserver la divulgation de l'IA (obligation de transparence, pas de partage du code source) |
 | **Exclusion spécifique à l'IA** | Exclut explicitement les modes de défaillance propres à l'IA |
 | **Multilingue** | Disponible en 11 langues (l'anglais faisant foi) |
 

@@ -53,10 +53,23 @@ debemos decirlo.
    escala, modelos de generación de código y cualquier otro sistema
    de aprendizaje automático.
 
-   "Autor" significa el humano o humanos que dirigieron el proceso de
-   generación de IA mediante diseño de arquitectura, ingeniería de
-   prompts, especificación de restricciones, aseguramiento de calidad
-   e integración.
+    "Autor" significa:
+
+         (a) el humano o humanos que dirigieron directamente el
+             proceso de generación de IA mediante el diseño de la
+             arquitectura, la ingeniería de prompts, la
+             especificación de restricciones, el aseguramiento de
+             calidad y la integración; o
+
+         (b) si ningún humano dirigió directamente la generación
+             de IA, el humano o humanos que diseñaron, configuraron
+             o desplegaron el sistema de IA que dirigió de forma
+             autónoma la generación (el "Operador"); o
+
+         (c) si ningún humano participó en ningún nivel en la
+             dirección de la generación, la persona física o
+             jurídica que primero Distribuyó el Software bajo
+             esta licencia.
 
    "Modelo" significa el sistema o sistemas de IA específicos
    utilizados para generar el Software.
@@ -138,13 +151,9 @@ debemos decirlo.
         bajo Apache-2.0, siempre que los requisitos de divulgación de
         la Sección 2 se cumplan de forma independiente.
 
-   3.3  TERMINACIÓN POR LITIGIO DE PATENTES. Si Usted inicia un
-        litigio de patentes (incluida una demanda reconvencional o
-        contrademanda en un pleito) contra el Autor o cualquier
-        entidad, alegando que el Software constituye una infracción
-        directa o contributiva de patentes, las concesiones de
-        derechos de autor y patentes de esta licencia terminarán a
-        partir de la fecha de presentación de dicho litigio.
+    3.3  TERMINACIÓN. Si Usted inicia un litigio de patentes alegando
+         que el Software infringe alguna patente, todos los derechos
+         que esta licencia le otorga a Usted terminarán.
 
 4. CONCESIÓN DE PATENTES
 
@@ -286,13 +295,34 @@ debemos decirlo.
         combinarse con software bajo Apache-2.0 o MIT, y la obra
         combinada puede Distribuirse bajo los términos de Apache-2.0
         o MIT, respectivamente, siempre que los requisitos de
-        divulgación de SySL (Sección 2) y los requisitos de
-        divulgación recíproca (Sección 8) se cumplan de forma
-        independiente.
+         divulgación de SySL (Sección 2) y los requisitos de
+         divulgación recíproca (Sección 8) se cumplan de forma
+         independiente. Para mayor claridad, la distribución bajo
+         Apache-2.0 o MIT no extingue las obligaciones de divulgación
+         — estas acompañan al código originado bajo SySL con
+         independencia de la licencia que se aplique a la obra
+         combinada. Quien desee publicar Software Generado por IA
+         sin obligaciones de divulgación no debe utilizar SySL.
 
-   10.2 La compatibilidad con otras licencias se evaluará caso por
-        caso. El Autor podrá publicar determinaciones de compatibilidad
-        para licencias adicionales en el sitio web oficial de SySL.
+    10.2 La compatibilidad con otras licencias se evaluará caso por
+         caso. El Autor podrá publicar determinaciones de compatibilidad
+         para licencias adicionales en el sitio web oficial de SySL.
+
+    10.3 LICENCIAMIENTO EN CAPAS. La SySL establece normas de
+         transparencia pero no impone restricciones comerciales,
+         períodos de no competencia ni mecanismos de cambio de
+         fecha. El Licenciante puede ofrecer el Software bajo SySL
+         junto con licencias adicionales que impongan tales
+         restricciones (por ejemplo, una doble licencia con la
+         Business Source License 1.1). En tales casos, Usted podrá
+         elegir qué términos de licencia seguir: la SySL (que solo
+         exige divulgación) o la licencia adicional (que impone
+         restricciones adicionales). El texto de la SySL en sí
+         permanece inalterado. Si se utiliza BUSL-1.1 como licencia
+         adicional, los Licenciantes de Software Generado por IA
+         deberán especificar SySL (no Apache-2.0 ni MIT) como
+         Licencia de Cambio para garantizar que la norma de
+         transparencia subsista tras el período de no competencia.
 
 11. DIVISIBILIDAD
 
@@ -354,3 +384,41 @@ debemos decirlo.
         versión posterior publicada por el Autor.
 
                         FIN DE LOS TÉRMINOS Y CONDICIONES
+
+                              APÉNDICE
+
+               Cómo Aplicar SySL a Su Software
+
+Para aplicar la Licencia de Código Sintético a su obra, adjunte el
+siguiente aviso estándar a cada archivo de código fuente. El aviso
+debe incluirse con la sintaxis de comentario adecuada para el formato
+del archivo.
+
+   Copyright (c) [año] [su nombre u organización]
+
+   Licensed under the Synthetic Source License, Version 1.0
+   (the "License"); you may not use this file except in compliance
+   with the License. You may obtain a copy of the License at
+
+       https://github.com/celestia-island/sysl
+
+   Unless required by applicable law or agreed to in writing,
+   software distributed under the License is distributed on an
+   "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+   either express or implied. See the License for the specific
+   language governing permissions and limitations under the License.
+
+   DIVULGACIÓN DE MODELOS DE IA: [Describa qué modelos de IA se
+   utilizaron para generar este software. Consulte la Sección 2
+   de la Licencia.]
+
+Además, cree un archivo llamado AI_DISCLOSURE (o AI_DISCLOSURE.md)
+en la raíz de su repositorio describiendo los modelos de IA
+utilizados, los tokens aproximados consumidos y la proporción de
+contenido generado por IA. Consulte la Sección 2.2 de la Licencia
+para el requisito completo.
+
+Para licenciar su software bajo "SySL-1.0 o cualquier versión
+posterior", puede incluir la frase "or (at your option) any later
+version" en el aviso estándar anterior. Si no incluye esta frase,
+su software estará licenciado únicamente bajo la Versión 1.0.

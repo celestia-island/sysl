@@ -55,10 +55,24 @@ logiciels avec l'IA, mais nous devons le dire.
    langage, les modèles de génération de code et tout autre système
    d'apprentissage automatique.
 
-   « Auteur » désigne la ou les personnes physiques qui ont dirigé le
-   processus de génération par l'IA par la conception de l'architecture,
-   l'ingénierie des invites, la spécification des contraintes,
-   l'assurance qualité et l'intégration.
+   « Auteur » désigne :
+
+        (a) la ou les personnes physiques ayant directement dirigé le
+            processus de génération par l'IA, notamment par la
+            conception de l'architecture, l'ingénierie des invites,
+            la spécification des contraintes, l'assurance qualité et
+            l'intégration ; ou
+
+        (b) à défaut de direction humaine directe de la génération
+            par l'IA, la ou les personnes physiques ayant conçu,
+            configuré ou déployé le système d'IA qui a dirigé la
+            génération de manière autonome (ci-après l'« Opérateur ») ;
+            ou
+
+        (c) en l'absence de toute intervention humaine à quelque
+            niveau que ce soit dans la direction de la génération,
+            la personne physique ou morale ayant la première Distribué
+            le Logiciel sous la présente licence.
 
    « Modèle » désigne le ou les systèmes d'IA spécifiques utilisés pour
    générer le Logiciel.
@@ -140,14 +154,10 @@ logiciels avec l'IA, mais nous devons le dire.
         Apache-2.0, à condition que les exigences de divulgation de la
         Section 2 soient satisfaites de manière indépendante.
 
-   3.3  RÉSILIATION POUR CONTENTIEUX EN MATIÈRE DE BREVETS. Si Vous
-        engagez une action en contrefaçon de brevet (y compris une
-        demande reconventionnelle ou une demande incidente dans le cadre
-        d'un procès) contre l'Auteur ou toute entité, alléguant que le
-        Logiciel constitue une contrefaçon directe ou indirecte de
-        brevet, alors les concessions de droits d'auteur et de brevets
-        de la présente licence prendront fin à la date de dépôt de
-        ladite action.
+   3.3  RÉSILIATION. Si Vous engagez une action en justice pour
+         violation de brevet alléguant que le Logiciel contrefait un
+         brevet quelconque, tous les droits qui Vous sont accordés par
+         la présente licence prennent fin.
 
 4. CONCESSION DE BREVETS
 
@@ -295,11 +305,33 @@ logiciels avec l'IA, mais nous devons le dire.
         conditions de la licence Apache-2.0 ou MIT, respectivement, à
         condition que les exigences de divulgation de la SySL (Section 2)
         et les exigences de divulgation réciproque (Section 8) soient
-        satisfaites de manière indépendante.
+                 satisfaites de manière indépendante. Pour éviter toute
+         ambiguïté, la distribution sous Apache-2.0 ou MIT ne libère
+         pas des obligations de divulgation — celles-ci suivent le
+         code d'origine SySL quel que soit l'habillage contractuel
+         appliqué à l'œuvre combinée. Le Concédant qui souhaite publier
+         un Logiciel Généré par IA sans obligation de divulgation ne
+         doit pas utiliser la SySL.
 
    10.2 La compatibilité avec d'autres licences est évaluée au cas par
         cas. L'Auteur peut publier des déterminations de compatibilité
-        pour d'autres licences sur le site Web officiel de la SySL.
+         pour d'autres licences sur le site Web officiel de la SySL.
+
+   10.3 LICENCES SUPERPOSÉES. La SySL établit des normes de
+         transparence mais n'impose ni restriction commerciale, ni
+         période de non-concurrence, ni mécanisme de changement de
+         licence. Le Concédant peut proposer le Logiciel sous SySL
+         parallèlement à des licences supplémentaires qui imposent de
+         telles restrictions (par exemple, une double licence avec la
+         Business Source License 1.1). En pareil cas, Vous pouvez
+         choisir les conditions que vous souhaitez respecter : la SySL
+         (qui n'exige que la divulgation) ou la licence supplémentaire
+         (qui impose des restrictions additionnelles). Le texte de la
+         SySL lui-même demeure inchangé. Lorsque BUSL-1.1 est utilisée
+         comme licence supplémentaire, le Concédant d'un Logiciel
+         Généré par IA doit désigner la SySL (et non Apache-2.0 ou
+         MIT) comme Licence de Changement afin que la norme de
+         transparence survive à la période de non-concurrence.
 
 11. CLAUSE DE SAUVEGARDE
 
@@ -362,3 +394,42 @@ logiciels avec l'IA, mais nous devons le dire.
         ultérieure publiée par l'Auteur.
 
                          FIN DES CONDITIONS GÉNÉRALES
+
+                               ANNEXE
+
+                 Comment Appliquer la SySL à Votre Logiciel
+
+Pour appliquer la Licence de Source Synthétique à votre œuvre, joignez
+l'avis type suivant à chaque fichier source. L'avis doit être placé dans
+la syntaxe de commentaire appropriée au format du fichier.
+
+   Copyright (c) [année] [votre nom ou organisation]
+
+   Sous licence Synthetic Source License, Version 1.0
+   (la « Licence ») ; vous ne pouvez utiliser ce fichier qu'en
+   conformité avec la Licence. Vous pouvez obtenir une copie de la
+   Licence à l'adresse suivante :
+
+       https://github.com/celestia-island/sysl
+
+   Sauf disposition contraire de la loi applicable ou convention
+   écrite, le logiciel distribué sous la Licence est fourni
+   « EN L'ÉTAT », SANS GARANTIES NI CONDITIONS D'AUCUNE SORTE,
+   expresses ou implicites. Voir la Licence pour le libellé
+   spécifique régissant les autorisations et les limitations.
+
+   DIVULGATION DES MODÈLES D'IA : [Décrivez quels modèles d'IA
+   ont été utilisés pour générer ce logiciel. Voir la Section 2
+   de la Licence.]
+
+Créez en outre un fichier nommé AI_DISCLOSURE (ou AI_DISCLOSURE.md)
+à la racine de votre dépôt décrivant les modèles d'IA utilisés, le
+nombre approximatif de jetons consommés et la proportion de contenu
+généré par IA. Voir la Section 2.2 de la Licence pour l'exigence
+complète.
+
+Pour placer votre logiciel sous licence « SySL-1.0 ou toute version
+ultérieure », vous pouvez inclure la mention « ou (à votre choix)
+toute version ultérieure » dans l'avis type ci-dessus. Si vous
+n'incluez pas cette mention, votre logiciel n'est concédé que sous
+la Version 1.0.

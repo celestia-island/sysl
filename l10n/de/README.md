@@ -40,6 +40,7 @@ SySL ist der erste Schritt: eine Lizenz, die ehrlich darüber ist, was der Code 
 | **Doppelte Rechtsgrundlage** | Fungiert sowohl als Urheberrechtslizenz als auch als unabhängiger Vertrag |
 | **Patenteinräumung** | Entspricht dem Patentschutz der Apache-2.0 |
 | **Apache-2.0-kompatibel** | SySL-Code kann mit Apache-2.0-Code kombiniert werden |
+| **Gestufte Lizenzierung** | Koexistenz mit BUSL-1.1 für kommerziellen Schutz (Doppellizenzierung) |
 | **Synthetisches Copyleft** | Abgeleitete Werke müssen die KI-Offenlegung bewahren (nicht den Quellcode, nur die Offenlegung) |
 | **KI-spezifischer Haftungsausschluss** | Schließt ausdrücklich KI-spezifische Versagensmodi aus |
 | **Mehrsprachig** | In 11 Sprachen verfügbar (Englisch rechtlich bindend) |

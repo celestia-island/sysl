@@ -59,10 +59,21 @@ devemos declarar isso.
    modelos de geração de código e qualquer outro sistema de
    aprendizado de máquina.
 
-   "Autor" significa o ser humano ou seres humanos que dirigiram o
-   processo de geração por IA por meio de projeto de arquitetura,
-   engenharia de prompts, especificação de restrições, garantia de
-   qualidade e integração.
+   "Autor" significa:
+
+        (a) o ser humano ou seres humanos que dirigiram diretamente
+            o processo de geração por IA por meio de projeto de
+            arquitetura, engenharia de prompts, especificação de
+            restrições, garantia de qualidade e integração; ou
+
+        (b) se nenhum ser humano dirigiu diretamente a geração por
+            IA, o ser humano ou seres humanos que projetaram,
+            configuraram ou implantaram o sistema de IA que dirigiu
+            autonomamente a geração (o "Operador"); ou
+
+        (c) se nenhum ser humano esteve envolvido em qualquer nível
+            na direção da geração, a pessoa física ou jurídica que
+            primeiro Distribuiu o Software sob esta licença.
 
    "Modelo" significa o sistema ou sistemas específicos de IA
    utilizados para gerar o Software.
@@ -143,12 +154,9 @@ devemos declarar isso.
         sob Apache-2.0, desde que os requisitos de divulgação da Seção 2
         sejam cumpridos de forma independente.
 
-   3.3  RESCISÃO POR LITÍGIO DE PATENTE. Se Você iniciar um litígio de
-        patente (incluindo uma reconvenção ou pedido contraposto em uma
-        ação judicial) contra o Autor ou qualquer entidade, alegando que
-        o Software constitui infração direta ou contributiva de patente,
-        as concessões de direitos autorais e de patente desta licença
-        serão rescindidas a partir da data do ajuizamento de tal litígio.
+    3.3  RESCISÃO. Se Você iniciar um litígio de patente alegando
+         que o Software infringe qualquer patente, todos os direitos
+         concedidos a Você sob esta licença serão rescindidos.
 
 4. CONCESSÃO DE PATENTE
 
@@ -279,18 +287,38 @@ devemos declarar isso.
 
 10. COMPATIBILIDADE
 
-   10.1 A SySL foi projetada para ser compatível com a Licença Apache,
-        Versão 2.0, e com a Licença MIT. Software licenciado sob a
-        SySL pode ser combinado com software licenciado sob Apache-2.0
-        ou MIT, e o trabalho combinado pode ser Distribuído sob os
-        termos da Apache-2.0 ou MIT, respectivamente, desde que os
-        requisitos de divulgação da SySL (Seção 2) e os requisitos de
-        divulgação recíproca (Seção 8) sejam cumpridos de forma
-        independente.
+    10.1 A SySL foi projetada para ser compatível com a Licença Apache,
+         Versão 2.0, e com a Licença MIT. Software licenciado sob a
+         SySL pode ser combinado com software licenciado sob Apache-2.0
+         ou MIT, e o trabalho combinado pode ser Distribuído sob os
+         termos da Apache-2.0 ou MIT, respectivamente, desde que os
+         requisitos de divulgação da SySL (Seção 2) e os requisitos de
+         divulgação recíproca (Seção 8) sejam cumpridos de forma
+         independente. Para evitar dúvidas, distribuir sob Apache-2.0
+         ou MIT não exonera as obrigações de divulgação — elas
+         acompanham o código originado sob SySL independentemente do
+         invólucro de licença aplicado ao trabalho combinado. Um
+         Licenciante que deseje disponibilizar Software Gerado por IA
+         sem obrigações de divulgação não deve utilizar a SySL.
 
-   10.2 A compatibilidade com outras licenças deve ser avaliada caso a
-        caso. O Autor poderá publicar determinações de compatibilidade
-        para licenças adicionais no site oficial da SySL.
+    10.2 A compatibilidade com outras licenças deve ser avaliada caso a
+         caso. O Autor poderá publicar determinações de compatibilidade
+         para licenças adicionais no site oficial da SySL.
+
+    10.3 LICENCIAMENTO EM CAMADAS. A SySL estabelece normas de
+         transparência, mas não impõe restrições comerciais, períodos
+         de não concorrência nem mecanismo de mudança de data. Um
+         Licenciante pode oferecer o Software sob a SySL juntamente
+         com licenças adicionais que imponham tais restrições (por
+         exemplo, duplo licenciamento com a Business Source License
+         1.1). Nesses casos, Você pode escolher quais termos de licença
+         seguir: a SySL (exigindo apenas divulgação) ou a licença
+         adicional (impondo restrições adicionais). O texto da SySL em
+         si permanece sem modificações. Ao utilizar a BUSL-1.1 como
+         licença adicional, os Licenciantes de Software Gerado por IA
+         devem especificar a SySL (não a Apache-2.0 ou MIT) como
+         Licença de Mudança para garantir que a norma de transparência
+         sobreviva ao período de não concorrência.
 
 11. SEPARABILIDADE
 
@@ -351,3 +379,43 @@ devemos declarar isso.
         versão posterior publicada pelo Autor.
 
                          FIM DOS TERMOS E CONDIÇÕES
+
+                               APÊNDICE
+
+              Como Aplicar a SySL ao Seu Software
+
+Para aplicar a Licença de Código Sintético ao seu trabalho, anexe o
+seguinte aviso padronizado a cada arquivo de código-fonte. O aviso deve
+estar delimitado pela sintaxe de comentário apropriada para o formato
+do arquivo.
+
+   Copyright (c) [ano] [seu nome ou organização]
+
+   Licenciado sob a Licença de Código Sintético, Versão 1.0
+   (a "Licença"); você não pode usar este arquivo exceto em
+   conformidade com a Licença. Você pode obter uma cópia da
+   Licença em
+
+       https://github.com/celestia-island/sysl
+
+   Salvo exigência da lei aplicável ou acordo por escrito, o
+   software distribuído sob a Licença é distribuído "NO ESTADO
+   EM QUE SE ENCONTRA", SEM GARANTIAS OU CONDIÇÕES DE QUALQUER
+   TIPO, expressas ou implícitas. Consulte a Licença para a
+   redação específica que rege as permissões e limitações sob
+   a Licença.
+
+   DIVULGAÇÃO DE MODELO DE IA: [Descreva quais modelos de IA
+   foram utilizados para gerar este software. Consulte a Seção
+   2 da Licença.]
+
+Além disso, crie um arquivo denominado AI_DISCLOSURE (ou
+AI_DISCLOSURE.md) na raiz do seu repositório descrevendo os modelos de
+IA utilizados, a quantidade aproximada de tokens consumidos e a
+proporção de conteúdo gerado por IA. Consulte a Seção 2.2 da Licença
+para o requisito completo.
+
+Para licenciar seu software sob "SySL-1.0 ou qualquer versão posterior",
+você pode incluir a frase "ou (a seu critério) qualquer versão posterior"
+no aviso padronizado acima. Se você não incluir esta frase, seu software
+será licenciado apenas sob a Versão 1.0.

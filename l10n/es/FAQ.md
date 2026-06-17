@@ -28,7 +28,9 @@ Sí, siempre que cumpla con los requisitos de divulgación (Sección 2) y los re
 
 - Conservar el aviso de divulgación de IA en su documentación.
 - Si distribuye código fuente, mantener las divulgaciones de generación por IA a nivel de archivo.
-- Si distribuye solo binarios, proporcionar el código fuente correspondiente (con divulgaciones) o una oferta por escrito para hacerlo.
+- Si distribuye solo binarios, incluir el aviso de divulgación de IA y una copia de (o enlace a) el archivo AI_DISCLOSURE.
+
+Usted **no** está obligado a distribuir su código fuente. El copyleft de SySL se limita a preservar la cadena de divulgación de IA.
 
 ### ¿Puedo combinar código SySL con código Apache-2.0?
 
@@ -38,9 +40,20 @@ Sí. SySL es explícitamente compatible con Apache-2.0. La obra combinada puede 
 
 La compatibilidad con GPL no ha sido analizada formalmente. Ambas licencias tienen obligaciones de tipo copyleft (divulgación de código fuente para GPL, divulgación de IA para SySL). Si necesita combinar código SySL con código GPL, consulte a un asesor legal o abra un issue para un análisis de compatibilidad.
 
+### ¿Se puede utilizar SySL junto con BUSL?
+
+Sí. SySL está diseñada para el licenciamiento en capas. Un licenciante puede ofrecer software simultáneamente bajo SySL y BUSL-1.1 (doble licencia). Ambas licencias sirven a propósitos diferentes:
+
+- **BUSL-1.1**: protege el uso comercial durante un período de desarrollo y luego se convierte en la Licencia de Cambio especificada.
+- **SySL**: establece la norma de transparencia de que la generación por IA debe ser divulgada.
+
+Los usuarios pueden elegir qué licencia seguir. Consulte la Sección 10.3 de la licencia para la disposición formal sobre licenciamiento en capas.
+
+**Importante**: al utilizar BUSL junto con SySL para software generado por IA, la Licencia de Cambio de BUSL debe configurarse como SySL (no Apache-2.0 ni MIT). Si BUSL se convierte en una licencia sin obligaciones de divulgación (como Apache-2.0), los destinatarios del código posterior a la fecha de cambio pueden eliminar la divulgación de IA, lo que frustra el propósito de SySL. Establecer SySL como Licencia de Cambio garantiza que la norma de transparencia subsista tras el período de no competencia de BUSL.
+
 ### ¿Necesito divulgar el uso de IA si solo uso el software internamente?
 
-Los requisitos de divulgación de la Sección 2 se aplican cuando usted **distribuye** el software. El uso interno dentro de una sola organización no constituye distribución bajo SySL. Sin embargo, si despliega el software como un servicio accesible a terceros, la Sección 8.2 puede ser aplicable.
+No. Los requisitos de divulgación de la Sección 2 se aplican cuando usted **distribuye** el software (proporciona una copia a un tercero). El uso interno dentro de una sola organización, incluido el despliegue SaaS en el que se presta un servicio en lugar de proporcionar una copia del software, no constituye distribución bajo SySL.
 
 ### ¿Qué se considera "Generado por IA"?
 
@@ -55,7 +68,7 @@ SySL está diseñada para ser exigible bajo dos teorías jurídicas independient
 1. **Derechos de autor**: si se determina que el código generado por IA es protegible por derechos de autor, SySL opera como una licencia de derechos de autor tradicional.
 2. **Derecho contractual**: si el código no es protegible por derechos de autor, SySL opera como un contrato vinculante. Al usar el software, usted acepta los términos.
 
-El enfoque de doble base está inspirado en la Fair Source License (FSL) de Sentry, que ha sido adoptada por múltiples empresas y no ha sido impugnada con éxito.
+El enfoque de doble base está inspirado en la Functional Source License (FSL, parte de la iniciativa Fair Source de Sentry), que ha sido adoptada por múltiples empresas y no ha sido impugnada con éxito.
 
 ### ¿Qué sucede si cambia la ley de derechos de autor?
 
@@ -63,11 +76,17 @@ Si un tribunal o legislador dictamina que el código generado por IA es protegib
 
 ### ¿Quién es el "Autor" bajo SySL?
 
-El Autor es el humano o humanos que dirigieron el proceso de generación de IA: diseño de arquitectura, ingeniería de prompts, especificación de restricciones, aseguramiento de calidad e integración. Esto refleja la realidad de que el código generado por IA no es creado por la IA en sí, sino por los humanos que guían y curan su salida.
+El Autor se determina en tres niveles, según quién dirigió la generación de IA:
+
+1. **Dirección directa**: el humano que directamente escribió los prompts, diseñó la arquitectura y guió la IA.
+2. **Dirección indirecta**: si un sistema de IA (no un humano) dirigió directamente la generación, el humano que diseñó, configuró o desplegó ese sistema de IA.
+3. **Sin intervención humana**: si ningún humano participó en ningún nivel, la entidad que primero publicó el software.
+
+Este enfoque multinivel reconoce que los sistemas de IA (como la propia flota de agentes de ) pueden dirigir de forma autónoma la generación de código en el futuro. La definición garantiza que siempre exista un anclaje jurídico para el contrato.
 
 ### ¿Por qué se establece Japón como ley aplicable?
 
-El autor de SySL reside en una jurisdicción donde la ley japonesa proporciona un marco estable y predecible para las licencias de software basadas en contrato. La elección de Japón como ley aplicable es deliberada: Japón tiene un cuerpo de derecho contractual bien desarrollado, un sistema legal que respeta la autonomía de las partes y es neutral respecto a las principales jurisdicciones (EE. UU., UE, China) donde es probable que SySL se utilice.
+Se eligió Japón como ley aplicable neutral por varias razones: Japón cuenta con un cuerpo de derecho contractual bien desarrollado, un sistema jurídico que respeta la autonomía de las partes en los acuerdos comerciales y es jurisdiccionalmente neutral respecto a las principales regiones (EE. UU., UE, China) donde es probable que SySL se utilice. Además, la ley de derechos de autor de Japón ha abordado las obras generadas por IA de manera que hace que el enfoque basado en contrato sea particularmente claro y exigible.
 
 Los usuarios en otras jurisdicciones conservan sus derechos locales de protección al consumidor y de datos.
 

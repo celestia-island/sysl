@@ -61,10 +61,24 @@ aber wir müssen dazu stehen.
    großer Sprachmodelle, Codegenerierungsmodelle und anderer
    maschineller Lernsysteme.
 
-   „Autor" bezeichnet den oder die Menschen, die den
-   KI-Generierungsprozess durch Architekturgestaltung, Prompt
-   Engineering, Vorgabenspezifikation, Qualitätssicherung und
-   Integration gesteuert haben.
+    „Autor" bezeichnet:
+
+         (a) den oder die Menschen, die den
+             KI-Generierungsprozess durch Architekturgestaltung,
+             Prompt Engineering, Vorgabenspezifikation,
+             Qualitätssicherung und Integration unmittelbar
+             gesteuert haben; oder
+
+         (b) falls kein Mensch die KI-Generierung unmittelbar
+             gesteuert hat, den oder die Menschen, die das
+             KI-System entworfen, konfiguriert oder eingesetzt
+             haben, das die Generierung autonom gesteuert hat
+             (der „Betreiber"); oder
+
+         (c) falls auf keiner Ebene ein Mensch an der Steuerung
+             der Generierung beteiligt war, die natürliche oder
+             juristische Person, die die Software zuerst unter
+             dieser Lizenz verbreitet hat.
 
    „Modell" bezeichnet das spezifische KI-System oder die Systeme, die
    zur Generierung der Software verwendet wurden.
@@ -149,14 +163,10 @@ aber wir müssen dazu stehen.
         Apache-2.0 verbreitet werden, sofern die Offenlegungspflichten
         des Abschnitts 2 unabhängig davon erfüllt werden.
 
-   3.3  BEENDIGUNG BEI PATENTRECHTSSTREITIGKEITEN. Wenn Sie ein
-        Patentrechtsstreitverfahren (einschließlich einer Widerklage
-        oder Gegenanspruch in einem Rechtsstreit) gegen den Autor
-        oder eine andere Partei einleiten, in dem Sie geltend machen,
-        dass die Software eine unmittelbare oder mittelbare
-        Patentverletzung darstellt, so enden die urheberrechtlichen
-        und patentrechtlichen Einräumungen dieser Lizenz mit dem
-        Datum der Einreichung eines solchen Verfahrens.
+    3.3  BEENDIGUNG. Wenn Sie ein Patentrechtsstreitverfahren
+         einleiten, in dem Sie geltend machen, dass die Software ein
+         Patent verletzt, enden alle Ihnen unter dieser Lizenz
+         gewährten Rechte.
 
 4. PATENTEINRÄUMUNG
 
@@ -301,19 +311,42 @@ aber wir müssen dazu stehen.
 
 10. KOMPATIBILITÄT
 
-   10.1 Die SySL ist so konzipiert, dass sie mit der Apache License,
-        Version 2.0, und der MIT License kompatibel ist. Software, die
-        unter der SySL lizenziert ist, darf mit Software kombiniert
-        werden, die unter Apache-2.0 oder MIT lizenziert ist, und das
-        kombinierte Werk darf unter den Bedingungen von Apache-2.0
-        oder MIT verbreitet werden, sofern die Offenlegungspflichten
-        der SySL (Abschnitt 2) und die reziproken Offenlegungspflichten
-        (Abschnitt 8) unabhängig davon erfüllt werden.
+    10.1 Die SySL ist so konzipiert, dass sie mit der Apache License,
+         Version 2.0, und der MIT License kompatibel ist. Software, die
+         unter der SySL lizenziert ist, darf mit Software kombiniert
+         werden, die unter Apache-2.0 oder MIT lizenziert ist, und das
+         kombinierte Werk darf unter den Bedingungen von Apache-2.0
+         bzw. MIT verbreitet werden, sofern die Offenlegungspflichten
+         der SySL (Abschnitt 2) und die reziproken Offenlegungspflichten
+         (Abschnitt 8) unabhängig davon erfüllt werden. Zur Klarstellung:
+         Die Verbreitung unter Apache-2.0 oder MIT entbindet nicht von
+         den Offenlegungspflichten — diese haften unabhängig von der
+         auf das kombinierte Werk angewandten Lizenzhülle an dem aus
+         SySL stammenden Code. Ein Lizenzgeber, der KI-generierte
+         Software ohne Offenlegungspflichten veröffentlichen möchte,
+         sollte SySL nicht verwenden.
 
-   10.2 Die Kompatibilität mit anderen Lizenzen ist im Einzelfall zu
-        prüfen. Der Autor kann Kompatibilitätsfeststellungen für
-        weitere Lizenzen auf der offiziellen SySL-Website
-        veröffentlichen.
+    10.2 Die Kompatibilität mit anderen Lizenzen ist im Einzelfall zu
+         prüfen. Der Autor kann Kompatibilitätsfeststellungen für
+         weitere Lizenzen auf der offiziellen SySL-Website
+         veröffentlichen.
+
+    10.3 GESTUFTE LIZENZIERUNG. Die SySL etabliert
+         Transparenznormen, erlegt jedoch keine kommerziellen
+         Beschränkungen, keine Wettbewerbsverbotsfristen und keinen
+         Änderungsdatum-Mechanismus auf. Ein Lizenzgeber kann die
+         Software unter der SySL zusammen mit zusätzlichen Lizenzen
+         anbieten, die solche Beschränkungen vorsehen (beispielsweise
+         eine Doppellizenzierung mit der Business Source License 1.1).
+         In solchen Fällen können Sie wählen, welchen
+         Lizenzbedingungen Sie folgen: der SySL (die nur Offenlegung
+         verlangt) oder der zusätzlichen Lizenz (die weitergehende
+         Beschränkungen auferlegt). Der SySL-Text selbst bleibt
+         unverändert. Wenn BUSL-1.1 als zusätzliche Lizenz verwendet
+         wird, sollten Lizenzgeber von KI-generierter Software SySL
+         (nicht Apache-2.0 oder MIT) als Change License angeben, um
+         sicherzustellen, dass die Transparenznorm die
+         Wettbewerbsverbotsfrist überdauert.
 
 11. SALVATORISCHE KLAUSEL
 
@@ -378,3 +411,42 @@ aber wir müssen dazu stehen.
         Fassung folgen.
 
                    ENDE DER BESTIMMUNGEN UND KONDITIONEN
+
+                               ANHANG
+
+              So wenden Sie SySL auf Ihre Software an
+
+Um die Synthetische-Quellcode-Lizenz auf Ihr Werk anzuwenden, fügen
+Sie den folgenden Standardhinweis in jede Quelldatei ein. Der Hinweis
+ist in die für das Dateiformat geeignete Kommentarsyntax einzuschließen.
+
+   Copyright (c) [Jahr] [Ihr Name oder Ihre Organisation]
+
+   Lizenziert unter der Synthetic Source License, Version 1.0
+   (die „Lizenz"); Sie dürfen diese Datei nur in Übereinstimmung
+   mit der Lizenz verwenden. Eine Kopie der Lizenz erhalten Sie unter
+
+       https://github.com/celestia-island/sysl
+
+   Sofern nicht gesetzlich vorgeschrieben oder schriftlich
+   vereinbart, wird die unter der Lizenz verbreitete Software im
+   „AS IS"-Zustand bereitgestellt, OHNE MÄNGELGEWÄHRLEISTUNG
+   ODER BEDINGUNGEN JEDWEDER ART, weder ausdrücklich noch
+   stillschweigend. Siehe die Lizenz für den genauen Wortlaut
+   der Rechte und Beschränkungen.
+
+   KI-MODELL-OFFENLEGUNG: [Beschreiben Sie, welche KI-Modelle
+   zur Generierung dieser Software verwendet wurden. Siehe
+   Abschnitt 2 der Lizenz.]
+
+Erstellen Sie außerdem eine Datei mit dem Namen AI_DISCLOSURE (oder
+AI_DISCLOSURE.md) im Wurzelverzeichnis Ihres Repositorys, die die
+verwendeten KI-Modelle, den ungefähren Token-Verbrauch und den Anteil
+KI-generierten Inhalts beschreibt. Siehe Abschnitt 2.2 der Lizenz für
+die vollständigen Anforderungen.
+
+Um Ihre Software unter „SySL-1.0 oder einer beliebigen späteren
+Fassung" zu lizenzieren, können Sie den Zusatz „oder (nach Ihrer Wahl)
+jeder späteren Fassung" in den obigen Standardhinweis aufnehmen. Wenn
+Sie diesen Zusatz nicht aufnehmen, ist Ihre Software ausschließlich
+unter Version 1.0 lizenziert.

@@ -38,6 +38,17 @@ Ja. SySL ist ausdrücklich mit Apache-2.0 kompatibel. Das kombinierte Werk darf 
 
 Die Kompatibilität mit der GPL wurde noch nicht formal analysiert. Beide Lizenzen haben Copyleft-ähnliche Verpflichtungen (Quelloffenlegung bei der GPL, KI-Offenlegung bei der SySL). Wenn Sie SySL-Code mit GPL-Code kombinieren müssen, konsultieren Sie einen Rechtsberater oder eröffnen Sie ein Issue für eine Kompatibilitätsanalyse.
 
+### Kann SySL zusammen mit BUSL verwendet werden?
+
+Ja. SySL ist für gestufte Lizenzierung konzipiert. Ein Lizenzgeber kann Software gleichzeitig unter SySL und BUSL-1.1 anbieten (Doppellizenzierung). Die beiden Lizenzen dienen unterschiedlichen Zwecken:
+
+- **BUSL-1.1**: schützt die kommerzielle Nutzung während eines Entwicklungszeitraums und wandelt sich dann in die angegebene Change License um.
+- **SySL**: etabliert die Transparenznorm, dass KI-Generierung offengelegt werden muss.
+
+Nutzer können wählen, welcher Lizenz sie folgen. Siehe Abschnitt 10.3 der Lizenz für die formelle Bestimmung zur gestuften Lizenzierung.
+
+**Wichtig**: Wenn BUSL neben SySL für KI-generierte Software verwendet wird, sollte die BUSL-Change-License auf SySL (nicht Apache-2.0 oder MIT) festgelegt werden. Würde BUSL in eine Lizenz ohne Offenlegungspflichten (wie Apache-2.0) umgewandelt, könnten Empfänger des Codes nach dem Änderungsdatum die KI-Offenlegung entfernen — was den Zweck von SySL zunichtemachen würde. Die Festlegung der Change License auf SySL stellt sicher, dass die Transparenznorm die BUSL-Wettbewerbsverbotsfrist überdauert.
+
 ### Muss ich die KI-Nutzung offenlegen, wenn ich die Software nur intern verwende?
 
 Die Offenlegungspflichten in Abschnitt 2 gelten, wenn Sie die Software **verbreiten**. Die interne Nutzung innerhalb einer einzelnen Organisation stellt keine Verbreitung unter der SySL dar. Wenn Sie die Software jedoch als Dienst bereitstellen, der Dritten zugänglich ist, kann Abschnitt 8.2 anwendbar sein.
@@ -63,7 +74,13 @@ Wenn ein Gericht oder Gesetzgeber entscheidet, dass KI-generierter Code urheberr
 
 ### Wer ist der „Autor" unter der SySL?
 
-Der Autor ist der Mensch oder sind die Menschen, die den KI-Generierungsprozess gesteuert haben: Architekturgestaltung, Prompt Engineering, Vorgabenspezifikation, Qualitätssicherung und Integration. Dies spiegelt die Realität wider, dass KI-generierter Code nicht von der KI selbst verfasst wird, sondern von den Menschen, die ihre Ausgabe steuern und kuratieren.
+Der Autor wird in drei Stufen bestimmt, je nachdem, wer die KI-Generierung gesteuert hat:
+
+1. **Unmittelbare Steuerung**: der Mensch, der unmittelbar Prompts verfasst, die Architektur entworfen und die KI angeleitet hat.
+2. **Mittelbare Steuerung**: wenn ein KI-System (nicht ein Mensch) die Generierung unmittelbar gesteuert hat, der Mensch, der dieses KI-System entworfen, konfiguriert oder eingesetzt hat.
+3. **Keine menschliche Beteiligung**: wenn auf keiner Ebene ein Mensch beteiligt war, die Instanz, die die Software zuerst veröffentlicht hat.
+
+Dieser mehrstufige Ansatz trägt dem Umstand Rechnung, dass KI-Systeme (wie s eigene Agentenflotte) die Codegenerierung in Zukunft autonom steuern könnten. Die Definition stellt sicher, dass stets ein rechtlicher Anknüpfungspunkt für den Vertrag besteht.
 
 ### Warum ist das anwendbare Recht auf Japan festgelegt?
 

@@ -40,6 +40,7 @@ A SySL é o primeiro passo: uma licença que é honesta sobre o que o código é
 | **Dupla Base Jurídica** | Funciona tanto como licença de direitos autorais quanto como contrato independente |
 | **Concessão de Patente** | Equivalente à proteção de patente da Apache-2.0 |
 | **Compatível com Apache-2.0** | Código SySL pode ser combinado com código Apache-2.0 |
+| **Licenciamento em Camadas** | Coexiste com a BUSL-1.1 para proteção comercial (dupla licença) |
 | **Copyleft Sintético** | Trabalhos derivados devem preservar a divulgação de IA (não o código-fonte, apenas a divulgação) |
 | **Isenção Específica para IA** | Isenta explicitamente os modos de falha únicos da IA |
 | **Multi-idioma** | Disponível em 11 idiomas (inglês juridicamente vinculativo) |

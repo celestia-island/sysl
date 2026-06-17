@@ -28,7 +28,7 @@ Sim, desde que você cumpra os requisitos de divulgação (Seção 2) e os requi
 
 - Manter o aviso de divulgação de IA na sua documentação.
 - Se distribuir código-fonte, manter as divulgações de geração por IA em nível de arquivo.
-- Se distribuir apenas binários, fornecer o código-fonte correspondente (com as divulgações) ou uma oferta por escrito para fazê-lo.
+- Se distribuir apenas binários, incluir o aviso de divulgação de IA e uma cópia do (ou link para o) arquivo AI_DISCLOSURE.
 
 ### Posso combinar código SySL com código Apache-2.0?
 
@@ -38,9 +38,20 @@ Sim. A SySL é explicitamente compatível com Apache-2.0. O trabalho combinado p
 
 A compatibilidade com a GPL não foi formalmente analisada. Ambas as licenças têm obrigações semelhantes a copyleft (divulgação de código-fonte para GPL, divulgação de IA para SySL). Se você precisar combinar código SySL com código GPL, consulte um advogado ou abra uma issue para uma análise de compatibilidade.
 
+### A SySL pode ser usada em conjunto com a BUSL?
+
+Sim. A SySL foi projetada para licenciamento em camadas. Um licenciante pode oferecer software sob ambas SySL e BUSL-1.1 simultaneamente (dupla licença). As duas licenças servem a propósitos diferentes:
+
+- **BUSL-1.1**: protege o uso comercial durante um período de desenvolvimento e depois converte para a Licença de Mudança especificada.
+- **SySL**: estabelece a norma de transparência de que a geração por IA deve ser divulgada.
+
+Os usuários podem escolher qual licença seguir. Consulte a Seção 10.3 da licença para a disposição formal de licenciamento em camadas.
+
+**Importante**: ao utilizar a BUSL juntamente com a SySL para software gerado por IA, a Licença de Mudança da BUSL deve ser definida como SySL (não Apache-2.0 ou MIT). Se a BUSL converter para uma licença sem obrigações de divulgação (como Apache-2.0), os destinatários do código pós-data de mudança podem remover a divulgação de IA — anulando o propósito da SySL. Definir a Licença de Mudança como SySL garante que a norma de transparência sobreviva ao período de não concorrência da BUSL.
+
 ### Preciso divulgar o uso de IA se eu usar o software apenas internamente?
 
-Os requisitos de divulgação da Seção 2 se aplicam quando você **distribui** o software. O uso interno dentro de uma única organização não constitui distribuição sob a SySL. No entanto, se você implantar o software como um serviço acessível a terceiros, a Seção 8.2 pode se aplicar.
+Não. Os requisitos de divulgação da Seção 2 se aplicam quando você **distribui** o software (fornece uma cópia a terceiros). O uso interno dentro de uma única organização, incluindo a implantação em SaaS em que você fornece um serviço em vez de uma cópia do software, não constitui distribuição sob a SySL.
 
 ### O que conta como "Gerado por IA"?
 
@@ -63,7 +74,13 @@ Se um tribunal ou legislador decidir que o código gerado por IA é protegível 
 
 ### Quem é o "Autor" sob a SySL?
 
-O Autor é o ser humano ou seres humanos que dirigiram o processo de geração por IA: projeto de arquitetura, engenharia de prompts, especificação de restrições, garantia de qualidade e integração. Isso reflete a realidade de que o código gerado por IA não é de autoria da própria IA, mas dos humanos que guiam e curam seu resultado.
+O Autor é determinado em três níveis, conforme quem dirigiu a geração por IA:
+
+1. **Direção direta**: o ser humano que diretamente escreveu os prompts, projetou a arquitetura e orientou a IA.
+2. **Direção indireta**: se um sistema de IA (e não um ser humano) dirigiu diretamente a geração, o ser humano que projetou, configurou ou implantou esse sistema de IA.
+3. **Nenhum envolvimento humano**: se nenhum ser humano esteve envolvido em qualquer nível, a entidade que primeiro publicou o software.
+
+Esta abordagem em múltiplos níveis reconhece que sistemas de IA (como a própria frota de agentes do ) podem dirigir autonomamente a geração de código no futuro. A definição garante que sempre haja uma âncora jurídica para o contrato.
 
 ### Por que a lei aplicável é definida como a do Japão?
 
