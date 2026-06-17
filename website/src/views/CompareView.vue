@@ -49,10 +49,14 @@ const html = computed(() => renderMarkdown(activeLang.value.md));
 
 <style scoped>
 .page-topbar {
-  max-width: var(--content-max);
+  max-width: 1080px;
   margin: 0 auto;
   padding: var(--sp-3) var(--sp-6);
   display: flex;
   justify-content: flex-end;
+}
+
+.page-wrapper {
+  max-width: 1080px;
 }
 </style>
