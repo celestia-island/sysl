@@ -56,7 +56,7 @@ Ces normes ne constituent pas des restrictions à la liberté. Elles sont le fon
 
           « AVIS : Ce logiciel inclut du code généré par intelligence artificielle. Consultez le fichier LICENSE pour les conditions de la Licence de Source Synthétique, y compris les exigences de divulgation des modèles. »
 
-   2.2  DIVULGATION ORIGINALE. La divulgation originale par l'Auteur des modèles utilisés et du contexte de génération doit être préservée textuellement dans le Logiciel. Cette divulgation doit être placée dans un fichier nommé AI_DISCLOSURE (ou AI_DISCLOSURE.md) à la racine du dépôt.
+   2.2  DIVULGATION ORIGINALE. La divulgation originale par l'Auteur des modèles utilisés et du contexte de génération doit être préservée textuellement dans le Logiciel. Cette divulgation doit être incluse à la fin du fichier LICENSE (voir la section DIVULGATION DES MODÈLES à la fin de ce document). Aucun fichier séparé n'est requis.
 
    2.3  DIVULGATION DES CONTRIBUTIONS. Chaque Contribution distribuée sous forme de code source doit inclure, au niveau du fichier ou du commit, une divulgation indiquant :
 
@@ -129,11 +129,11 @@ Ces normes ne constituent pas des restrictions à la liberté. Elles sont le fon
 
         (a) l'avis de divulgation de génération par IA requis par la Section 2.1, visible par les utilisateurs finaux ; et
 
-        (b) une copie du fichier AI_DISCLOSURE original (ou d'une documentation équivalente) permettant aux utilisateurs finaux de déterminer quelles portions du Logiciel sont Générées par IA et quels Modèles ont été utilisés.
+        (b) une copie du fichier LICENSE original (ou d'une documentation équivalente) permettant aux utilisateurs finaux de déterminer quelles portions du Logiciel sont Générées par IA et quels Modèles ont été utilisés.
 
    8.3  ABSENCE D'OBLIGATION DE CODE SOURCE. La présente Section 8 ne Vous oblige pas à distribuer le code source. Le copyleft synthétique de la SySL se limite à préserver la chaîne de divulgation de l'IA. Vous pouvez distribuer des Œuvres dérivées uniquement sous forme de code objet, à condition que les exigences de divulgation des Sections 2 et 8.2 soient satisfaites. Il s'agit d'un choix de conception délibéré : le copyleft de la SySL concerne la transparence, non le partage du code source.
 
-   8.4  CONFORMITÉ PAR ACCESSIBILITÉ PUBLIQUE. Les obligations de la Section 8.2(b) sont satisfaites si Vous rendez le fichier AI_DISCLOSURE accessible au public (par exemple, via une plateforme d'hébergement de code généralement reconnue telle que GitHub, GitLab ou équivalent, ou via un site Web publiquement accessible) et incluez l'URL d'accès dans le code objet Distribué ou sa documentation jointe.
+   8.4  CONFORMITÉ PAR ACCESSIBILITÉ PUBLIQUE. Les obligations de la Section 8.2(b) sont satisfaites si Vous rendez le fichier LICENSE accessible au public (par exemple, via une plateforme d'hébergement de code généralement reconnue telle que GitHub, GitLab ou équivalent, ou via un site Web publiquement accessible) et incluez l'URL d'accès dans le code objet Distribué ou sa documentation jointe.
 
 9. FORMATION D'IA ET DÉCHÉANCE POUR CONTREFAÇON
 
@@ -207,9 +207,9 @@ Pour appliquer la Licence de Source Synthétique à votre œuvre, joignez l'avis
 
    Sauf disposition contraire de la loi applicable ou convention écrite, le logiciel distribué sous la Licence est fourni « EN L'ÉTAT », SANS GARANTIES NI CONDITIONS D'AUCUNE SORTE, expresses ou implicites. Voir la Licence pour le libellé spécifique régissant les autorisations et les limitations.
 
-   DIVULGATION DES MODÈLES D'IA : [Décrivez quels modèles d'IA ont été utilisés pour générer ce logiciel. Voir la Section 2 de la Licence.]
+   DIVULGATION DES MODÈLES D'IA : Complétez la section DIVULGATION DES MODÈLES à la fin de ce fichier LICENSE. Voir la Section 2.2 de la Licence.
 
-Créez en outre un fichier nommé AI_DISCLOSURE (ou AI_DISCLOSURE.md) à la racine de votre dépôt décrivant les modèles d'IA utilisés, le nombre approximatif de jetons consommés et la proportion de contenu généré par IA. Voir la Section 2.2 de la Licence pour l'exigence complète.
+Complétez la section DIVULGATION DES MODÈLES à la fin de ce fichier LICENSE. Listez les principaux modèles d’IA dont dépend le corps principal du Logiciel. Pour chaque modèle, indiquez le nom du modèle, l’organisation qui le fournit et l’URL du site web officiel du fournisseur. Aucun fichier séparé n’est requis. Voir la Section 2.2 de la Licence pour l’exigence complète.
 
 Pour placer votre logiciel sous licence « SySL-1.0 ou toute version ultérieure », vous pouvez inclure la mention « ou (à votre choix) toute version ultérieure » dans l'avis type ci-dessus. Si vous n'incluez pas cette mention, votre logiciel n'est concédé que sous la Version 1.0.
                            DIVULGATION DES MODÈLES
@@ -219,7 +219,7 @@ Auteur humain:
   [Nom de la personne ayant dirigé la génération par IA]
 
 Modèles d’IA utilisés:
-  Énumérez tous les modèles ayant contribué à la génération du Logiciel. Pour chaque modèle, indiquez le nom du modèle, l’organisation qui le fournit et l’URL du site web officiel du fournisseur.
+  Énumérez les principaux modèles d’IA dont dépend le corps principal du Logiciel. Pour chaque modèle, indiquez le nom du modèle, l’organisation qui le fournit et l’URL du site web officiel du fournisseur. Les autres modèles utilisés par les contributeurs peuvent être divulgués dans les messages de commit.
 
   [Nom du modèle] — [Fournisseur / Organisation] — [URL du site web du fournisseur]
 

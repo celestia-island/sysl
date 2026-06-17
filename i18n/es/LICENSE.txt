@@ -56,7 +56,7 @@ Estas normas no son restricciones a la libertad. Son los cimientos de un nuevo c
 
           "AVISO: Este software incluye código generado por inteligencia artificial. Consulte el archivo LICENSE para conocer los términos de la Licencia de Código Sintético, incluidos los requisitos de divulgación de modelos."
 
-   2.2  DIVULGACIÓN ORIGINAL. La divulgación original del Autor sobre los modelos utilizados y el contexto de generación debe conservarse textualmente en el Software. Esta divulgación se colocará en un archivo llamado AI_DISCLOSURE (o AI_DISCLOSURE.md) en la raíz del repositorio.
+   2.2  DIVULGACIÓN ORIGINAL. La divulgación original del Autor sobre los modelos utilizados y el contexto de generación debe conservarse textualmente en el Software. Esta divulgación se incluirá al final del archivo LICENSE (véase la sección DIVULGACIÓN DE MODELOS al final de este documento). No se requiere un archivo separado.
 
    2.3  DIVULGACIÓN DE CONTRIBUCIONES. Toda Contribución distribuida como código fuente debe incluir, a nivel de archivo o de commit, una divulgación que indique:
 
@@ -129,11 +129,11 @@ Estas normas no son restricciones a la libertad. Son los cimientos de un nuevo c
 
          (a) el aviso de divulgación de generación por IA requerido por la Sección 2.1, visible para los usuarios finales; y
 
-         (b) una copia del archivo AI_DISCLOSURE original (o documentación equivalente) a partir del cual los usuarios finales puedan determinar qué partes del Software son Generadas por IA y qué Modelos se utilizaron.
+         (b) una copia del archivo LICENSE original (o documentación equivalente) a partir del cual los usuarios finales puedan determinar qué partes del Software son Generadas por IA y qué Modelos se utilizaron.
 
    8.3  NINGUNA OBLIGACIÓN DE CÓDIGO FUENTE. Esta Sección 8 no le exige a Usted distribuir código fuente. El copyleft sintético de SySL se limita a preservar la cadena de divulgación de IA. Usted puede distribuir Obras Derivadas únicamente en forma de código objeto, siempre que se cumplan los requisitos de divulgación de las Secciones 2 y 8.2. Esta es una elección de diseño deliberada: el copyleft de SySL concierne a la transparencia, no al uso compartido del código fuente.
 
-   8.4  CUMPLIMIENTO MEDIANTE ACCESIBILIDAD PÚBLICA. Las obligaciones de la Sección 8.2(b) se consideran satisfechas si Usted pone el archivo AI_DISCLOSURE a disposición pública (por ejemplo, a través de una plataforma de alojamiento de código generalmente reconocida como GitHub, GitLab o equivalente, o a través de un sitio web de acceso público) e incluye la URL de acceso en el código objeto Distribuido o en su documentación adjunta.
+   8.4  CUMPLIMIENTO MEDIANTE ACCESIBILIDAD PÚBLICA. Las obligaciones de la Sección 8.2(b) se consideran satisfechas si Usted pone el archivo LICENSE a disposición pública (por ejemplo, a través de una plataforma de alojamiento de código generalmente reconocida como GitHub, GitLab o equivalente, o a través de un sitio web de acceso público) e incluye la URL de acceso en el código objeto Distribuido o en su documentación adjunta.
 
 9. FORMACIÓN DE IA Y PÉRDIDA POR INFRACCIÓN
 
@@ -207,7 +207,7 @@ Para aplicar la Licencia de Código Sintético a su obra, adjunte el siguiente a
 
    DIVULGACIÓN DE MODELOS DE IA: [Describa qué modelos de IA se utilizaron para generar este software. Consulte la Sección 2 de la Licencia.]
 
-Además, cree un archivo llamado AI_DISCLOSURE (o AI_DISCLOSURE.md) en la raíz de su repositorio describiendo los modelos de IA utilizados, los tokens aproximados consumidos y la proporción de contenido generado por IA. Consulte la Sección 2.2 de la Licencia para el requisito completo.
+Complete la sección DIVULGACIÓN DE MODELOS al final de este archivo LICENSE. Enumere los principales modelos de IA de los que depende el cuerpo principal del Software. Para cada modelo, incluya el nombre del modelo, la organización que lo proporciona y la URL del sitio web oficial del proveedor. No se requiere un archivo separado. Consulte la Sección 2.2 de la Licencia para conocer el requisito completo.
 
 Para licenciar su software bajo "SySL-1.0 o cualquier versión posterior", puede incluir la frase "o (a su elección) cualquier versión posterior" en el aviso estándar anterior. Si no incluye esta frase, su software estará licenciado únicamente bajo la Versión 1.0.
                            DIVULGACIÓN DE MODELOS
@@ -217,7 +217,7 @@ Autor humano:
   [Nombre de la persona que dirigió la generación por IA]
 
 Modelos de IA utilizados:
-  Enumere todos los modelos que contribuyeron a la generación del Software. Para cada modelo, incluya el nombre del modelo, la organización que lo proporciona y la URL del sitio web oficial del proveedor.
+  Enumere los principales modelos de IA de los que depende el cuerpo principal del Software. Para cada modelo, incluya el nombre del modelo, la organización que lo proporciona y la URL del sitio web oficial del proveedor. Otros modelos utilizados por los contribuyentes pueden divulgarse en los mensajes de commit.
 
   [Nombre del modelo] — [Proveedor / Organización] — [URL del sitio web del proveedor]
 
