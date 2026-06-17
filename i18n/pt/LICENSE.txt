@@ -55,11 +55,11 @@ Estas normas não são restrições à liberdade. Elas são o fundamento de um n
 
 2. DIVULGAÇÃO DE GERAÇÃO POR IA
 
-   2.1  MANUTENÇÃO DO AVISO. Você deve manter, em todas as cópias do Software e em todos os Trabalhos Derivados distribuídos na forma de código-fonte, o seguinte aviso em local de destaque (como o arquivo README na raiz ou um arquivo AI_DISCLOSURE dedicado):
+   2.1  MANUTENÇÃO DO AVISO. Você deve manter, em todas as cópias do Software e em todos os Trabalhos Derivados distribuídos na forma de código-fonte, o seguinte aviso em local de destaque (como o arquivo README na raiz ou um arquivo LICENSE dedicado):
 
           "AVISO: Este software inclui código gerado por inteligência artificial. Consulte o arquivo LICENSE para os termos da Licença de Código Sintético, incluindo os requisitos de divulgação de modelo."
 
-   2.2  DIVULGAÇÃO ORIGINAL. A divulgação original do Autor sobre os modelos utilizados e o contexto de geração deve ser preservada literalmente no Software. Esta divulgação deve ser incluída no final do arquivo LICENSE (consulte a seção DIVULGAÇÃO DE MODELOS no final deste documento). Não é necessário um arquivo separado.
+   2.2  DIVULGAÇÃO ORIGINAL. A divulgação original do Autor sobre os modelos utilizados e o contexto de geração deve ser preservada literalmente no Software. Esta divulgação deve ser colocada em um final do arquivo LICENSE (consulte a seção DIVULGAÇÃO DE MODELOS no final deste documento). Não é necessário um arquivo separado.
 
    2.3  DIVULGAÇÃO DE CONTRIBUIÇÃO. Toda Contribuição distribuída como código-fonte deve incluir, em nível de arquivo ou de commit, uma divulgação declarando:
 
@@ -67,7 +67,7 @@ Estas normas não são restrições à liberdade. Elas são o fundamento de um n
 
         (b) qual Modelo ou Modelos foram utilizados, se houver;
 
-        Uma Contribuição que faça apenas uso incidental ou complementar de um modelo de IA (como pequenos ajustes de formatação ou breves completamentos de texto) pode satisfazer as obrigações de divulgação desta Seção apenas por meio da mensagem de commit associada, sem exigir divulgação no próprio arquivo fonte.
+        Apenas os principais modelos de IA dos quais o corpo principal do Software depende devem ser divulgados no arquivo LICENSE (consulte a Seção 2.2). Outros modelos utilizados pelos contribuidores — independentemente do tamanho ou natureza de suas contribuições — podem ser divulgados apenas nas mensagens de commit associadas.
 
    2.4  AVISO EM CÓDIGO-OBJETO. Se Você distribuir o Software ou um Trabalho Derivado exclusivamente na forma de código-objeto ou executável, Você deve incluir o aviso exigido pela Seção 2.1 em um local visível para os usuários finais (como uma caixa de diálogo "Sobre" ou na documentação que acompanha).
 
@@ -210,18 +210,6 @@ Para aplicar a Licença de Código Sintético ao seu trabalho, anexe o seguinte 
 
    DIVULGAÇÃO DE MODELO DE IA: [Descreva quais modelos de IA foram utilizados para gerar este software. Consulte a Seção 2 da Licença.]
 
-Preencha a seção DIVULGAÇÃO DE MODELOS no final deste arquivo LICENSE. Liste os principais modelos de IA dos quais o corpo principal do Software depende. Para cada modelo, inclua o nome do modelo, a organização que o fornece e o URL do site oficial do fornecedor. Não é necessário um arquivo separado. Consulte a Seção 2.2 da Licença para o requisito completo.
+Além disso, crie um arquivo denominado AI_DISCLOSURE (ou AI_DISCLOSURE.md) na raiz do seu repositório descrevendo os modelos de IA utilizados, a quantidade aproximada de tokens consumidos e a proporção de conteúdo gerado por IA. Consulte a Seção 2.2 da Licença para o requisito completo.
 
 Para licenciar seu software sob "SySL-1.0 ou qualquer versão posterior", você pode incluir a frase "ou (a seu critério) qualquer versão posterior" no aviso padronizado acima. Se você não incluir esta frase, seu software será licenciado apenas sob a Versão 1.0.
-                           DIVULGAÇÃO DE MODELOS
-                      (A ser preenchido pelo licenciante)
-
-Autor humano:
-  [Nome da pessoa que dirigiu a geração por IA]
-
-Modelos de IA utilizados:
-  Liste os principais modelos de IA dos quais o corpo principal do Software depende. Para cada modelo, inclua o nome do modelo, a organização que o fornece e o URL do site oficial do fornecedor. Outros modelos utilizados pelos contribuidores podem ser divulgados nas mensagens de commit.
-
-  [Nome do modelo] — [Fornecedor / Organização] — [URL do site do fornecedor]
-
-  [Nome do modelo] — [Fornecedor / Organização] — [URL do site do fornecedor]

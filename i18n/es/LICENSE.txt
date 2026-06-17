@@ -52,11 +52,11 @@ Estas normas no son restricciones a la libertad. Son los cimientos de un nuevo c
 
 2. DIVULGACIÓN DE GENERACIÓN POR IA
 
-   2.1  CONSERVACIÓN DEL AVISO. Usted debe conservar, en cada copia del Software y en cada Obra Derivada distribuida en forma de código fuente, el siguiente aviso en una ubicación prominente (como el archivo README raíz o un archivo AI_DISCLOSURE específico):
+   2.1  CONSERVACIÓN DEL AVISO. Usted debe conservar, en cada copia del Software y en cada Obra Derivada distribuida en forma de código fuente, el siguiente aviso en una ubicación prominente (como el archivo README raíz o un archivo LICENSE específico):
 
           "AVISO: Este software incluye código generado por inteligencia artificial. Consulte el archivo LICENSE para conocer los términos de la Licencia de Código Sintético, incluidos los requisitos de divulgación de modelos."
 
-   2.2  DIVULGACIÓN ORIGINAL. La divulgación original del Autor sobre los modelos utilizados y el contexto de generación debe conservarse textualmente en el Software. Esta divulgación se incluirá al final del archivo LICENSE (véase la sección DIVULGACIÓN DE MODELOS al final de este documento). No se requiere un archivo separado.
+   2.2  DIVULGACIÓN ORIGINAL. La divulgación original del Autor sobre los modelos utilizados y el contexto de generación debe conservarse textualmente en el Software. Esta divulgación se colocará en un final del archivo LICENSE (véase la sección DIVULGACIÓN DE MODELOS al final de este documento). No se requiere un archivo separado.
 
    2.3  DIVULGACIÓN DE CONTRIBUCIONES. Toda Contribución distribuida como código fuente debe incluir, a nivel de archivo o de commit, una divulgación que indique:
 
@@ -64,7 +64,7 @@ Estas normas no son restricciones a la libertad. Son los cimientos de un nuevo c
 
         (b) qué Modelo o Modelos se utilizaron, en su caso;
 
-        Una Contribución que haga solo un uso incidental o complementario de un modelo de IA (como ajustes menores de formato o breves completaciones de texto) puede cumplir con las obligaciones de divulgación de esta Sección mediante el mensaje de commit asociado exclusivamente, sin exigir divulgación en el propio archivo fuente.
+        (c) la proporción aproximada de contenido Generado por IA dentro de la Contribución.
 
    2.4  AVISO EN CÓDIGO OBJETO. Si Usted distribuye el Software o una Obra Derivada únicamente en forma de código objeto o ejecutable, debe incluir el aviso requerido por la Sección 2.1 en una ubicación visible para los usuarios finales (como un diálogo "Acerca de" o la documentación adjunta).
 
@@ -207,18 +207,6 @@ Para aplicar la Licencia de Código Sintético a su obra, adjunte el siguiente a
 
    DIVULGACIÓN DE MODELOS DE IA: [Describa qué modelos de IA se utilizaron para generar este software. Consulte la Sección 2 de la Licencia.]
 
-Complete la sección DIVULGACIÓN DE MODELOS al final de este archivo LICENSE. Enumere los principales modelos de IA de los que depende el cuerpo principal del Software. Para cada modelo, incluya el nombre del modelo, la organización que lo proporciona y la URL del sitio web oficial del proveedor. No se requiere un archivo separado. Consulte la Sección 2.2 de la Licencia para conocer el requisito completo.
+Además, cree un archivo llamado AI_DISCLOSURE (o AI_DISCLOSURE.md) en la raíz de su repositorio describiendo los modelos de IA utilizados, los tokens aproximados consumidos y la proporción de contenido generado por IA. Consulte la Sección 2.2 de la Licencia para el requisito completo.
 
 Para licenciar su software bajo "SySL-1.0 o cualquier versión posterior", puede incluir la frase "o (a su elección) cualquier versión posterior" en el aviso estándar anterior. Si no incluye esta frase, su software estará licenciado únicamente bajo la Versión 1.0.
-                           DIVULGACIÓN DE MODELOS
-                      (A completar por el licenciante)
-
-Autor humano:
-  [Nombre de la persona que dirigió la generación por IA]
-
-Modelos de IA utilizados:
-  Enumere los principales modelos de IA de los que depende el cuerpo principal del Software. Para cada modelo, incluya el nombre del modelo, la organización que lo proporciona y la URL del sitio web oficial del proveedor. Otros modelos utilizados por los contribuyentes pueden divulgarse en los mensajes de commit.
-
-  [Nombre del modelo] — [Proveedor / Organización] — [URL del sitio web del proveedor]
-
-  [Nombre del modelo] — [Proveedor / Organización] — [URL del sitio web del proveedor]
