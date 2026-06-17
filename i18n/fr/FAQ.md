@@ -28,7 +28,7 @@ Oui, à condition de satisfaire aux exigences de divulgation (Section 2) et aux 
 
 - Conserver l'avis de divulgation de l'IA dans votre documentation.
 - Si vous distribuez le code source, maintenir les divulgations de génération par IA au niveau des fichiers.
-- Si vous distribuez uniquement des binaires, inclure l'avis de divulgation de l'IA et une copie (ou un lien vers) le fichier AI_DISCLOSURE.
+- Si vous distribuez uniquement des binaires, inclure l'avis de divulgation de l'IA et une copie (ou un lien vers) le fichier LICENSE.
 
 Vous n'êtes **pas** tenu de distribuer votre code source. Le copyleft de la SySL se limite à préserver la chaîne de divulgation de l'IA.
 
@@ -90,22 +90,9 @@ L'exigence de divulgation est le cœur de la SySL. Si vous ne pouvez pas ou ne v
 
 ## Questions pratiques
 
-### Comment créer un fichier AI_DISCLOSURE ?
+### Où divulguer les modèles d’IA utilisés ?
 
-Créez un fichier nommé `AI_DISCLOSURE` ou `AI_DISCLOSURE.md` à la racine de votre dépôt. Un exemple minimal :
-
-```
-MODÈLES D'IA UTILISÉS :
-- Claude Opus 4.6 (Anthropic)
-- GLM-4 (Zhipu AI)
-
-JETONS CONSOMMÉS :
-- Environ 100 milliards de jetons au total
-
-PROPORTION DE GÉNÉRATION PAR IA :
-- ~100 % du code source est généré par IA
-- Conception de l'architecture et assurance qualité : humain
-```
+La divulgation des modèles est incluse directement dans le fichier LICENSE, à la fin, dans la section DIVULGATION DES MODÈLES. Listez les principaux modèles d’IA dont dépend le corps principal du Logiciel. Aucun fichier séparé n’est requis. Voir la Section 2.2 de la Licence pour plus de détails.
 
 ### Puis-je modifier le texte de la SySL pour mon projet ?
 

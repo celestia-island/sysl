@@ -51,7 +51,6 @@ A SySL é o primeiro passo: uma licença que é honesta sobre o que o código é
 Para usar a SySL no seu projeto:
 
 1. Copie `LICENSE.txt` para a raiz do seu repositório.
-2. Crie um arquivo `AI_DISCLOSURE` (ou `AI_DISCLOSURE.md`) descrevendo:
  - Quais modelos de IA foram utilizados
  - Quantidade aproximada de tokens consumidos
  - A proporção de código gerado por IA vs. escrito por humanos

@@ -51,7 +51,6 @@ SySL 是第一步：一个对代码是什么、谁制作了它以及规则是什
 为您的项目使用 SySL：
 
 1. 将 `LICENSE.txt` 复制到您的仓库根目录。
-2. 创建一个 `AI_DISCLOSURE`（或 `AI_DISCLOSURE.md`）文件，描述：
  - 使用了哪些 AI 模型
  - 大致消耗的 token 数量
  - AI 生成代码与人类编写代码的比例

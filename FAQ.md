@@ -28,7 +28,7 @@ Yes, provided you satisfy the disclosure requirements (Section 2) and the recipr
 
 - Keep the AI disclosure notice in your documentation.
 - If distributing source code, maintain AI generation disclosures at the file level.
-- If distributing only binaries, include the AI disclosure notice and a copy of (or link to) the AI_DISCLOSURE file.
+- If distributing only binaries, include the AI disclosure notice and a copy of (or link to) the LICENSE file.
 
 You are **not** required to distribute your source code. SySL's copyleft is limited to preserving the AI disclosure chain.
 
@@ -158,22 +158,9 @@ The disclosure requirement is the core of SySL. If you cannot or will not disclo
 
 ## Practical Questions
 
-### How do I create an AI_DISCLOSURE file?
+### Where do I disclose the AI models used?
 
-Create a file named `AI_DISCLOSURE` or `AI_DISCLOSURE.md` in your repository root. A minimal example:
-
-```
-AI MODELS USED:
-- Claude Opus 4.6 (Anthropic)
-- GLM-4 (Zhipu AI)
-
-TOKENS CONSUMED:
-- Approximately 100 billion tokens total
-
-AI GENERATION PROPORTION:
-- ~100% of source code is AI-generated
-- Architecture design and quality assurance: human
-```
+The model disclosure is included directly in the LICENSE file, at the end, under the MODEL DISCLOSURE section. List the primary AI models on which the Software's main body depends. No separate file is required. See Section 2.2 of the License for details.
 
 ### Can I modify the SySL text for my project?
 

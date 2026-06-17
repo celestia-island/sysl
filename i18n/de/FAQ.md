@@ -88,22 +88,9 @@ Die Offenlegungspflicht ist der Kern von SySL. Wenn Sie die KI-Generierung nicht
 
 ## Praktische Fragen
 
-### Wie erstelle ich eine AI_DISCLOSURE-Datei?
+### Wo werden die verwendeten KI-Modelle offengelegt?
 
-Erstellen Sie eine Datei mit dem Namen `AI_DISCLOSURE` oder `AI_DISCLOSURE.md` im Wurzelverzeichnis Ihres Repositorys. Ein Minimalbeispiel:
-
-```
-AI MODELS USED:
-- Claude Opus 4.6 (Anthropic)
-- GLM-4 (Zhipu AI)
-
-TOKENS CONSUMED:
-- Approximately 100 billion tokens total
-
-AI GENERATION PROPORTION:
-- ~100% of source code is AI-generated
-- Architecture design and quality assurance: human
-```
+Die Modelloffenlegung erfolgt direkt in der LICENSE-Datei, am Ende, im Abschnitt MODELLOFFENLEGUNG. Listen Sie die primären KI-Modelle auf, von denen der Hauptteil der Software abhängt. Eine separate Datei ist nicht erforderlich. Einzelheiten finden Sie in Abschnitt 2.2 der Lizenz.
 
 ### Kann ich den SySL-Text für mein Projekt verändern?
 

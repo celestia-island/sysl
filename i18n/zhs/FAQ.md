@@ -117,23 +117,9 @@ SySL 设计为在两种独立的法律理论下均可执行：
 
 ## 实操问题
 
-### 如何创建 AI_DISCLOSURE 文件？
+### 在何处披露使用的 AI 模型？
 
-在仓库根目录下创建名为 `AI_DISCLOSURE` 或 `AI_DISCLOSURE.md` 的文件。一个最简
-示例：
-
-```
-AI MODELS USED:
-- Claude Opus 4.6 (Anthropic)
-- GLM-4 (Zhipu AI)
-
-TOKENS CONSUMED:
-- Approximately 100 billion tokens total
-
-AI GENERATION PROPORTION:
-- ~100% of source code is AI-generated
-- Architecture design and quality assurance: human
-```
+模型披露直接包含在 LICENSE 文件末尾的「模型披露」部分。列出项目主体所依赖的主要 AI 模型。无需单独创建文件。详见本协议第 2.2 条。
 
 ### 我可以为我的项目修改 SySL 文本吗？
 
