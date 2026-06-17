@@ -28,7 +28,7 @@ Sim, desde que você cumpra os requisitos de divulgação (Seção 2) e os requi
 
 - Manter o aviso de divulgação de IA na sua documentação.
 - Se distribuir código-fonte, manter as divulgações de geração por IA em nível de arquivo.
-- Se distribuir apenas binários, incluir o aviso de divulgação de IA e uma cópia do (ou link para o) arquivo AI_DISCLOSURE.
+- Se distribuir apenas binários, incluir o aviso de divulgação de IA e uma cópia do (ou link para o) arquivo LICENSE.
 
 ### Posso combinar código SySL com código Apache-2.0?
 
@@ -94,22 +94,9 @@ O requisito de divulgação é o núcleo da SySL. Se você não puder ou não qu
 
 ## Questões Práticas
 
-### Como criar um arquivo AI_DISCLOSURE?
+### Onde divulgar os modelos de IA utilizados?
 
-Crie um arquivo chamado `AI_DISCLOSURE` ou `AI_DISCLOSURE.md` na raiz do seu repositório. Um exemplo mínimo:
-
-```
-MODELOS DE IA UTILIZADOS:
-- Claude Opus 4.6 (Anthropic)
-- GLM-4 (Zhipu AI)
-
-TOKENS CONSUMIDOS:
-- Aproximadamente 100 bilhões de tokens no total
-
-PROPORÇÃO DE GERAÇÃO POR IA:
-- ~100% do código-fonte é gerado por IA
-- Projeto de arquitetura e garantia de qualidade: humanos
-```
+A divulgação dos modelos é incluída diretamente no arquivo LICENSE, no final, na seção DIVULGAÇÃO DE MODELOS. Liste os principais modelos de IA dos quais o corpo principal do Software depende. Não é necessário um arquivo separado. Consulte a Seção 2.2 da Licença para obter detalhes.
 
 ### Posso modificar o texto da SySL para o meu projeto?
 

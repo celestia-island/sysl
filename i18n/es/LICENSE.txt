@@ -207,6 +207,5 @@ Para aplicar la Licencia de Código Sintético a su obra, adjunte el siguiente a
 
    DIVULGACIÓN DE MODELOS DE IA: [Describa qué modelos de IA se utilizaron para generar este software. Consulte la Sección 2 de la Licencia.]
 
-Además, cree un archivo llamado AI_DISCLOSURE (o AI_DISCLOSURE.md) en la raíz de su repositorio describiendo los modelos de IA utilizados, los tokens aproximados consumidos y la proporción de contenido generado por IA. Consulte la Sección 2.2 de la Licencia para el requisito completo.
 
 Para licenciar su software bajo "SySL-1.0 o cualquier versión posterior", puede incluir la frase "o (a su elección) cualquier versión posterior" en el aviso estándar anterior. Si no incluye esta frase, su software estará licenciado únicamente bajo la Versión 1.0.

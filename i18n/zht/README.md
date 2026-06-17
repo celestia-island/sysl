@@ -51,7 +51,6 @@ SySL 是第一步：一項對程式碼的本質、誰製作了它以及規則是
 為您的專案採用 SySL：
 
 1. 將 `LICENSE.txt` 複製到您的儲存庫根目錄。
-2. 建立一份 `AI_DISCLOSURE`（或 `AI_DISCLOSURE.md`）檔案，說明：
  - 使用了哪些 AI 模型
  - 大約消耗的 token 數量
  - AI 生成程式碼與人類編寫程式碼的比例

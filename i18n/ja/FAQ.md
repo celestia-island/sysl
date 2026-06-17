@@ -88,22 +88,9 @@ SySL は、二つの独立した法理論の下で執行可能となるように
 
 ## 実践的な質問
 
-### AI_DISCLOSURE ファイルを作成するにはどうすればよいですか？
+### 使用したAIモデルはどこに開示しますか？
 
-リポジトリのルートに `AI_DISCLOSURE` または `AI_DISCLOSURE.md` という名前のファイルを作成します。最小限の例：
-
-```
-AI MODELS USED:
-- Claude Opus 4.6 (Anthropic)
-- GLM-4 (Zhipu AI)
-
-TOKENS CONSUMED:
-- Approximately 100 billion tokens total
-
-AI GENERATION PROPORTION:
-- ~100% of source code is AI-generated
-- Architecture design and quality assurance: human
-```
+モデル開示はLICENSEファイルの末尾の「モデル開示」セクションに直接記載します。ソフトウェアの主体が依存する主要なAIモデルを列挙してください。個別のファイルは不要です。詳細はライセンス第2.2条を参照してください。
 
 ### 自分のプロジェクト用に SySL の本文を改変できますか？
 
