@@ -88,7 +88,11 @@ This multi-tier approach acknowledges that AI systems (like 's own agent fleet) 
 
 Japan was chosen as a neutral governing law for several reasons: Japan has a well-developed body of contract law, a legal system that respects party autonomy in commercial agreements, and is jurisdictionally neutral with respect to the major regions (US, EU, China) where SySL is likely to be used. Additionally, Japan's copyright law has addressed AI-generated works in ways that make the contract-basis approach particularly clear and enforceable.
 
-Users in other jurisdictions retain their local consumer protection rights.
+The Japan Commercial Arbitration Association (JCAA) conducts proceedings in English upon request; parties do not need Japanese language ability. Users in other jurisdictions retain their local consumer protection rights.
+
+### How can disclosure claims be verified if source code is not distributed?
+
+They cannot be independently verified. SySL's disclosure obligations rely on the honesty of the party making the disclosure. The license deliberately does not require source code distribution (see Section 8.3), and therefore does not include a mechanism to audit claims about AI-generation proportions. This is a design choice: SySL prioritizes the transparency norm over source-sharing, trusting that the social and contractual obligation to disclose will be honored. If you require verifiable AI-disclosure guarantees, a source-sharing license (such as GPL) used in combination with SySL may better suit your needs.
 
 ### What if I disagree with the AI disclosure requirement?
 

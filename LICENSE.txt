@@ -298,8 +298,8 @@ must say so.
 
    10.2 Compatibility with other licenses shall be evaluated on a
         case-by-case basis. The Author may publish compatibility
-        determinations for additional licenses at the official
-        SySL website.
+        determinations for additional licenses at
+        <https://sysl.celestia.world>.
 
    10.3 LAYERED LICENSING. The SySL establishes transparency norms
         but imposes no commercial restrictions, no non-compete

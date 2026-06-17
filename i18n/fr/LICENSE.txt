@@ -315,7 +315,7 @@ logiciels avec l'IA, mais nous devons le dire.
 
    10.2 La compatibilité avec d'autres licences est évaluée au cas par
         cas. L'Auteur peut publier des déterminations de compatibilité
-         pour d'autres licences sur le site Web officiel de la SySL.
+         pour d'autres licences sur https://sysl.celestia.world.
 
    10.3 LICENCES SUPERPOSÉES. La SySL établit des normes de
          transparence mais n'impose ni restriction commerciale, ni

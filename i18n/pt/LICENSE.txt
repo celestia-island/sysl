@@ -303,7 +303,7 @@ devemos declarar isso.
 
     10.2 A compatibilidade com outras licenças deve ser avaliada caso a
          caso. O Autor poderá publicar determinações de compatibilidade
-         para licenças adicionais no site oficial da SySL.
+         para licenças adicionais em <https://sysl.celestia.world>.
 
     10.3 LICENCIAMENTO EM CAMADAS. A SySL estabelece normas de
          transparência, mas não impõe restrições comerciais, períodos

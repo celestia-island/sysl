@@ -328,7 +328,7 @@ aber wir müssen dazu stehen.
 
     10.2 Die Kompatibilität mit anderen Lizenzen ist im Einzelfall zu
          prüfen. Der Autor kann Kompatibilitätsfeststellungen für
-         weitere Lizenzen auf der offiziellen SySL-Website
+         weitere Lizenzen unter <https://sysl.celestia.world>
          veröffentlichen.
 
     10.3 GESTUFTE LIZENZIERUNG. Die SySL etabliert

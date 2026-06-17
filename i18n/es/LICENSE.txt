@@ -306,7 +306,7 @@ debemos decirlo.
 
     10.2 La compatibilidad con otras licencias se evaluará caso por
          caso. El Autor podrá publicar determinaciones de compatibilidad
-         para licencias adicionales en el sitio web oficial de SySL.
+         para licencias adicionales en <https://sysl.celestia.world>.
 
     10.3 LICENCIAMIENTO EN CAPAS. La SySL establece normas de
          transparencia pero no impone restricciones comerciales,
