@@ -1,6 +1,6 @@
 // =========================================================================
 //  Markdown / Prose rendering styles
-//  Used by FAQ, Comparison, Adopters views
+//  Traditional print typography for FAQ, Comparison, Adopters
 // =========================================================================
 
 .prose {
@@ -10,21 +10,19 @@
   color: var(--text-primary);
 
   h1 {
-    font-size: var(--text-3xl);
+    font-size: var(--text-2xl);
     font-weight: 700;
-    letter-spacing: var(--tracking-tight);
     margin-bottom: var(--sp-8);
     line-height: var(--leading-tight);
   }
 
   h2 {
     font-size: var(--text-xl);
-    font-weight: 600;
+    font-weight: 700;
     margin-top: var(--sp-12);
     margin-bottom: var(--sp-4);
     padding-bottom: var(--sp-2);
     border-bottom: 1px solid var(--border-color);
-    color: var(--text-primary);
   }
 
   h3 {
@@ -32,7 +30,6 @@
     font-weight: 600;
     margin-top: var(--sp-8);
     margin-bottom: var(--sp-3);
-    color: var(--text-primary);
   }
 
   p {
@@ -53,7 +50,7 @@
 
   strong {
     color: var(--text-primary);
-    font-weight: 600;
+    font-weight: 700;
   }
 
   em {
@@ -61,7 +58,7 @@
   }
 
   a {
-    color: var(--brand-violet);
+    color: var(--link-color);
     text-decoration: underline;
     text-underline-offset: 2px;
   }
@@ -72,14 +69,14 @@
     background: var(--code-bg);
     border: 1px solid var(--code-border);
     border-radius: var(--radius-sm);
-    padding: 0.15em 0.4em;
+    padding: 0.1em 0.3em;
   }
 
   pre {
-    background: var(--bg-tertiary);
-    border: 1px solid var(--border-color);
+    background: var(--code-bg);
+    border: 1px solid var(--code-border);
     border-radius: var(--radius);
-    padding: var(--sp-4) var(--sp-6);
+    padding: var(--sp-4);
     overflow-x: auto;
     margin-bottom: var(--sp-4);
 
@@ -100,25 +97,19 @@
 
     th {
       text-align: left;
-      font-weight: 600;
-      padding: var(--sp-3) var(--sp-4);
-      border-bottom: 2px solid var(--border-strong);
-      color: var(--text-primary);
-      white-space: nowrap;
+      font-weight: 700;
+      padding: var(--sp-2) var(--sp-3);
+      border-bottom: 2px solid var(--table-border);
     }
 
     td {
-      padding: var(--sp-3) var(--sp-4);
+      padding: var(--sp-2) var(--sp-3);
       border-bottom: 1px solid var(--border-color);
       color: var(--text-secondary);
     }
 
     tr:nth-child(even) td {
       background: var(--table-stripe);
-    }
-
-    tr:hover td {
-      background: var(--accent-subtle);
     }
   }
 
@@ -129,7 +120,7 @@
   }
 
   blockquote {
-    border-left: 3px solid var(--brand-violet);
+    border-left: 3px solid var(--border-strong);
     padding-left: var(--sp-4);
     margin-bottom: var(--sp-4);
     color: var(--text-tertiary);

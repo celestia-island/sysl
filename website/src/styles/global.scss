@@ -2,113 +2,15 @@
 @use "tokens";
 @use "markdown";
 
-// --- Page layout helpers ---
+// --- Page layout ---
 
 .page-wrapper {
   max-width: var(--content-max);
   margin: 0 auto;
-  padding: 0 var(--sp-6);
+  padding: var(--sp-8) var(--sp-6) var(--sp-16);
 }
 
-.section {
-  padding: var(--sp-24) 0;
-
-  @media (max-width: 768px) {
-    padding: var(--sp-16) 0;
-  }
-}
-
-// --- Buttons ---
-
-.btn {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--sp-2);
-  padding: var(--sp-3) var(--sp-6);
-  border-radius: var(--radius);
-  font-size: var(--text-sm);
-  font-weight: 500;
-  transition: all var(--t-fast);
-  white-space: nowrap;
-
-  &--primary {
-    background: var(--brand-gradient);
-    color: #fff;
-    box-shadow: var(--shadow-md);
-
-    &:hover {
-      opacity: 0.9;
-      transform: translateY(-1px);
-      box-shadow: var(--shadow-lg);
-    }
-  }
-
-  &--ghost {
-    border: 1px solid var(--border-strong);
-    color: var(--text-primary);
-    background: transparent;
-
-    &:hover {
-      background: var(--bg-tertiary);
-      border-color: var(--brand-violet);
-    }
-  }
-}
-
-// --- Cards ---
-
-.card {
-  background: var(--bg-secondary);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-lg);
-  padding: var(--sp-6);
-  transition: border-color var(--t-normal), box-shadow var(--t-normal);
-
-  &:hover {
-    border-color: var(--border-strong);
-    box-shadow: var(--shadow-md);
-  }
-}
-
-// --- Section heading ---
-
-.section-title {
-  font-size: var(--text-2xl);
-  font-weight: 700;
-  letter-spacing: var(--tracking-tight);
-  margin-bottom: var(--sp-2);
-}
-
-.section-subtitle {
-  font-size: var(--text-lg);
-  color: var(--text-secondary);
-  margin-bottom: var(--sp-8);
-}
-
-// --- Brand text gradient ---
-
-.brand-text {
-  background: var(--brand-gradient);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-// --- Tag / pill ---
-
-.tag {
-  display: inline-flex;
-  align-items: center;
-  padding: var(--sp-1) var(--sp-3);
-  border-radius: var(--radius-full);
-  font-size: var(--text-xs);
-  font-weight: 500;
-  background: var(--accent-subtle);
-  color: var(--brand-violet);
-  border: 1px solid transparent;
-}
-
-// --- Fade-in animation on route enter ---
+// --- Route transition ---
 
 .fade-enter-active {
   transition: opacity var(--t-normal);

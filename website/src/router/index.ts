@@ -11,9 +11,7 @@ const router = createRouter({
     },
     {
       path: "/license",
-      name: "license",
-      component: () => import("@/views/LicenseView.vue"),
-      meta: { title: "License Text — SySL" },
+      redirect: "/",
     },
     {
       path: "/faq",

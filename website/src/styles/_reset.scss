@@ -22,12 +22,11 @@ html {
   *::after {
     transition-duration: 0.01ms !important;
     animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
   }
 }
 
 body {
-  font-family: var(--font-sans);
+  font-family: var(--font-serif);
   font-size: var(--text-base);
   line-height: var(--leading-normal);
   color: var(--text-primary);
@@ -37,12 +36,13 @@ body {
 }
 
 a {
-  color: var(--brand-violet);
+  color: var(--link-color);
   text-decoration: none;
-  transition: opacity var(--t-fast);
+  transition: color var(--t-fast);
 
   &:hover {
-    opacity: 0.8;
+    color: var(--link-hover);
+    text-decoration: underline;
   }
 }
 

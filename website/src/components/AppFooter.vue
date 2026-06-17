@@ -3,40 +3,20 @@ const year = new Date().getFullYear();
 </script>
 
 <template>
-  <footer class="footer">
+  <footer class="footer" role="contentinfo">
     <div class="footer__inner">
-      <div class="footer__brand">
-        <span class="brand-text footer__name">SySL</span>
-        <span class="footer__tagline">Synthetic Source License v1.0</span>
-      </div>
-
-      <div class="footer__links">
-        <a href="https://github.com/celestia-island/sysl">GitHub</a>
-        <RouterLink to="/license">License Text</RouterLink>
-        <RouterLink to="/faq">FAQ</RouterLink>
-        <a href="https://github.com/celestia-island/sysl/issues">Issues</a>
-      </div>
-
-      <div class="footer__meta">
-        <span>&copy; {{ year }} langyo · Celestia Island</span>
-        <span class="footer__contact">
-          <a href="mailto:sysl.contact@celestia.world">sysl.contact@celestia.world</a>
-        </span>
-      </div>
+      <span>&copy; {{ year }} langyo · Celestia Island</span>
+      <span>
+        <a href="mailto:sysl.contact@celestia.world">sysl.contact@celestia.world</a>
+      </span>
     </div>
   </footer>
 </template>
 
-<script lang="ts">
-import { RouterLink } from "vue-router";
-export default { components: { RouterLink } };
-</script>
-
 <style scoped lang="scss">
 .footer {
   border-top: 1px solid var(--border-color);
-  padding: var(--sp-12) 0;
-  margin-top: var(--sp-24);
+  padding: var(--sp-6) 0;
 }
 
 .footer__inner {
@@ -44,52 +24,24 @@ export default { components: { RouterLink } };
   margin: 0 auto;
   padding: 0 var(--sp-6);
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  gap: var(--sp-4);
-  text-align: center;
-}
-
-.footer__brand {
-  display: flex;
-  flex-direction: column;
-  gap: var(--sp-1);
-}
-
-.footer__name {
-  font-size: var(--text-xl);
-  font-weight: 700;
-}
-
-.footer__tagline {
+  flex-wrap: wrap;
+  gap: var(--sp-2);
   font-size: var(--text-sm);
   color: var(--text-tertiary);
 }
 
-.footer__links {
-  display: flex;
-  gap: var(--sp-6);
-
-  a {
-    font-size: var(--text-sm);
-    color: var(--text-secondary);
-
-    &:hover {
-      color: var(--brand-violet);
-      opacity: 1;
-    }
-  }
-}
-
-.footer__meta {
-  display: flex;
-  flex-direction: column;
-  gap: var(--sp-1);
-  font-size: var(--text-xs);
+.footer__inner a {
   color: var(--text-tertiary);
 
-  a {
-    color: var(--text-tertiary);
+  &:hover {
+    color: var(--text-secondary);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--link-color);
+    outline-offset: 2px;
   }
 }
 </style>

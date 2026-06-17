@@ -6,7 +6,5 @@ const html = renderMarkdown(compareText);
 </script>
 
 <template>
-  <div class="page-wrapper" style="padding-top: var(--sp-16); padding-bottom: var(--sp-16)">
-    <div class="prose" v-html="html"></div>
-  </div>
+  <div class="page-wrapper prose" role="article" v-html="html"></div>
 </template>
