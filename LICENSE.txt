@@ -273,7 +273,12 @@ must say so.
         and the combined work may be Distributed under the terms of
         Apache-2.0 or MIT, respectively, provided that SySL's disclosure
         requirements (Section 2) and reciprocal disclosure requirements
-        (Section 8) are independently satisfied.
+        (Section 8) are independently satisfied. For the avoidance of
+        doubt, distributing under Apache-2.0 or MIT does not discharge
+        the disclosure obligations — they travel with the SySL-originated
+        code regardless of the license wrapper applied to the combined
+        work. A Licensor who wishes to release AI-generated Software
+        without disclosure obligations should not use SySL.
 
    10.2 Compatibility with other licenses shall be evaluated on a
         case-by-case basis. The Author may publish compatibility
@@ -288,7 +293,11 @@ must say so.
         the Business Source License 1.1). In such cases, You may
         choose which license terms to follow: the SySL (requiring
         only disclosure) or the additional license (imposing further
-        restrictions). The SySL text itself remains unmodified.
+        restrictions). The SySL text itself remains unmodified. When
+        using BUSL-1.1 as the additional license, Licensors of
+        AI-Generated Software should specify SySL (not Apache-2.0 or
+        MIT) as the Change License to ensure the transparency norm
+        survives the non-compete period.
 
 11. SEVERABILITY
 

@@ -44,10 +44,12 @@ Compatibility with GPL has not been formally analyzed. Both licenses have copyle
 
 Yes. SySL is designed for layered licensing. A licensor may offer software under both SySL and BUSL-1.1 simultaneously (dual-licensing). The two licenses serve different purposes:
 
-- **BUSL-1.1**: protects commercial use during a development period, then converts to open source.
+- **BUSL-1.1**: protects commercial use during a development period, then converts to the specified Change License.
 - **SySL**: establishes the transparency norm that AI generation must be disclosed.
 
 Users may choose which license to follow. See Section 10.3 of the license for the formal layered licensing provision.
+
+**Important**: when using BUSL alongside SySL for AI-generated software, the BUSL Change License should be set to SySL (not Apache-2.0 or MIT). If BUSL converts to a license without disclosure obligations (like Apache-2.0), recipients of the post-change-date code can strip the AI disclosure — defeating SySL's purpose. Setting the Change License to SySL ensures the transparency norm survives the BUSL non-compete period.
 
 ### Do I need to disclose AI usage if I only use the software internally?
 
