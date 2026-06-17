@@ -175,9 +175,10 @@ must say so.
         PURPOSE, TITLE, AND NON-INFRINGEMENT.
 
    6.2  AI-SPECIFIC DISCLAIMER. WITHOUT LIMITING THE GENERALITY OF
-        SECTION 6.1, THE AUTHOR SPECIFICALLY DISCLAIMS THAT AI-GENERATED
-        CODE MAY EXHIBIT FAILURE MODES MATERIAL TO AND ATYPICAL OF
-        HUMAN-WRITTEN CODE, INCLUDING BUT NOT LIMITED TO:
+        SECTION 6.1, THE AUTHOR SPECIFICALLY DISCLAIMS ANY WARRANTY
+        THAT THE SOFTWARE IS FREE FROM FAILURE MODES THAT ARE MATERIAL
+        IN CONSEQUENCE AND MAY BE ATYPICAL OF HUMAN-WRITTEN CODE,
+        INCLUDING BUT NOT LIMITED TO:
 
         (a) PLAUSIBLE-APPEARING BUT LOGICALLY INCORRECT CODE;
         (b) SECURITY VULNERABILITIES INHERITED FROM MODEL TRAINING DATA;
@@ -328,3 +329,38 @@ must say so.
         Author.
 
                          END OF TERMS AND CONDITIONS
+
+                              APPENDIX
+
+                   How to Apply SySL to Your Software
+
+To apply the Synthetic Source License to your work, attach the following
+boilerplate notice to each source file. The notice should be enclosed in
+the appropriate comment syntax for the file format.
+
+   Copyright (c) [year] [your name or organization]
+
+   Licensed under the Synthetic Source License, Version 1.0
+   (the "License"); you may not use this file except in compliance
+   with the License. You may obtain a copy of the License at
+
+       https://github.com/celestia-island/sysl
+
+   Unless required by applicable law or agreed to in writing,
+   software distributed under the License is distributed on an
+   "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+   either express or implied. See the License for the specific
+   language governing permissions and limitations under the License.
+
+   AI MODEL DISCLOSURE: [Describe which AI models were used to
+   generate this software. See Section 2 of the License.]
+
+In addition, create a file named AI_DISCLOSURE (or AI_DISCLOSURE.md)
+at your repository root describing the AI models used, approximate
+tokens consumed, and the proportion of AI-generated content. See
+Section 2.2 of the License for the full requirement.
+
+To license your software under "SySL-1.0 or any later version," you
+may include the phrase "or (at your option) any later version" in the
+boilerplate notice above. If you do not include this phrase, your
+software is licensed only under Version 1.0.
