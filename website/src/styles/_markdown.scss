@@ -88,7 +88,8 @@
     }
   }
 
-  // --- Tables: scrollable wrapper, proper alignment ---
+  // --- Tables (basic, for FAQ and other prose) ---
+  // CompareView tables are wrapped in .table-scroll and styled separately
   table {
     display: block;
     overflow-x: auto;
@@ -114,6 +115,13 @@
     tr:nth-child(even) td {
       background: var(--table-stripe);
     }
+  }
+
+  // Tables inside CompareView's .table-scroll wrapper get reset
+  .table-scroll > table {
+    display: table;
+    overflow: visible;
+    width: max-content;
   }
 
   hr {
