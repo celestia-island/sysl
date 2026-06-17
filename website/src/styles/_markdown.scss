@@ -1,0 +1,140 @@
+// =========================================================================
+//  Markdown / Prose rendering styles
+// =========================================================================
+
+.prose {
+  max-width: var(--content-max);
+  margin: 0 auto;
+  line-height: var(--leading-relaxed);
+  color: var(--text-primary);
+
+  h1 {
+    font-size: var(--text-2xl);
+    font-weight: 700;
+    margin-bottom: var(--sp-8);
+    line-height: var(--leading-tight);
+  }
+
+  h2 {
+    font-size: var(--text-xl);
+    font-weight: 700;
+    margin-top: var(--sp-12);
+    margin-bottom: var(--sp-4);
+    padding-bottom: var(--sp-2);
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  h3 {
+    font-size: var(--text-lg);
+    font-weight: 600;
+    margin-top: var(--sp-8);
+    margin-bottom: var(--sp-3);
+  }
+
+  p {
+    margin-bottom: var(--sp-4);
+    color: var(--text-secondary);
+  }
+
+  ul,
+  ol {
+    margin-bottom: var(--sp-4);
+    padding-left: var(--sp-6);
+    color: var(--text-secondary);
+
+    li {
+      margin-bottom: var(--sp-2);
+    }
+  }
+
+  strong {
+    color: var(--text-primary);
+    font-weight: 700;
+  }
+
+  em {
+    color: var(--text-tertiary);
+  }
+
+  a {
+    color: var(--link-color);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  code {
+    font-family: var(--font-mono);
+    font-size: 0.85em;
+    background: var(--code-bg);
+    border: 1px solid var(--code-border);
+    border-radius: var(--radius-sm);
+    padding: 0.1em 0.3em;
+  }
+
+  pre {
+    background: var(--code-bg);
+    border: 1px solid var(--code-border);
+    border-radius: var(--radius);
+    padding: var(--sp-4);
+    overflow-x: auto;
+    margin-bottom: var(--sp-4);
+
+    code {
+      background: none;
+      border: none;
+      padding: 0;
+      font-size: var(--text-sm);
+      line-height: var(--leading-normal);
+    }
+  }
+
+  // --- Tables (basic, for FAQ and other prose) ---
+  // CompareView tables are wrapped in .table-scroll and styled separately
+  table {
+    display: block;
+    overflow-x: auto;
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: var(--sp-6);
+    font-size: var(--text-sm);
+    -webkit-overflow-scrolling: touch;
+
+    th {
+      font-weight: 700;
+      padding: var(--sp-2) var(--sp-3);
+      border-bottom: 2px solid var(--table-border);
+      white-space: nowrap;
+    }
+
+    td {
+      padding: var(--sp-2) var(--sp-3);
+      border-bottom: 1px solid var(--border-color);
+      color: var(--text-secondary);
+    }
+
+    tr:nth-child(even) td {
+      background: var(--table-stripe);
+    }
+  }
+
+  // Tables inside CompareView's .table-scroll wrapper get reset
+  .table-scroll > table {
+    display: table;
+    overflow: visible;
+    width: max-content;
+  }
+
+  hr {
+    border: none;
+    border-top: 1px solid var(--border-color);
+    margin: var(--sp-8) 0;
+  }
+
+  blockquote {
+    border-left: 3px solid var(--border-strong);
+    padding-left: var(--sp-4);
+    margin-bottom: var(--sp-4);
+    color: var(--text-tertiary);
+    font-style: italic;
+  }
+}

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sysl.celestia.world/sitemap.xml

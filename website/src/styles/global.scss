@@ -1,0 +1,59 @@
+@use "reset";
+@use "tokens";
+@use "markdown";
+
+// --- Page layout ---
+
+.page-wrapper {
+  max-width: var(--content-max);
+  margin: 0 auto;
+  padding: var(--sp-8) var(--sp-6) var(--sp-16);
+}
+
+// --- Route transition ---
+
+.fade-enter-active {
+  transition: opacity var(--t-normal);
+}
+
+.fade-leave-active {
+  transition: opacity var(--t-fast);
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+// --- Global print styles ---
+@media print {
+  // Hide everything by default
+  body * {
+    visibility: hidden;
+  }
+
+  // Show only the print area and its children
+  .print-area,
+  .print-area * {
+    visibility: visible;
+  }
+
+  // Position the print area at the top of the page
+  .print-area {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+
+  // Force light theme colors for print
+  .print-area {
+    background: #fff !important;
+    color: #000 !important;
+  }
+
+  // Hide non-printable elements
+  .no-print {
+    display: none !important;
+  }
+}
