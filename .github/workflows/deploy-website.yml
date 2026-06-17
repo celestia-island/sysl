@@ -1,16 +1,16 @@
-name: Deploy website to GitHub Pages
+name: CI
 
 on:
   push:
-    branches: [dev]
+    branches: [master, dev]
     paths:
       - "website/**"
       - "LICENSE.txt"
       - "FAQ.md"
       - "COMPARISON.md"
-      - "ADOPTERS.md"
       - "README.md"
       - "i18n/**"
+      - ".github/workflows/deploy-website.yml"
   workflow_dispatch:
 
 permissions:
@@ -19,45 +19,45 @@ permissions:
   id-token: write
 
 concurrency:
-  group: "pages"
+  group: "pages-${{ github.ref }}"
   cancel-in-progress: true
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      - uses: actions/setup-node@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - uses: actions/setup-node@v5
         with:
           node-version: 24
-
-      - name: Install pnpm
-        run: npm install -g pnpm
+          cache: 'pnpm'
+          cache-dependency-path: website/pnpm-lock.yaml
 
       - name: Install dependencies
         working-directory: website
-        run: pnpm install --frozen-lockfile
+        run: pnpm install --ignore-scripts --frozen-lockfile
 
       - name: Build
         working-directory: website
         run: pnpm build
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v4
+        if: github.ref == 'refs/heads/master'
         with:
           path: website/dist
 
   deploy:
-    needs: build
+    if: github.ref == 'refs/heads/master'
     runs-on: ubuntu-latest
+    needs: build
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - id: deployment
+        uses: actions/deploy-pages@v5
