@@ -26,7 +26,6 @@ La SySL comble ce vide. Elle fonctionne à la fois comme une licence de droit d'
 
 ## Pourquoi est-ce important ?
 
-En 2026, les modèles d'IA génèrent couramment des bases de code entières. Des projets réels existent déjà où l'IA génère 100 % du code source—des applications, des bibliothèques et des systèmes entiers, construits par des individus dirigeant des modèles d'IA plutôt qu'en écrivant du code à la main.
 
 Ce n'est pas une hypothèse. Les logiciels générés par IA sont là. Le cadre juridique doit rattraper son retard.
 
@@ -51,9 +50,9 @@ Pour utiliser la SySL pour votre projet :
 
 1. Copiez `LICENSE.txt` à la racine de votre dépôt.
 2. Créez un fichier `AI_DISCLOSURE` (ou `AI_DISCLOSURE.md`) décrivant :
-   - Quels modèles d'IA ont été utilisés
-   - Le nombre approximatif de jetons consommés
-   - La proportion de code généré par IA par rapport au code écrit par un humain
+ - Quels modèles d'IA ont été utilisés
+ - Le nombre approximatif de jetons consommés
+ - La proportion de code généré par IA par rapport au code écrit par un humain
 3. Ajoutez un badge à votre README :
 
 ```markdown
@@ -99,18 +98,6 @@ SySL is available in the following languages. The English version is legally bin
 | Deutsch | [README.md](../../i18n/de/README.md) | [LICENSE.txt](../../i18n/de/LICENSE.txt) | [FAQ.md](../../i18n/de/FAQ.md) | [COMPARISON.md](../../i18n/de/COMPARISON.md) |
 | Português | [README.md](../../i18n/pt/README.md) | [LICENSE.txt](../../i18n/pt/LICENSE.txt) | [FAQ.md](../../i18n/pt/FAQ.md) | [COMPARISON.md](../../i18n/pt/COMPARISON.md) |
 | العربية | [README.md](../../i18n/ar/README.md) | [LICENSE.txt](../../i18n/ar/LICENSE.txt) | [FAQ.md](../../i18n/ar/FAQ.md) | [COMPARISON.md](../../i18n/ar/COMPARISON.md) |
-
-## Adoptants
-
-Projets ayant adopté la SySL :
-
-| Projet | Description | Depuis |
-|---------|-------------|-------|
-|  | Plateforme d'orchestration d'IA multi-agents | 2026-06 |
-| [shittim-chest](https://github.com/celestia-island/shittim-chest) | Shell Web pour plateforme IA | 2026-06 |
-| [evernight](https://github.com/celestia-island/evernight) | Bibliothèque de contrôle à distance multiplateforme | 2026-06 |
-
-*Pour ajouter votre projet, soumettez une PR à [ADOPTERS.md](./ADOPTERS.md).*
 
 ## Philosophie
 

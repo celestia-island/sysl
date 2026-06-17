@@ -110,7 +110,6 @@ Projekte, die SySL übernommen haben:
 | [shittim-chest](https://github.com/celestia-island/shittim-chest) | KI-Plattform-Webshell | 2026-06 |
 | [evernight](https://github.com/celestia-island/evernight) | Plattformübergreifende Fernsteuerungsbibliothek | 2026-06 |
 
-*Um Ihr Projekt hinzuzufügen, reichen Sie einen PR zu [ADOPTERS.md](./ADOPTERS.md) ein.*
 
 ## Philosophie
 

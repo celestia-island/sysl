@@ -26,6 +26,7 @@ SySL 填補了這一真空。它同時作為著作權授權（若著作權存在
 
 ## 這為什麼重要？
 
+
 在 2026 年，AI 模型已能常規地生成整個程式碼庫。現實中已存在由 AI 100% 生成原始碼的專案——完整的應用、函式庫和系統，由引導 AI 模型的個人構建，而非手工編寫。
 
 這不是假設性命題。AI 生成的軟體已經到來。法律框架需要跟上。
@@ -51,9 +52,9 @@ SySL 是第一步：一項對程式碼的本質、誰製作了它以及規則是
 
 1. 將 `LICENSE.txt` 複製到您的儲存庫根目錄。
 2. 建立一份 `AI_DISCLOSURE`（或 `AI_DISCLOSURE.md`）檔案，說明：
-   - 使用了哪些 AI 模型
-   - 大約消耗的 token 數量
-   - AI 生成程式碼與人類編寫程式碼的比例
+ - 使用了哪些 AI 模型
+ - 大約消耗的 token 數量
+ - AI 生成程式碼與人類編寫程式碼的比例
 3. 在您的 README 中加入標章：
 
 ```markdown
@@ -97,18 +98,6 @@ SySL 提供以下語言版本。英文版本具法律約束力；譯本僅供參
 | Deutsch | [l10n/de/README.md](./l10n/de/README.md) | [l10n/de/LICENSE.txt](./l10n/de/LICENSE.txt) | [l10n/de/FAQ.md](./l10n/de/FAQ.md) |
 | Português | [l10n/pt/README.md](./l10n/pt/README.md) | [l10n/pt/LICENSE.txt](./l10n/pt/LICENSE.txt) | [l10n/pt/FAQ.md](./l10n/pt/FAQ.md) |
 | العربية | [l10n/ar/README.md](./l10n/ar/README.md) | [l10n/ar/LICENSE.txt](./l10n/ar/LICENSE.txt) | [l10n/ar/FAQ.md](./l10n/ar/FAQ.md) |
-
-## 採用者
-
-已採用 SySL 的專案：
-
-| 專案 | 說明 | 自 |
-|---------|-------------|-------|
-|  | 多代理 AI 協作平台 | 2026-06 |
-| [shittim-chest](https://github.com/celestia-island/shittim-chest) | AI 平台 Web 命令層 | 2026-06 |
-| [evernight](https://github.com/celestia-island/evernight) | 跨平台遠端控制函式庫 | 2026-06 |
-
-*若要新增您的專案，請向 [ADOPTERS.md](./ADOPTERS.md) 提交 PR。*
 
 ## 理念
 

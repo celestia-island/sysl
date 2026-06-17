@@ -84,12 +84,6 @@ L'Auteur est déterminé selon trois niveaux, en fonction de qui a dirigé la g�
 
 Cette approche à plusieurs niveaux reconnaît que les systèmes d'IA (comme la flotte d'agents d' elle-même) pourront à l'avenir diriger la génération de code de manière autonome. La définition garantit qu'il existe toujours un ancrage juridique pour le contrat.
 
-### Pourquoi le droit applicable est-il celui du Japon ?
-
-Le Japon a été choisi comme droit applicable neutre pour plusieurs raisons : le Japon dispose d'un corpus de droit des contrats bien développé, d'un système juridique qui respecte l'autonomie des parties dans les accords commerciaux, et il est juridictionnellement neutre par rapport aux principales régions (États-Unis, UE, Chine) où la SySL est susceptible d'être utilisée. En outre, le droit d'auteur japonais a traité les œuvres générées par IA d'une manière qui rend l'approche contractuelle particulièrement claire et exécutoire.
-
-Les utilisateurs dans d'autres juridictions conservent leurs droits locaux en matière de protection des consommateurs.
-
 ### Que faire si je ne suis pas d'accord avec l'exigence de divulgation de l'IA ?
 
 L'exigence de divulgation est le cœur de la SySL. Si vous ne pouvez pas ou ne voulez pas divulguer la génération par IA, vous ne devez pas utiliser de logiciel sous licence SySL. Les licences alternatives qui n'exigent pas la divulgation de l'IA incluent MIT, Apache-2.0 et BSD.
@@ -123,8 +117,5 @@ L'Auteur peut publier des versions révisées officielles de la SySL. Voir la Se
 
 ### Qui utilise la SySL ?
 
-Voir [ADOPTERS.md](./ADOPTERS.md) pour la liste actuelle. Les premiers adoptants sont les projets de l'écosystème [](https://github.com/celestia-island/).
-
 ### Comment ajouter mon projet à la liste des adoptants ?
 
-Soumettez une pull request à [ADOPTERS.md](./ADOPTERS.md) avec le nom de votre projet, une courte description et la date d'adoption.

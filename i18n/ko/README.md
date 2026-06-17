@@ -110,7 +110,6 @@ SySL을 도입한 프로젝트:
 | [shittim-chest](https://github.com/celestia-island/shittim-chest) | AI 플랫폼 웹 셸 | 2026-06 |
 | [evernight](https://github.com/celestia-island/evernight) | 크로스 플랫폼 원격 제어 라이브러리 | 2026-06 |
 
-*프로젝트를 추가하려면 [ADOPTERS.md](./ADOPTERS.md)에 PR을 제출하십시오.*
 
 ## 철학
 

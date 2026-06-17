@@ -26,6 +26,7 @@ SySL 填补了这一真空。它同时作为著作权许可（若存在著作权
 
 ## 这为什么重要？
 
+
 在 2026 年，AI 模型已能常规性地生成整个代码库。现实中已存在由 AI 100% 生成源代码的项目——完整的应用、库和系统，由引导 AI 模型的个人构建，而非手工编写。
 
 这不是假想场景。AI 生成的软件已经到来。法律框架需要跟上。
@@ -51,9 +52,9 @@ SySL 是第一步：一个对代码是什么、谁制作了它以及规则是什
 
 1. 将 `LICENSE.txt` 复制到您的仓库根目录。
 2. 创建一个 `AI_DISCLOSURE`（或 `AI_DISCLOSURE.md`）文件，描述：
-   - 使用了哪些 AI 模型
-   - 大致消耗的 token 数量
-   - AI 生成代码与人类编写代码的比例
+ - 使用了哪些 AI 模型
+ - 大致消耗的 token 数量
+ - AI 生成代码与人类编写代码的比例
 3. 在您的 README 中添加徽章：
 
 ```markdown
@@ -99,18 +100,6 @@ SySL is available in the following languages. The English version is legally bin
 | Deutsch | [README.md](../../i18n/de/README.md) | [LICENSE.txt](../../i18n/de/LICENSE.txt) | [FAQ.md](../../i18n/de/FAQ.md) | [COMPARISON.md](../../i18n/de/COMPARISON.md) |
 | Português | [README.md](../../i18n/pt/README.md) | [LICENSE.txt](../../i18n/pt/LICENSE.txt) | [FAQ.md](../../i18n/pt/FAQ.md) | [COMPARISON.md](../../i18n/pt/COMPARISON.md) |
 | العربية | [README.md](../../i18n/ar/README.md) | [LICENSE.txt](../../i18n/ar/LICENSE.txt) | [FAQ.md](../../i18n/ar/FAQ.md) | [COMPARISON.md](../../i18n/ar/COMPARISON.md) |
-
-## 采用者
-
-已采用 SySL 的项目：
-
-| 项目 | 描述 | 自 |
-|---------|-------------|-------|
-|  | 多智能体 AI 编排平台 | 2026-06 |
-| [shittim-chest](https://github.com/celestia-island/shittim-chest) | AI 平台 Web Shell | 2026-06 |
-| [evernight](https://github.com/celestia-island/evernight) | 跨平台远程控制库 | 2026-06 |
-
-*要将您的项目添加到列表，请向 [ADOPTERS.md](./ADOPTERS.md) 提交 PR。*
 
 ## 理念
 

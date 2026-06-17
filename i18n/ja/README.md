@@ -110,7 +110,6 @@ SySL を採用したプロジェクト：
 | [shittim-chest](https://github.com/celestia-island/shittim-chest) | AIプラットフォームWebシェル | 2026-06 |
 | [evernight](https://github.com/celestia-island/evernight) | クロスプラットフォームリモートコントロールライブラリ | 2026-06 |
 
-*プロジェクトを追加するには、[ADOPTERS.md](./ADOPTERS.md) にPRを提出してください。*
 
 ## 理念
 

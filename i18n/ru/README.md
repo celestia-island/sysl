@@ -110,7 +110,6 @@ SySL is available in the following languages. The English version is legally bin
 | [shittim-chest](https://github.com/celestia-island/shittim-chest) | Веб-оболочка платформы ИИ | 2026-06 |
 | [evernight](https://github.com/celestia-island/evernight) | Кроссплатформенная библиотека удалённого управления | 2026-06 |
 
-*Чтобы добавить ваш проект, отправьте PR в [ADOPTERS.md](./ADOPTERS.md).*
 
 ## Философия
 

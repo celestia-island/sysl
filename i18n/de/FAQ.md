@@ -82,12 +82,6 @@ Der Autor wird in drei Stufen bestimmt, je nachdem, wer die KI-Generierung geste
 
 Dieser mehrstufige Ansatz trägt dem Umstand Rechnung, dass KI-Systeme (wie s eigene Agentenflotte) die Codegenerierung in Zukunft autonom steuern könnten. Die Definition stellt sicher, dass stets ein rechtlicher Anknüpfungspunkt für den Vertrag besteht.
 
-### Warum ist das anwendbare Recht auf Japan festgelegt?
-
-Der SySL-Autor hat seinen Sitz in einer Jurisdiktion, in der das japanische Recht einen stabilen und berechenbaren Rahmen für vertragsbasierte Softwarelizenzierung bietet. Die Wahl Japans als anwendbares Recht ist bewusst getroffen: Japan verfügt über ein gut entwickeltes Vertragsrechtssystem, ein Rechtssystem, das die Parteiautonomie respektiert, und ist neutral gegenüber den großen Rechtsordnungen (USA, EU, China), in denen SySL voraussichtlich verwendet wird.
-
-Nutzer in anderen Rechtsordnungen behalten ihre lokalen Verbraucher- und Datenschutzrechte.
-
 ### Was, wenn ich mit der KI-Offenlegungspflicht nicht einverstanden bin?
 
 Die Offenlegungspflicht ist der Kern von SySL. Wenn Sie die KI-Generierung nicht offenlegen können oder wollen, sollten Sie SySL-lizenzierte Software nicht verwenden. Alternative Lizenzen, die keine KI-Offenlegung verlangen, sind MIT, Apache-2.0 und BSD.
@@ -121,8 +115,5 @@ Der Autor kann offizielle überarbeitete Fassungen der SySL veröffentlichen. Si
 
 ### Wer verwendet SySL?
 
-Siehe [ADOPTERS.md](./ADOPTERS.md) für die aktuelle Liste. Die ersten Adoptierenden sind die Projekte des [](https://github.com/celestia-island/)-Ökosystems.
-
 ### Wie füge ich mein Projekt zur Adoptierendenliste hinzu?
 
-Reichen Sie einen Pull Request zu [ADOPTERS.md](./ADOPTERS.md) mit Ihrem Projektnamen, einer kurzen Beschreibung und dem Datum der Übernahme ein.

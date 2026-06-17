@@ -26,6 +26,7 @@ SySL llena este vacío. Opera tanto como una licencia de derechos de autor (si e
 
 ## ¿Por qué es importante esto?
 
+
 En 2026, los modelos de IA generan rutinariamente bases de código completas. Ya existen proyectos reales donde la IA genera el 100 % del código fuente—aplicaciones, bibliotecas y sistemas completos, construidos por individuos que dirigen modelos de IA en lugar de escribir código a mano.
 
 Esto no es una hipótesis. El software generado por IA ya está aquí. El marco legal necesita ponerse al día.
@@ -51,9 +52,9 @@ Para usar SySL en su proyecto:
 
 1. Copie `LICENSE.txt` en la raíz de su repositorio.
 2. Cree un archivo `AI_DISCLOSURE` (o `AI_DISCLOSURE.md`) que describa:
-   - Qué modelos de IA se utilizaron
-   - Tokens aproximados consumidos
-   - La proporción de código generado por IA frente a código escrito por humanos
+ - Qué modelos de IA se utilizaron
+ - Tokens aproximados consumidos
+ - La proporción de código generado por IA frente a código escrito por humanos
 3. Añada una insignia a su README:
 
 ```markdown
@@ -99,18 +100,6 @@ SySL is available in the following languages. The English version is legally bin
 | Deutsch | [README.md](../../i18n/de/README.md) | [LICENSE.txt](../../i18n/de/LICENSE.txt) | [FAQ.md](../../i18n/de/FAQ.md) | [COMPARISON.md](../../i18n/de/COMPARISON.md) |
 | Português | [README.md](../../i18n/pt/README.md) | [LICENSE.txt](../../i18n/pt/LICENSE.txt) | [FAQ.md](../../i18n/pt/FAQ.md) | [COMPARISON.md](../../i18n/pt/COMPARISON.md) |
 | العربية | [README.md](../../i18n/ar/README.md) | [LICENSE.txt](../../i18n/ar/LICENSE.txt) | [FAQ.md](../../i18n/ar/FAQ.md) | [COMPARISON.md](../../i18n/ar/COMPARISON.md) |
-
-## Adoptantes
-
-Proyectos que han adoptado SySL:
-
-| Proyecto | Descripción | Desde |
-|---------|-------------|-------|
-|  | Plataforma de orquestación de IA multiagente | 2026-06 |
-| [shittim-chest](https://github.com/celestia-island/shittim-chest) | Shell web de plataforma de IA | 2026-06 |
-| [evernight](https://github.com/celestia-island/evernight) | Biblioteca de control remoto multiplataforma | 2026-06 |
-
-*Para añadir su proyecto, envíe un PR a [ADOPTERS.md](./ADOPTERS.md).*
 
 ## Filosofía
 
