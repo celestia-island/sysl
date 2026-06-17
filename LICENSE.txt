@@ -126,12 +126,9 @@ must say so.
         code may be Distributed under Apache-2.0, provided that the
         disclosure requirements of Section 2 are independently satisfied.
 
-   3.3  TERMINATION FOR PATENT LITIGATION. If You institute patent
-        litigation (including a cross-claim or counterclaim in a
-        lawsuit) against the Author or any entity alleging that the
-        Software constitutes direct or contributory patent infringement,
-        then the copyright and patent grants in this license shall
-        terminate as of the date such litigation is filed.
+   3.3  TERMINATION. If You institute patent litigation alleging
+        that the Software infringes any patent, all rights granted
+        to You under this license terminate.
 
 4. PATENT GRANT
 
