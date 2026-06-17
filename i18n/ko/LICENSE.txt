@@ -394,21 +394,21 @@ SySL은 AI 시대를 위한 세 가지 새로운 규범을 수립합니다:
 귀하의 저작물에 합성 소스 라이선스를 적용하려면, 다음 상용구 고지를 각 소스
 파일에 첨부하십시오. 고지는 해당 파일 형식에 맞는 주석 구문으로 둘러싸야 합니다.
 
-   Copyright (c) [연도] [귀하의 이름 또는 조직명]
+   저작권 (c) [연도] [귀하의 이름 또는 조직명]
 
-   Licensed under the Synthetic Source License, Version 1.0
-   (the "License"); you may not use this file except in compliance
-   with the License. You may obtain a copy of the License at
+   본 소프트웨어는 합성 소스 라이선스 버전 1.0("라이선스")에 따라
+   라이선스가 부여되며, 라이선스를 준수하는 경우에만 사용할 수
+   있습니다. 라이선스 사본은 아래에서 확인할 수 있습니다.
 
        https://github.com/celestia-island/sysl
 
-   Unless required by applicable law or agreed to in writing,
-   software distributed under the License is distributed on an
-   "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
-   either express or implied. See the License for the specific
-   language governing permissions and limitations under the License.
+   관련 법률에 따라 요구되거나 서면으로 동의한 경우를 제외하고,
+   라이선스에 따라 배포되는 소프트웨어는 "있는 그대로" 제공되며,
+   명시적이든 묵시적이든 어떠한 종류의 보증이나 조건도 제공되지
+   않습니다. 라이선스에 따른 권한 및 제한 사항은 라이선스를
+   참조하십시오.
 
-   AI MODEL DISCLOSURE: [이 소프트웨어를 생성하는 데 어떤 AI 모델이
+   AI 모델 공개: [이 소프트웨어를 생성하는 데 어떤 AI 모델이
    사용되었는지 설명하십시오. 라이선스 제2조 참조.]
 
 또한, 저장소 루트에 AI_DISCLOSURE(또는 AI_DISCLOSURE.md) 파일을 생성하여

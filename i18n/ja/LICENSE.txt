@@ -417,22 +417,25 @@ SySL は、AI時代に向けた三つの新しい規範を確立します：
 各ソースファイルに添付してください。通知は、ファイル形式に適したコメント
 構文で囲んでください。
 
-   Copyright (c) [年] [氏名または組織名]
+    Copyright (c) [年] [氏名または組織名]
 
-   Licensed under the Synthetic Source License, Version 1.0
-   (the "License"); you may not use this file except in compliance
-   with the License. You may obtain a copy of the License at
+    本ファイルは、合成ソースライセンス（Synthetic Source License）
+    バージョン 1.0（以下「本ライセンス」といいます。）に基づき
+    ライセンスされています。本ライセンスに準拠しない限り、
+    本ファイルを使用することはできません。本ライセンスの写しは
+    以下のURLで入手できます。
 
-       https://github.com/celestia-island/sysl
+        https://github.com/celestia-island/sysl
 
-   Unless required by applicable law or agreed to in writing,
-   software distributed under the License is distributed on an
-   "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
-   either express or implied. See the License for the specific
-   language governing permissions and limitations under the License.
+    適用される法律により要求される場合または書面により合意される
+    場合を除き、本ライセンスに基づき配布されるソフトウェアは
+    「現状のまま」提供され、明示または黙示を問わず、いかなる
+    種類の保証または条件も付されません。本ライセンスに基づく
+    許諾および制限の具体的条項については、本ライセンスを
+    参照してください。
 
-   AI MODEL DISCLOSURE: [本ソフトウェアの生成に使用されたAIモデルを
-   記載してください。ライセンス第2条を参照。]
+    AIモデル開示: [本ソフトウェアの生成に使用されたAIモデルを
+    記載してください。ライセンス第2条を参照。]
 
 加えて、リポジトリのルートに AI_DISCLOSURE（または AI_DISCLOSURE.md）
 という名称のファイルを作成し、使用されたAIモデル、おおよその消費トークン数、
