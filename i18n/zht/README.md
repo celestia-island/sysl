@@ -1,6 +1,6 @@
 # 合成源碼協議（SySL）
 
-**首個專為 100% AI 生成程式碼之軟體設計的開源授權條款。**
+**專為 AI 生成程式碼設計的新型軟體授權——以獨立於版權的約束性合約形式運作。**
 
 [![License](https://img.shields.io/badge/license-SySL%201.0-blue)](./LICENSE.txt)
 
