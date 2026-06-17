@@ -3,10 +3,13 @@ import { RouterView } from "vue-router";
 import AppHeader from "@/components/AppHeader.vue";
 import AppFooter from "@/components/AppFooter.vue";
 import ScrollToTop from "@/components/ScrollToTop.vue";
+import { useUI } from "@/composables/useLangStore";
+
+const { t } = useUI();
 </script>
 
 <template>
-  <a href="#main-content" class="skip-link no-print">Skip to content</a>
+  <a href="#main-content" class="skip-link no-print">{{ t("skipToContent") }}</a>
   <AppHeader class="no-print" />
   <main id="main-content">
     <RouterView v-slot="{ Component }">

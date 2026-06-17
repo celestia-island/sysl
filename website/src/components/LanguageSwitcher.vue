@@ -1,8 +1,9 @@
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from "vue";
-import { useLangStore } from "@/composables/useLangStore";
+import { useLangStore, useUI } from "@/composables/useLangStore";
 
 const langStore = useLangStore();
+const { t } = useUI();
 
 interface Lang {
   code: string;
@@ -63,7 +64,7 @@ const activeLabel = () =>
       @click="showDropdown = !showDropdown"
       :aria-expanded="showDropdown"
       aria-haspopup="listbox"
-      aria-label="Select language"
+          :aria-label="t('selectLang')"
     >
       <span>{{ activeLabel() }}</span>
       <svg class="lang-switcher__arrow" width="10" height="10" viewBox="0 0 12 12" aria-hidden="true">

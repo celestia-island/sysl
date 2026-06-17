@@ -1,8 +1,9 @@
 <script setup lang="ts">
 import { ref, computed, onMounted, onUnmounted } from "vue";
-import { useLangStore } from "@/composables/useLangStore";
+import { useLangStore, useUI } from "@/composables/useLangStore";
 
 const langStore = useLangStore();
+const { t } = useUI();
 
 import enText from "../../../LICENSE.txt?raw";
 import zhsText from "../../../i18n/zhs/LICENSE.txt?raw";
@@ -174,8 +175,8 @@ const renderBlocks = computed<RenderBlock[]>(() => {
         <button
           class="meta-btn"
           @click="copyText"
-          :aria-label="copied ? 'Copied' : 'Copy license text'"
-          :title="copied ? 'Copied!' : 'Copy license text'"
+          :aria-label="copied ? t('copied') : t('copy')"
+          :title="copied ? t('copied') : t('copy')"
         >
           <svg v-if="copied" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <polyline points="20 6 9 17 4 12"/>
@@ -184,21 +185,21 @@ const renderBlocks = computed<RenderBlock[]>(() => {
             <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
             <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
           </svg>
-          <span class="meta-btn__label">{{ copied ? "Copied" : "Copy" }}</span>
+          <span class="meta-btn__label">{{ copied ? t("copied") : t("copy") }}</span>
         </button>
 
         <button
           class="meta-btn"
           @click="printText"
-          aria-label="Print license text"
-          title="Print license text"
+          :aria-label="t('print')"
+          :title="t('print')"
         >
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <polyline points="6 9 6 2 18 2 18 9"/>
             <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/>
             <rect x="6" y="14" width="12" height="8"/>
           </svg>
-          <span class="meta-btn__label">Print</span>
+          <span class="meta-btn__label">{{ t("print") }}</span>
         </button>
 
         <div ref="switcherRef" class="lang-switcher">
@@ -208,7 +209,7 @@ const renderBlocks = computed<RenderBlock[]>(() => {
             @click="showDropdown = !showDropdown"
             :aria-expanded="showDropdown"
             aria-haspopup="listbox"
-            aria-label="Select language"
+            :aria-label="t('selectLang')"
           >
             <span>{{ activeLang.label }}</span>
             <svg class="lang-switcher__arrow" width="10" height="10" viewBox="0 0 12 12" aria-hidden="true">
@@ -236,7 +237,7 @@ const renderBlocks = computed<RenderBlock[]>(() => {
     </div>
 
     <p v-if="activeLang.code !== 'en'" class="license-notice no-print" role="note">
-      Informational translation. The English version is legally binding.
+      {{ t("translationNotice") }}
     </p>
 
     <div class="license-center print-area">
