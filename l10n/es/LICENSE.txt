@@ -243,34 +243,34 @@ debemos decirlo.
         Contribución según lo requerido por la Sección 2.3.
 
    8.2  DISTRIBUCIÓN DE CÓDIGO OBJETO. Si Usted Distribuye el Software
-        o una Obra Derivada únicamente en forma de código objeto o
-        ejecutable, debe incluir, con la Distribución, ya sea:
+         o una Obra Derivada únicamente en forma de código objeto o
+         ejecutable, debe incluir, con la Distribución:
 
-        (a) el código fuente correspondiente completo (según se define
-            en la Licencia Pública General de GNU, Versión 3),
-            incluyendo todas las divulgaciones de generación por IA
-            requeridas por la Sección 2; o
+         (a) el aviso de divulgación de generación por IA requerido
+             por la Sección 2.1, visible para los usuarios finales; y
 
-        (b) una oferta por escrito, válida durante al menos tres años,
-            para proporcionar a cualquier tercero el código fuente
-            correspondiente completo, incluyendo todas las divulgaciones
-            de generación por IA, por un cargo no superior al coste
-            razonable de realizar físicamente la distribución del
-            código fuente.
+         (b) una copia del archivo AI_DISCLOSURE original (o
+             documentación equivalente) a partir del cual los usuarios
+             finales puedan determinar qué partes del Software son
+             Generadas por IA y qué Modelos se utilizaron.
 
-   8.3  ALCANCE DE LA OBLIGACIÓN DE CÓDIGO FUENTE. El código fuente
-        a proporcionar bajo la Sección 8.2 es el código fuente
-        necesario para reproducir el código objeto Distribuido. Usted
-        no está obligado a divulgar algoritmos propietarios, secretos
-        comerciales ni código fuente no relacionado con el Software
-        o su Contribución.
+   8.3  NINGUNA OBLIGACIÓN DE CÓDIGO FUENTE. Esta Sección 8 no le
+         exige a Usted distribuir código fuente. El copyleft sintético
+         de SySL se limita a preservar la cadena de divulgación de IA.
+         Usted puede distribuir Obras Derivadas únicamente en forma de
+         código objeto, siempre que se cumplan los requisitos de
+         divulgación de las Secciones 2 y 8.2. Esta es una elección de
+         diseño deliberada: el copyleft de SySL concierne a la
+         transparencia, no al uso compartido del código fuente.
 
-   8.4  CUMPLIMIENTO MEDIANTE REPOSITORIO PÚBLICO. Las obligaciones
-        de la Sección 8.2(b) se consideran satisfechas si Usted pone
-        el código fuente correspondiente a disposición pública a
-        través de una plataforma de alojamiento de código generalmente
-        reconocida (como GitHub, GitLab o equivalente) e incluye la
-        URL del repositorio en el código objeto Distribuido.
+   8.4  CUMPLIMIENTO MEDIANTE ACCESIBILIDAD PÚBLICA. Las obligaciones
+         de la Sección 8.2(b) se consideran satisfechas si Usted pone
+         el archivo AI_DISCLOSURE a disposición pública (por ejemplo,
+         a través de una plataforma de alojamiento de código
+         generalmente reconocida como GitHub, GitLab o equivalente, o
+         a través de un sitio web de acceso público) e incluye la URL
+         de acceso en el código objeto Distribuido o en su
+         documentación adjunta.
 
 9. MARCAS COMERCIALES
 

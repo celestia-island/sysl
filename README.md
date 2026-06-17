@@ -1,6 +1,6 @@
 # Synthetic Source License (SySL)
 
-**The first open-source license designed for software whose code is 100% AI-generated.**
+**The first software license designed for code that is 100% AI-generated.**
 
 [![License](https://img.shields.io/badge/license-SySL%201.0-blue)](./LICENSE.txt)
 
@@ -40,7 +40,7 @@ SySL is the first step: a license that is honest about what the code is, who mad
 | **Dual Legal Basis** | Functions as both copyright license and independent contract |
 | **Patent Grant** | Equivalent to Apache-2.0 patent protection |
 | **Apache-2.0 Compatible** | SySL code can be combined with Apache-2.0 code |
-| **Synthetic Copyleft** | Derivatives must preserve AI disclosure (not source code, just disclosure) |
+| **Synthetic Copyleft** | Derivatives must preserve AI disclosure (transparency obligation, not source-sharing) |
 | **AI-Specific Disclaimer** | Explicitly disclaims AI-unique failure modes |
 | **Multi-language** | Available in 11 languages (English legally binding) |
 
@@ -124,8 +124,6 @@ The Synthetic Source License text is copyrighted by langyo. You may freely repro
 ## Contributing
 
 Bug reports, corrections, and suggestions for future versions of SySL are welcome. Please open an issue or pull request at <https://github.com/celestia-island/sysl>.
-
-The process for SySL version updates is documented in [GOVERNANCE.md](./GOVERNANCE.md).
 
 ## Contact
 

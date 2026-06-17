@@ -262,34 +262,35 @@ aber wir müssen dazu stehen.
 
    8.2  OBJEKT-VERBREITUNG. Wenn Sie die Software oder ein Abgeleitetes
         Werk ausschließlich in Objektcode oder ausführbarer Form
-        verbreiten, müssen Sie zusammen mit der Verbreitung entweder
-        Folgendes bereitstellen:
+        verbreiten, müssen Sie zusammen mit der Verbreitung Folgendes
+        beifügen:
 
-        (a) den vollständigen zugehörigen Quellcode (wie in der GNU
-            General Public License, Version 3, definiert),
-            einschließlich aller nach Abschnitt 2 erforderlichen
-            KI-Generierungsoffenlegungen; oder
+        (a) den nach Abschnitt 2.1 erforderlichen
+            KI-Generierungshinweis, der für Endnutzer sichtbar ist;
+            und
 
-        (b) ein schriftliches Angebot, das mindestens drei Jahre
-            gültig ist, jedem Dritten den vollständigen zugehörigen
-            Quellcode einschließlich aller KI-Generierungsoffenlegungen
-            zu einem Entgelt zur Verfügung zu stellen, das Ihre
-            angemessenen Kosten für die physische Durchführung der
-            Quellcode-Verbreitung nicht übersteigt.
+        (b) eine Kopie der ursprünglichen AI_DISCLOSURE-Datei (oder
+            einer gleichwertigen Dokumentation), anhand derer
+            Endnutzer feststellen können, welche Teile der Software
+            KI-generiert sind und welche Modelle verwendet wurden.
 
-   8.3  UMFANG DER QUELLCODE-VERPFLICHTUNG. Der nach Abschnitt 8.2
-        bereitzustellende Quellcode ist der Quellcode, der notwendig
-        ist, um den verbreiteten Objektcode zu reproduzieren. Sie sind
-        nicht verpflichtet, proprietäre Algorithmen, Geschäftsgeheimnisse
-        oder Quellcode offenzulegen, der in keinem Zusammenhang mit der
-        Software oder Ihrem Beitrag steht.
+   8.3  KEINE QUELLCODE-VERPFLICHTUNG. Dieser Abschnitt 8 verpflichtet
+        Sie nicht, Quellcode zu verbreiten. Das synthetische Copyleft
+        von SySL beschränkt sich auf die Wahrung der
+        KI-Offenlegungskette. Sie dürfen Abgeleitete Werke
+        ausschließlich in Objektcodeform verbreiten, sofern die
+        Offenlegungspflichten nach den Abschnitten 2 und 8.2 erfüllt
+        sind. Dies ist eine bewusste Designentscheidung: Das Copyleft
+        von SySL betrifft Transparenz, nicht die Quellcode-Teilung.
 
-   8.4  ERFÜLLUNG DURCH ÖFFENTLICHES REPOSITORY. Die Verpflichtungen
-        nach Abschnitt 8.2(b) gelten als erfüllt, wenn Sie den
-        zugehörigen Quellcode über eine allgemein anerkannte
-        Code-Hosting-Plattform (wie GitHub, GitLab oder vergleichbare
-        Dienste) öffentlich zugänglich machen und die Repository-URL
-        im verbreiteten Objektcode angeben.
+   8.4  ERFÜLLUNG DURCH ÖFFENTLICHE ZUGÄNGLICHKEIT. Die Verpflichtungen
+        nach Abschnitt 8.2(b) gelten als erfüllt, wenn Sie die
+        AI_DISCLOSURE-Datei öffentlich zugänglich machen (beispielsweise
+        über eine allgemein anerkannte Code-Hosting-Plattform wie
+        GitHub, GitLab oder vergleichbare Dienste, oder über eine
+        öffentlich zugängliche Website) und die Zugriffs-URL im
+        verbreiteten Objektcode oder seiner Begleitdokumentation
+        angeben.
 
 9. MARKEN
 

@@ -243,31 +243,32 @@ devemos declarar isso.
 
    8.2  DISTRIBUIÇÃO DE CÓDIGO-OBJETO. Se Você Distribuir o Software ou
         um Trabalho Derivado exclusivamente na forma de código-objeto ou
-        executável, Você deve incluir, com a Distribuição, uma das
-        seguintes opções:
+        executável, Você deve incluir, com a Distribuição:
 
-        (a) o código-fonte correspondente completo (conforme definido
-            pela Licença Pública Geral GNU, Versão 3), incluindo todas
-            as divulgações de geração por IA exigidas pela Seção 2; ou
+        (a) o aviso de divulgação de geração por IA exigido pela Seção
+            2.1, visível para os usuários finais; e
 
-        (b) uma oferta por escrito, válida por pelo menos três anos, para
-            fornecer a qualquer terceiro o código-fonte correspondente
-            completo, incluindo todas as divulgações de geração por IA,
-            por um valor não superior ao Seu custo razoável para realizar
-            fisicamente a distribuição do código-fonte.
+        (b) uma cópia do arquivo AI_DISCLOSURE original (ou documentação
+            equivalente) a partir do qual os usuários finais possam
+            determinar quais partes do Software são Geradas por IA e
+            quais Modelos foram utilizados.
 
-   8.3  ESCOPO DA OBRIGAÇÃO DE CÓDIGO-FONTE. O código-fonte a ser
-        fornecido nos termos da Seção 8.2 é o código-fonte necessário
-        para reproduzir o código-objeto Distribuído. Você não é obrigado
-        a divulgar algoritmos proprietários, segredos comerciais ou
-        código-fonte não relacionado ao Software ou à Sua Contribuição.
+   8.3  AUSÊNCIA DE OBRIGAÇÃO DE CÓDIGO-FONTE. Esta Seção 8 não exige
+        que Você distribua código-fonte. O copyleft sintético da SySL
+        limita-se a preservar a cadeia de divulgação de IA. Você pode
+        distribuir Trabalhos Derivados exclusivamente na forma de
+        código-objeto, desde que os requisitos de divulgação das Seções
+        2 e 8.2 sejam cumpridos. Esta é uma escolha de projeto
+        deliberada: o copyleft da SySL diz respeito à transparência, e
+        não ao compartilhamento de código-fonte.
 
-   8.4  CUMPRIMENTO POR MEIO DE REPOSITÓRIO PÚBLICO. As obrigações da
-        Seção 8.2(b) são satisfeitas se Você disponibilizar o
-        código-fonte correspondente publicamente por meio de uma
-        plataforma de hospedagem de código geralmente reconhecida
-        (como GitHub, GitLab ou equivalente) e incluir a URL do
-        repositório no código-objeto Distribuído.
+   8.4  CUMPRIMENTO POR MEIO DE ACESSIBILIDADE PÚBLICA. As obrigações da
+        Seção 8.2(b) são satisfeitas se Você tornar o arquivo
+        AI_DISCLOSURE publicamente acessível (por exemplo, por meio de
+        uma plataforma de hospedagem de código geralmente reconhecida,
+        como GitHub, GitLab ou equivalente, ou por meio de um site
+        publicamente acessível) e incluir a URL de acesso no código-objeto
+        Distribuído ou em sua documentação acompanhante.
 
 9. MARCAS REGISTRADAS
 

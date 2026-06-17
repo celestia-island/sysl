@@ -29,7 +29,8 @@ SySL establishes three new norms for the AI era:
      status does not create uncertainty about permitted use.
 
   3. RISK ACKNOWLEDGMENT. AI-generated code exhibits failure modes
-     distinct from human-written code. Users accept this explicitly.
+     distinct from human-written code. Users accept these risks
+     by using the Software under this license.
 
 These norms are not restrictions on freedom. They are the foundation
 of a new social contract: we may build software with AI, but we
@@ -221,36 +222,38 @@ must say so.
 
    8.2  OBJECT DISTRIBUTION. If You Distribute the Software or a
         Derivative Work solely in object code or executable form,
-        You must include, with the Distribution, either:
+        You must include, with the Distribution:
 
-        (a) the complete corresponding source code (as defined by
-            the GNU General Public License, Version 3), including
-            all AI-generation disclosures required by Section 2; or
+        (a) the AI-generation disclosure notice required by
+            Section 2.1, visible to end users; and
 
-        (b) a written offer, valid for at least three years, to
-            provide any third party with the complete corresponding
-            source code, including all AI-generation disclosures,
-            for a charge no more than Your reasonable cost of
-            physically performing source distribution.
+        (b) a copy of the original AI_DISCLOSURE file (or equivalent
+            documentation) from which end users can determine which
+            portions of the Software are AI-Generated and which
+            Models were used.
 
-   8.3  SCOPE OF SOURCE OBLIGATION. The source code to be provided
-        under Section 8.2 is the source code needed to reproduce the
-        Distributed object code. You are not required to disclose
-        proprietary algorithms, trade secrets, or source code that
-        is unrelated to the Software or Your Contribution.
+   8.3  NO SOURCE CODE OBLIGATION. This Section 8 does not require
+        You to distribute source code. The synthetic copyleft of SySL
+        is limited to preserving the AI disclosure chain. You may
+        distribute Derivative Works solely in object code form,
+        provided the disclosure requirements of Sections 2 and 8.2
+        are satisfied. This is a deliberate design choice: SySL's
+        copyleft concerns transparency, not source-sharing.
 
-   8.4  COMPLIANCE THROUGH PUBLIC REPOSITORY. The obligations of
-        Section 8.2(b) are satisfied if You make the corresponding
-        source code publicly available through a generally recognized
-        code hosting platform (such as GitHub, GitLab, or equivalent)
-        and include the repository URL in the Distributed object code.
+   8.4  COMPLIANCE THROUGH PUBLIC ACCESSIBILITY. The obligations of
+        Section 8.2(b) are satisfied if You make the AI_DISCLOSURE
+        file publicly accessible (for example, through a generally
+        recognized code hosting platform such as GitHub, GitLab, or
+        equivalent, or through a publicly accessible website) and
+        include the access URL in the Distributed object code or its
+        accompanying documentation.
 
 9. TRADEMARKS
 
-    This license does not grant permission to use the trade names,
-    trademarks, service marks, or product names of the Author, except
-    as required for reasonable and customary use in describing the
-    origin of the Software.
+   This license does not grant permission to use the trade names,
+   trademarks, service marks, or product names of the Author, except
+   as required for reasonable and customary use in describing the
+   origin of the Software.
 
 10. COMPATIBILITY
 

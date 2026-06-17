@@ -15,7 +15,7 @@
 | **Liability waiver** | Standard + AI-specific | Standard | Standard | Standard | Standard |
 | **OSI-approved** | No (new category) | Yes | Yes | Yes | No |
 | **FSF-free** | Yes (four freedoms) | Yes | Yes | Yes | No |
-| **Change date** | None (perpetual) | N/A | N/A | N/A | Converts to GPLv2 |
+| **Change date** | None (perpetual) | N/A | N/A | N/A | Converts to designated license |
 
 ## Detailed Analysis
 

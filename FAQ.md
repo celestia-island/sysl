@@ -28,7 +28,9 @@ Yes, provided you satisfy the disclosure requirements (Section 2) and the recipr
 
 - Keep the AI disclosure notice in your documentation.
 - If distributing source code, maintain AI generation disclosures at the file level.
-- If distributing only binaries, provide the corresponding source code (with disclosures) or a written offer to do so.
+- If distributing only binaries, include the AI disclosure notice and a copy of (or link to) the AI_DISCLOSURE file.
+
+You are **not** required to distribute your source code. SySL's copyleft is limited to preserving the AI disclosure chain.
 
 ### Can I combine SySL code with Apache-2.0 code?
 
@@ -40,7 +42,7 @@ Compatibility with GPL has not been formally analyzed. Both licenses have copyle
 
 ### Do I need to disclose AI usage if I only use the software internally?
 
-The disclosure requirements in Section 2 apply when you **distribute** the software. Internal use within a single organization does not constitute distribution under SySL. However, if you deploy the software as a service accessible to third parties, Section 8.2 may apply.
+No. The disclosure requirements in Section 2 apply when you **distribute** the software (provide a copy to a third party). Internal use within a single organization, including SaaS deployment where you provide a service rather than a copy of the software, does not constitute distribution under SySL.
 
 ### What counts as "AI-Generated"?
 
@@ -67,9 +69,9 @@ The Author is the human or humans who directed the AI generation process: archit
 
 ### Why is governing law set to Japan?
 
-The SySL author is based in a jurisdiction where Japanese law provides a stable and predictable framework for contract-based software licensing. The choice of Japan as governing law is a deliberate one: Japan has a well-developed body of contract law, a legal system that respects party autonomy, and is neutral with respect to the major jurisdictions (US, EU, China) where SySL is likely to be used.
+Japan was chosen as a neutral governing law for several reasons: Japan has a well-developed body of contract law, a legal system that respects party autonomy in commercial agreements, and is jurisdictionally neutral with respect to the major regions (US, EU, China) where SySL is likely to be used. Additionally, Japan's copyright law has addressed AI-generated works in ways that make the contract-basis approach particularly clear and enforceable.
 
-Users in other jurisdictions retain their local consumer and data protection rights.
+Users in other jurisdictions retain their local consumer protection rights.
 
 ### What if I disagree with the AI disclosure requirement?
 
