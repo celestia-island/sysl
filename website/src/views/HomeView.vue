@@ -91,9 +91,18 @@ interface RenderLine {
   type: "normal" | "rule" | "center" | "blank";
 }
 
-const renderLines = computed<RenderLine[]>(() => {
+interface RenderBlock {
+  /** Lines belonging to this block */
+  lines: RenderLine[];
+  /** Block type: "rule", "center", "blank", or "para" (consecutive normal lines) */
+  kind: "rule" | "center" | "blank" | "para";
+  /** Text with \n between lines (for para blocks) */
+  text?: string;
+}
+
+const renderBlocks = computed<RenderBlock[]>(() => {
   const raw = activeLang.value.text.split("\n");
-  return raw.map((line) => {
+  const lines = raw.map((line): RenderLine => {
     if (line.length === 0) return { text: "", type: "blank" as const };
     const t = line.trim();
     if (t.length >= 10 && /^[-=─━]+$/.test(t)) return { text: t, type: "rule" as const };
@@ -101,6 +110,46 @@ const renderLines = computed<RenderLine[]>(() => {
     if (lead >= 15) return { text: t, type: "center" as const };
     return { text: line, type: "normal" as const };
   });
+
+  const blocks: RenderBlock[] = [];
+  let i = 0;
+  while (i < lines.length) {
+    const line = lines[i];
+
+    if (line.type === "blank") {
+      blocks.push({ lines: [line], kind: "blank" });
+      i++;
+      continue;
+    }
+    if (line.type === "rule") {
+      blocks.push({ lines: [line], kind: "rule" });
+      i++;
+      continue;
+    }
+    if (line.type === "center") {
+      // Collect consecutive centered lines
+      const group: RenderLine[] = [];
+      while (i < lines.length && lines[i].type === "center") {
+        group.push(lines[i]);
+        i++;
+      }
+      blocks.push({ lines: group, kind: "center" });
+      continue;
+    }
+    // normal: collect consecutive normal lines into one paragraph
+    const group: RenderLine[] = [];
+    while (i < lines.length && lines[i].type === "normal") {
+      group.push(lines[i]);
+      i++;
+    }
+    blocks.push({
+      lines: group,
+      kind: "para",
+      text: group.map((l) => l.text).join("\n"),
+    });
+  }
+
+  return blocks;
 });
 </script>
 
@@ -184,12 +233,14 @@ const renderLines = computed<RenderLine[]>(() => {
         :dir="activeLang.rtl ? 'rtl' : 'ltr'"
         :lang="activeLang.code"
       >
-        <div
-          v-for="(rl, i) in renderLines"
-          :key="i"
-          class="license-line"
-          :class="'license-line--' + rl.type"
-        >{{ rl.type === "blank" ? "\u00A0" : rl.text }}</div>
+        <template v-for="(block, bi) in renderBlocks" :key="bi">
+          <div v-if="block.kind === 'blank'" class="lb-blank" aria-hidden="true">&nbsp;</div>
+          <div v-else-if="block.kind === 'rule'" class="lb-rule" aria-hidden="true">{{ block.lines[0].text }}</div>
+          <div v-else-if="block.kind === 'center'" class="lb-center" aria-hidden="false">
+            <div v-for="(cl, ci) in block.lines" :key="ci">{{ cl.text }}</div>
+          </div>
+          <p v-else class="lb-para">{{ block.text }}</p>
+        </template>
       </div>
     </div>
   </div>
@@ -336,36 +387,48 @@ const renderLines = computed<RenderLine[]>(() => {
   color: var(--text-primary);
 }
 
-.license-line {
+// --- Paragraph blocks ---
+.lb-para {
   white-space: pre-wrap;
   word-wrap: break-word;
-  min-height: 1em;
+  margin: 0 0 var(--sp-4);
+  text-indent: 0;
 
-  &--center {
-    text-align: center;
-    white-space: pre-wrap;
-  }
-
-  &--rule {
-    color: transparent;
-    border-bottom: 1px solid var(--border-strong);
-    height: 0;
-    overflow: hidden;
-    margin: var(--sp-4) 0;
-    user-select: all;
-  }
-
-  &--blank {
-    min-height: 1em;
-  }
+  &:last-child { margin-bottom: 0; }
 }
 
-.license-text--rtl .license-line {
-  text-align: right;
-  direction: rtl;
+// Blank line spacing (structural, collapsed to 0 – paragraphs own their margins)
+.lb-blank {
+  height: 0;
+}
 
-  &--center {
+// Section rule (separator line)
+.lb-rule {
+  color: transparent;
+  border-bottom: 1px solid var(--border-strong);
+  height: 0;
+  overflow: hidden;
+  margin: var(--sp-5) 0;
+  user-select: all;
+}
+
+// Centered title block
+.lb-center {
+  text-align: center;
+  white-space: pre-wrap;
+  margin: var(--sp-6) 0 var(--sp-2);
+  font-size: var(--text-base);
+  font-weight: 600;
+}
+
+.license-text--rtl {
+  .lb-para {
+    text-align: right;
+    direction: rtl;
+  }
+  .lb-center {
     text-align: center;
+    direction: rtl;
   }
 }
 
@@ -406,11 +469,9 @@ const renderLines = computed<RenderLine[]>(() => {
     color: #000;
   }
 
-  .license-line {
-    &--rule {
-      color: transparent;
-      border-bottom: 1px solid #000;
-    }
+  .lb-rule {
+    color: transparent;
+    border-bottom: 1px solid #000;
   }
 }
 </style>
