@@ -47,7 +47,7 @@ Sí. SySL está diseñada para el licenciamiento en capas. Un licenciante puede 
 - **BUSL-1.1**: protege el uso comercial durante un período de desarrollo y luego se convierte en la Licencia de Cambio especificada.
 - **SySL**: establece la norma de transparencia de que la generación por IA debe ser divulgada.
 
-Los usuarios pueden elegir qué licencia seguir. Consulte la Sección 10.3 de la licencia para la disposición formal sobre licenciamiento en capas.
+Los usuarios pueden elegir qué licencia seguir. Consulte la Sección 11.3 de la licencia para la disposición formal sobre licenciamiento en capas.
 
 **Importante**: al utilizar BUSL junto con SySL para software generado por IA, la Licencia de Cambio de BUSL debe configurarse como SySL (no Apache-2.0 ni MIT). Si BUSL se convierte en una licencia sin obligaciones de divulgación (como Apache-2.0), los destinatarios del código posterior a la fecha de cambio pueden eliminar la divulgación de IA, lo que frustra el propósito de SySL. Establecer SySL como Licencia de Cambio garantiza que la norma de transparencia subsista tras el período de no competencia de BUSL.
 
@@ -117,7 +117,7 @@ PROPORCIÓN DE GENERACIÓN POR IA:
 
 Puede modificar el texto de la licencia para su propio uso, pero no debe llamar a la versión modificada "la Licencia de Código Sintético" ni "SySL" sin permiso. Si crea una licencia derivada, asígnele un nombre distinto.
 
-El Autor puede publicar versiones revisadas oficiales de SySL. Consulte la Sección 15 de la licencia.
+El Autor puede publicar versiones revisadas oficiales de SySL. Consulte la Sección 16 de la licencia.
 
 ## Adopción
 

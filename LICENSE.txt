@@ -254,7 +254,7 @@ must say so.
         (e) CODE THAT VIOLATES THIRD-PARTY INTELLECTUAL PROPERTY
             OWING TO THE MODEL'S TRAINING DATA (SEE ALSO SECTION 9.4,
             NO IP LAUNDERING); AND
-         (f) GENERATED CODE THAT REPLICATES VULNERABLE CODING PATTERNS
+        (f) GENERATED CODE THAT REPLICATES VULNERABLE CODING PATTERNS
              FROM TRAINING DATA, PRODUCING BUGS THAT ARE PLAUSIBLE-
              APPEARING BUT INSECURE IN WAYS ATYPICAL OF HUMAN ERROR.
 
@@ -428,7 +428,7 @@ must say so.
 14. GOVERNING LAW AND DISPUTE RESOLUTION
 
    14.1 This license shall be governed by and construed in accordance
-         with the laws of Japan.
+        with the laws of Japan.
 
    14.2 For the avoidance of doubt, where the Software is AI-Generated
         and the copyright status of such code is uncertain under the
@@ -444,8 +444,8 @@ must say so.
 15. OFFICIAL TEXT AND TRANSLATIONS
 
    15.1 The authoritative text of this license is the English language
-         version maintained in the official SySL repository at
-         <https://github.com/celestia-island/sysl>.
+        version maintained in the official SySL repository at
+        <https://github.com/celestia-island/sysl>.
 
    15.2 Translations of this license into other languages are provided
         for informational purposes only. In the event of any conflict

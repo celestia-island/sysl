@@ -45,7 +45,7 @@ Ja. SySL ist für gestufte Lizenzierung konzipiert. Ein Lizenzgeber kann Softwar
 - **BUSL-1.1**: schützt die kommerzielle Nutzung während eines Entwicklungszeitraums und wandelt sich dann in die angegebene Change License um.
 - **SySL**: etabliert die Transparenznorm, dass KI-Generierung offengelegt werden muss.
 
-Nutzer können wählen, welcher Lizenz sie folgen. Siehe Abschnitt 10.3 der Lizenz für die formelle Bestimmung zur gestuften Lizenzierung.
+Nutzer können wählen, welcher Lizenz sie folgen. Siehe Abschnitt 11.3 der Lizenz für die formelle Bestimmung zur gestuften Lizenzierung.
 
 **Wichtig**: Wenn BUSL neben SySL für KI-generierte Software verwendet wird, sollte die BUSL-Change-License auf SySL (nicht Apache-2.0 oder MIT) festgelegt werden. Würde BUSL in eine Lizenz ohne Offenlegungspflichten (wie Apache-2.0) umgewandelt, könnten Empfänger des Codes nach dem Änderungsdatum die KI-Offenlegung entfernen — was den Zweck von SySL zunichtemachen würde. Die Festlegung der Change License auf SySL stellt sicher, dass die Transparenznorm die BUSL-Wettbewerbsverbotsfrist überdauert.
 
@@ -115,7 +115,7 @@ AI GENERATION PROPORTION:
 
 Sie dürfen den Lizenztext für Ihren eigenen Gebrauch verändern, aber Sie dürfen die veränderte Fassung nicht ohne Genehmigung als „the Synthetic Source License" oder „SySL" bezeichnen. Wenn Sie eine abgeleitete Lizenz erstellen, geben Sie ihr einen eigenständigen Namen.
 
-Der Autor kann offizielle überarbeitete Fassungen der SySL veröffentlichen. Siehe Abschnitt 15 der Lizenz.
+Der Autor kann offizielle überarbeitete Fassungen der SySL veröffentlichen. Siehe Abschnitt 16 der Lizenz.
 
 ## Übernahme
 

@@ -47,7 +47,7 @@ Oui. La SySL est conçue pour la superposition de licences. Le concédant peut p
 - **BUSL-1.1** : protège l'usage commercial pendant une période de développement, puis bascule vers la Licence de Changement spécifiée.
 - **SySL** : établit la norme de transparence selon laquelle la génération par IA doit être divulguée.
 
-Les utilisateurs peuvent choisir la licence à respecter. Voir la Section 10.3 de la licence pour la disposition formelle relative aux licences superposées.
+Les utilisateurs peuvent choisir la licence à respecter. Voir la Section 11.3 de la licence pour la disposition formelle relative aux licences superposées.
 
 **Important** : lorsque BUSL est utilisée parallèlement à la SySL pour un logiciel Généré par IA, la Licence de Changement BUSL doit être fixée à SySL (et non Apache-2.0 ou MIT). Si BUSL bascule vers une licence sans obligation de divulgation (comme Apache-2.0), les destinataires du code après la date de changement peuvent supprimer la divulgation de l'IA — ce qui va à l'encontre de l'objectif de la SySL. Fixer la Licence de Changement à SySL garantit que la norme de transparence survit à la période de non-concurrence BUSL.
 
@@ -117,7 +117,7 @@ PROPORTION DE GÉNÉRATION PAR IA :
 
 Vous pouvez modifier le texte de la licence pour votre propre usage, mais vous ne devez pas appeler la version modifiée « Synthetic Source License » ou « SySL » sans autorisation. Si vous créez une licence dérivée, donnez-lui un nom distinct.
 
-L'Auteur peut publier des versions révisées officielles de la SySL. Voir la Section 15 de la licence.
+L'Auteur peut publier des versions révisées officielles de la SySL. Voir la Section 16 de la licence.
 
 ## Adoption
 
