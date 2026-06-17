@@ -255,8 +255,8 @@ must say so.
             OWING TO THE MODEL'S TRAINING DATA (SEE ALSO SECTION 9.4,
             NO IP LAUNDERING); AND
         (f) GENERATED CODE THAT REPLICATES VULNERABLE CODING PATTERNS
-             FROM TRAINING DATA, PRODUCING BUGS THAT ARE PLAUSIBLE-
-             APPEARING BUT INSECURE IN WAYS ATYPICAL OF HUMAN ERROR.
+            FROM TRAINING DATA, PRODUCING BUGS THAT ARE PLAUSIBLE-
+            APPEARING BUT INSECURE IN WAYS ATYPICAL OF HUMAN ERROR.
 
    6.3  The Author makes no warranty that the Software will meet Your
         requirements, operate uninterrupted, or be error-free, and

@@ -151,7 +151,7 @@ debemos decirlo.
         bajo Apache-2.0, siempre que los requisitos de divulgación de
         la Sección 2 se cumplan de forma independiente.
 
-     3.3  TERMINACIÓN. Si Usted inicia un litigio de patentes alegando
+   3.3  TERMINACIÓN. Si Usted inicia un litigio de patentes alegando
           que el Software infringe alguna patente, todos los derechos
           que esta licencia le otorga a Usted terminarán.
 
@@ -403,11 +403,11 @@ debemos decirlo.
          combinada. Quien desee publicar Software Generado por IA
          sin obligaciones de divulgación no debe utilizar SySL.
 
-    11.2 La compatibilidad con otras licencias se evaluará caso por
+   11.2 La compatibilidad con otras licencias se evaluará caso por
          caso. El Autor podrá publicar determinaciones de compatibilidad
          para licencias adicionales en <https://sysl.celestia.world>.
 
-    11.3 LICENCIAMIENTO EN CAPAS. La SySL establece normas de
+   11.3 LICENCIAMIENTO EN CAPAS. La SySL establece normas de
          transparencia pero no impone restricciones comerciales,
          períodos de no competencia ni mecanismos de cambio de
          fecha. El Licenciante puede ofrecer el Software bajo SySL

@@ -163,7 +163,7 @@ aber wir müssen dazu stehen.
         Apache-2.0 verbreitet werden, sofern die Offenlegungspflichten
         des Abschnitts 2 unabhängig davon erfüllt werden.
 
-    3.3  BEENDIGUNG. Wenn Sie ein Patentrechtsstreitverfahren
+   3.3  BEENDIGUNG. Wenn Sie ein Patentrechtsstreitverfahren
          einleiten, in dem Sie geltend machen, dass die Software ein
          Patent verletzt, enden alle Ihnen unter dieser Lizenz
           gewährten Rechte.
@@ -412,7 +412,7 @@ aber wir müssen dazu stehen.
 
 11. KOMPATIBILITÄT
 
-    11.1 Die SySL ist so konzipiert, dass sie mit der Apache License,
+   11.1 Die SySL ist so konzipiert, dass sie mit der Apache License,
          Version 2.0, und der MIT License kompatibel ist. Software, die
          unter der SySL lizenziert ist, darf mit Software kombiniert
          werden, die unter Apache-2.0 oder MIT lizenziert ist, und das
@@ -427,12 +427,12 @@ aber wir müssen dazu stehen.
          Software ohne Offenlegungspflichten veröffentlichen möchte,
          sollte SySL nicht verwenden.
 
-    11.2 Die Kompatibilität mit anderen Lizenzen ist im Einzelfall zu
+   11.2 Die Kompatibilität mit anderen Lizenzen ist im Einzelfall zu
          prüfen. Der Autor kann Kompatibilitätsfeststellungen für
          weitere Lizenzen unter <https://sysl.celestia.world>
          veröffentlichen.
 
-    11.3 GESTUFTE LIZENZIERUNG. Die SySL etabliert
+   11.3 GESTUFTE LIZENZIERUNG. Die SySL etabliert
          Transparenznormen, erlegt jedoch keine kommerziellen
          Beschränkungen, keine Wettbewerbsverbotsfristen und keinen
          Änderungsdatum-Mechanismus auf. Ein Lizenzgeber kann die

@@ -154,7 +154,7 @@ devemos declarar isso.
         sob Apache-2.0, desde que os requisitos de divulgação da Seção 2
         sejam cumpridos de forma independente.
 
-    3.3  RESCISÃO. Se Você iniciar um litígio de patente alegando
+   3.3  RESCISÃO. Se Você iniciar um litígio de patente alegando
          que o Software infringe qualquer patente, todos os direitos
          concedidos a Você sob esta licença serão rescindidos.
 
@@ -382,7 +382,7 @@ devemos declarar isso.
 
 11. COMPATIBILIDADE
 
-    11.1 A SySL foi projetada para ser compatível com a Licença Apache,
+   11.1 A SySL foi projetada para ser compatível com a Licença Apache,
          Versão 2.0, e com a Licença MIT. Software licenciado sob a
          SySL pode ser combinado com software licenciado sob Apache-2.0
          ou MIT, e o trabalho combinado pode ser Distribuído sob os
@@ -396,11 +396,11 @@ devemos declarar isso.
          Licenciante que deseje disponibilizar Software Gerado por IA
          sem obrigações de divulgação não deve utilizar a SySL.
 
-    11.2 A compatibilidade com outras licenças deve ser avaliada caso a
+   11.2 A compatibilidade com outras licenças deve ser avaliada caso a
          caso. O Autor poderá publicar determinações de compatibilidade
          para licenças adicionais em <https://sysl.celestia.world>.
 
-    11.3 LICENCIAMENTO EM CAMADAS. A SySL estabelece normas de
+   11.3 LICENCIAMENTO EM CAMADAS. A SySL estabelece normas de
          transparência, mas não impõe restrições comerciais, períodos
          de não concorrência nem mecanismo de mudança de data. Um
          Licenciante pode oferecer o Software sob a SySL juntamente
