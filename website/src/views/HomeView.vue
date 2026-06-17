@@ -380,8 +380,8 @@ const renderBlocks = computed<RenderBlock[]>(() => {
 }
 
 .license-text {
-  flex: 0 1 auto;
-  max-width: 100%;
+  max-width: var(--content-max);
+  width: 100%;
   font-size: var(--text-sm);
   line-height: 1.9;
   color: var(--text-primary);
@@ -389,8 +389,6 @@ const renderBlocks = computed<RenderBlock[]>(() => {
 
 // --- Paragraph blocks ---
 .lb-para {
-  white-space: pre-wrap;
-  word-wrap: break-word;
   margin: 0 0 var(--sp-4);
   text-indent: 0;
 
@@ -415,7 +413,6 @@ const renderBlocks = computed<RenderBlock[]>(() => {
 // Centered title block
 .lb-center {
   text-align: center;
-  white-space: pre-wrap;
   margin: var(--sp-6) 0 var(--sp-2);
   font-size: var(--text-base);
   font-weight: 600;
