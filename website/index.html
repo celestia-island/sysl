@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Synthetic Source License (SySL) — The first software license designed for code that is 100% AI-generated." />
+    <meta name="theme-color" content="#6C3CE0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>SySL — Synthetic Source License</title>
+    <script>
+      (function () {
+        var stored = localStorage.getItem("sysl-theme");
+        var prefersLight = window.matchMedia("(prefers-color-scheme: light)").matches;
+        var theme = stored || (prefersLight ? "light" : "dark");
+        document.documentElement.setAttribute("data-theme", theme);
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
