@@ -26,7 +26,7 @@ SySL fills this vacuum. It operates as both a copyright license (if copyright ex
 
 ## Why does this matter?
 
-In 2026, AI models routinely generate entire codebases. The [](https://github.com/celestia-island/) project---a multi-agent AI orchestration platform---is a 100% AI-generated codebase comprising over 850,000 lines of Rust, 56 crates, and 2,200+ tests. It took one person 4.3 months using 100 billion tokens of AI generation.
+In 2026, AI models routinely generate entire codebases. Real-world projects now exist where AI generates 100% of the source code—entire applications, libraries, and systems, built by individuals directing AI models rather than writing code by hand.
 
 This is not a hypothetical. AI-generated software is here. The legal framework needs to catch up.
 
@@ -54,9 +54,9 @@ To use SySL for your project:
 1. **File patents first** (strongly recommended): if your AI-directed software contains novel, non-obvious inventions, file patent applications *before* publishing. The patent grant in §4 only has legal force if you hold issued patents. Without patents, §4 is a gentleman's agreement — still useful as a norm, but not legally enforceable. See [§4.3–4.5](./LICENSE.txt) for details.
 2. Copy `LICENSE.txt` into your repository root.
 3. Create an `AI_DISCLOSURE` (or `AI_DISCLOSURE.md`) file describing:
-   - Which AI models were used
-   - Approximate tokens consumed
-   - The proportion of AI-generated vs. human-written code
+ - Which AI models were used
+ - Approximate tokens consumed
+ - The proportion of AI-generated vs. human-written code
 4. Add a badge to your README:
 
 ```markdown
@@ -100,18 +100,6 @@ SySL is available in the following languages. The English version is legally bin
 | Deutsch | [README.md](./i18n/de/README.md) | [LICENSE.txt](./i18n/de/LICENSE.txt) | [FAQ.md](./i18n/de/FAQ.md) | [COMPARISON.md](./i18n/de/COMPARISON.md) |
 | Português | [README.md](./i18n/pt/README.md) | [LICENSE.txt](./i18n/pt/LICENSE.txt) | [FAQ.md](./i18n/pt/FAQ.md) | [COMPARISON.md](./i18n/pt/COMPARISON.md) |
 | العربية | [README.md](./i18n/ar/README.md) | [LICENSE.txt](./i18n/ar/LICENSE.txt) | [FAQ.md](./i18n/ar/FAQ.md) | [COMPARISON.md](./i18n/ar/COMPARISON.md) |
-
-## Adopters
-
-Projects that have adopted SySL:
-
-| Project | Description | Since |
-|---------|-------------|-------|
-| [](https://github.com/celestia-island/) | Multi-agent AI orchestration platform | 2026-06 |
-| [shittim-chest](https://github.com/celestia-island/shittim-chest) | AI platform web shell | 2026-06 |
-| [evernight](https://github.com/celestia-island/evernight) | Cross-platform remote control library | 2026-06 |
-
-*To add your project, submit a PR to [ADOPTERS.md](./ADOPTERS.md).*
 
 ## Philosophy
 

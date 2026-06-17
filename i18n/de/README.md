@@ -26,7 +26,7 @@ SySL füllt dieses Vakuum. Sie fungiert sowohl als urheberrechtliche Lizenz (wen
 
 ## Warum ist das von Bedeutung?
 
-Im Jahr 2026 generieren KI-Modelle routinemäßig gesamte Codebasen. Das Projekt [](https://github.com/celestia-island/) — eine Multi-Agent-KI-Orchestrierungsplattform — ist eine zu 100 % KI-generierte Codebasis mit über 850.000 Zeilen Rust, 56 Crates und über 2.200 Tests. Eine einzelne Person hat in 4,3 Monaten unter Verwendung von 100 Milliarden Token KI-Generierung daran gearbeitet.
+Im Jahr 2026 generieren KI-Modelle routinemäßig gesamte Codebasen. Es gibt bereits reale Projekte, bei denen KI 100 % des Quellcodes generiert—komplette Anwendungen, Bibliotheken und Systeme, die von Personen erstellt werden, die KI-Modelle steuern, anstatt Code von Hand zu schreiben.
 
 Das ist keine Hypothese. KI-generierte Software ist Realität. Der rechtliche Rahmen muss aufholen.
 
@@ -106,11 +106,10 @@ Projekte, die SySL übernommen haben:
 
 | Projekt | Beschreibung | Seit |
 |---------|-------------|------|
-| [](https://github.com/celestia-island/) | Multi-Agent-KI-Orchestrierungsplattform | 2026-06 |
+|  | Multi-Agent-KI-Orchestrierungsplattform | 2026-06 |
 | [shittim-chest](https://github.com/celestia-island/shittim-chest) | KI-Plattform-Webshell | 2026-06 |
 | [evernight](https://github.com/celestia-island/evernight) | Plattformübergreifende Fernsteuerungsbibliothek | 2026-06 |
 
-*Um Ihr Projekt hinzuzufügen, reichen Sie einen PR zu [ADOPTERS.md](./ADOPTERS.md) ein.*
 
 ## Philosophie
 

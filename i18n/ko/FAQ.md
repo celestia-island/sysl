@@ -121,8 +121,5 @@ AI 생성 비율:
 
 ### 누가 SySL을 사용하고 있나요?
 
-현재 목록은 [ADOPTERS.md](./ADOPTERS.md)를 참조하십시오. 최초의 도입자는 [](https://github.com/celestia-island/) 생태계 프로젝트들입니다.
-
 ### 제 프로젝트를 도입자 목록에 추가하려면 어떻게 하나요?
 
-프로젝트 이름, 간략한 설명 및 도입 날짜를 포함하여 [ADOPTERS.md](./ADOPTERS.md)에 풀 리퀘스트를 제출하십시오.

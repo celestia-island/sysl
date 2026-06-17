@@ -100,7 +100,7 @@ However, enforceability varies by clause:
 
 ### Should I file patents before using SySL?
 
-**Yes, strongly.** This is the single most important practical recommendation for SySL adopters.
+**Yes, strongly.** This is the single most important practical recommendation for SySL users.
 
 The patent grant in Section 4 only has legal force if you hold issued patents covering the Software. If you have no patents, Section 4 is an empty grant — it promises rights that do not exist. Without patents, the patent provisions of SySL operate as a gentleman's agreement: a normative statement of intent with limited legal teeth.
 
@@ -116,7 +116,7 @@ Without this step, SySL still functions as a contract (§5) and a transparency n
 
 It depends on the jurisdiction and the level of human involvement. Key considerations:
 
-- **Inventorship requirement**: most patent systems (US, EU, China, Japan) require that at least one inventor be a natural human person. The DABUS cases (2019–2024) confirmed that an AI system cannot be named as an inventor in these jurisdictions.
+- **Inventorship requirement**: most patent systems (US, EU, China, and other major jurisdictions) require that at least one inventor be a natural human person. The DABUS cases (2019–2024) confirmed that an AI system cannot be named as an inventor in these jurisdictions.
 - **Sufficient human contribution**: if a human designed the architecture, made key technical decisions, and directed the AI to implement specific solutions, the human *may* qualify as an inventor. If the AI autonomously generated the code with minimal human direction, inventorship may fail entirely.
 - **Novelty and non-obviousness**: AI-generated code must still meet standard patentability criteria independently.
 
@@ -147,12 +147,6 @@ The Author is determined in three tiers, depending on who directed the AI genera
 3. **No human involvement**: if no human was involved at any level, the entity that first published the software.
 
 This multi-tier approach acknowledges that AI systems (like 's own agent fleet) may autonomously direct code generation in the future. The definition ensures there is always a legal anchor for the contract.
-
-### Why is governing law set to Japan?
-
-Japan was chosen as a neutral governing law for several reasons: Japan has a well-developed body of contract law, a legal system that respects party autonomy in commercial agreements, and is jurisdictionally neutral with respect to the major regions (US, EU, China) where SySL is likely to be used. Additionally, Japan's copyright law has addressed AI-generated works in ways that make the contract-basis approach particularly clear and enforceable.
-
-The Japan Commercial Arbitration Association (JCAA) conducts proceedings in English upon request; parties do not need Japanese language ability. Users in other jurisdictions retain their local consumer protection rights.
 
 ### How can disclosure claims be verified if source code is not distributed?
 
@@ -191,8 +185,3 @@ The Author may publish official revised versions of SySL. See Section 16 of the 
 
 ### Who is using SySL?
 
-See [ADOPTERS.md](./ADOPTERS.md) for the current list. The first adopters are the [](https://github.com/celestia-island/) ecosystem projects.
-
-### How do I add my project to the adopters list?
-
-Submit a pull request to [ADOPTERS.md](./ADOPTERS.md) with your project name, a short description, and the date of adoption.

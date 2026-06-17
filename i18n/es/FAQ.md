@@ -123,8 +123,5 @@ El Autor puede publicar versiones revisadas oficiales de SySL. Consulte la Secci
 
 ### ¿Quién está usando SySL?
 
-Consulte [ADOPTERS.md](./ADOPTERS.md) para ver la lista actual. Los primeros adoptantes son los proyectos del ecosistema [](https://github.com/celestia-island/).
-
 ### ¿Cómo añado mi proyecto a la lista de adoptantes?
 
-Envíe un pull request a [ADOPTERS.md](./ADOPTERS.md) con el nombre de su proyecto, una breve descripción y la fecha de adopción.

@@ -171,11 +171,11 @@ These norms are not restrictions on freedom. They are the foundation of a new so
 
 14. GOVERNING LAW AND DISPUTE RESOLUTION
 
-   14.1 This license shall be governed by and construed in accordance with the laws of Japan.
+   14.1 This license shall be governed by general principles of international copyright law and construed to provide the broadest protection consistent with the terms herein.
 
    14.2 For the avoidance of doubt, where the Software is AI-Generated and the copyright status of such code is uncertain under the governing law, the provisions of this license shall be given maximum effect under applicable contract law.
 
-   14.3 Any dispute arising out of or in connection with this license shall first be resolved through good-faith negotiation. If negotiation fails, the dispute shall be submitted to binding arbitration in accordance with the rules of the Japan Commercial Arbitration Association.
+   14.3 Any dispute arising out of or in connection with this license shall first be resolved through good-faith negotiation. If negotiation fails, the dispute shall be submitted to binding arbitration under the rules of an internationally recognized arbitration institution to be agreed upon by the parties.
 
 15. OFFICIAL TEXT AND TRANSLATIONS
 

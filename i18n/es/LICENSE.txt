@@ -169,11 +169,11 @@ Estas normas no son restricciones a la libertad. Son los cimientos de un nuevo c
 
 14. LEY APLICABLE Y RESOLUCIÓN DE CONFLICTOS
 
-   14.1 Esta licencia se regirá e interpretará de conformidad con las leyes de Japón.
+   14.1 Esta licencia se regirá por los principios generales del derecho internacional de autor y se interpretará para proporcionar la protección más amplia compatible con los términos herein.
 
    14.2 Para evitar dudas, cuando el Software sea Generado por IA y la situación de los derechos de autor de dicho código sea incierta según la ley aplicable, las disposiciones de esta licencia recibirán el máximo efecto posible bajo la ley contractual aplicable.
 
-   14.3 Cualquier controversia que surja de o en relación con esta licencia se resolverá primero mediante negociación de buena fe. Si la negociación fracasa, la controversia se someterá a arbitraje vinculante de conformidad con las reglas de la Asociación de Arbitraje Comercial de Japón.
+   14.3 la controversia se someterá a arbitraje vinculante conforme a las reglas de una institución de arbitraje internacionalmente reconocida que acuerden las partes.
 
 15. TEXTO OFICIAL Y TRADUCCIONES
 

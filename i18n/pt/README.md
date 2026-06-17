@@ -26,7 +26,8 @@ A SySL preenche esse vácuo. Ela opera tanto como uma licença de direitos autor
 
 ## Por que isso importa?
 
-Em 2026, modelos de IA geram bases de código inteiras rotineiramente. O projeto [](https://github.com/celestia-island/) — uma plataforma multiagente de orquestração de IA — é uma base de código 100% gerada por IA, composta por mais de 850.000 linhas de Rust, 56 crates e mais de 2.200 testes. Levou 4,3 meses para uma pessoa, usando 100 bilhões de tokens de geração por IA.
+
+Em 2026, modelos de IA geram bases de código inteiras rotineiramente. Já existem projetos reais onde a IA gera 100% do código fonte—aplicações, bibliotecas e sistemas completos, construídos por indivíduos que dirigem modelos de IA em vez de escrever código à mão.
 
 Isso não é hipotético. O software gerado por IA chegou. O arcabouço jurídico precisa alcançá-lo.
 
@@ -51,9 +52,9 @@ Para usar a SySL no seu projeto:
 
 1. Copie `LICENSE.txt` para a raiz do seu repositório.
 2. Crie um arquivo `AI_DISCLOSURE` (ou `AI_DISCLOSURE.md`) descrevendo:
-   - Quais modelos de IA foram utilizados
-   - Quantidade aproximada de tokens consumidos
-   - A proporção de código gerado por IA vs. escrito por humanos
+ - Quais modelos de IA foram utilizados
+ - Quantidade aproximada de tokens consumidos
+ - A proporção de código gerado por IA vs. escrito por humanos
 3. Adicione um selo ao seu README:
 
 ```markdown
@@ -99,18 +100,6 @@ SySL is available in the following languages. The English version is legally bin
 | Deutsch | [README.md](../../i18n/de/README.md) | [LICENSE.txt](../../i18n/de/LICENSE.txt) | [FAQ.md](../../i18n/de/FAQ.md) | [COMPARISON.md](../../i18n/de/COMPARISON.md) |
 | Português | [README.md](../../i18n/pt/README.md) | [LICENSE.txt](../../i18n/pt/LICENSE.txt) | [FAQ.md](../../i18n/pt/FAQ.md) | [COMPARISON.md](../../i18n/pt/COMPARISON.md) |
 | العربية | [README.md](../../i18n/ar/README.md) | [LICENSE.txt](../../i18n/ar/LICENSE.txt) | [FAQ.md](../../i18n/ar/FAQ.md) | [COMPARISON.md](../../i18n/ar/COMPARISON.md) |
-
-## Adotantes
-
-Projetos que adotaram a SySL:
-
-| Projeto | Descrição | Desde |
-|---------|-----------|-------|
-| [](https://github.com/celestia-island/) | Plataforma multiagente de orquestração de IA | 2026-06 |
-| [shittim-chest](https://github.com/celestia-island/shittim-chest) | Shell web para plataforma de IA | 2026-06 |
-| [evernight](https://github.com/celestia-island/evernight) | Biblioteca multiplataforma de controle remoto | 2026-06 |
-
-*Para adicionar seu projeto, envie um PR para [ADOPTERS.md](./ADOPTERS.md).*
 
 ## Filosofia
 
