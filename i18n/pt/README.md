@@ -130,6 +130,6 @@ O processo para atualizações de versão da SySL está documentado em [GOVERNAN
 
 ## Contato
 
-- Autor: langyo <langyo.china@gmail.com>
+- Autor: langyo <sysl.contact@celestia.world>
 - Organização: [Celestia Island](https://github.com/celestia-island)
 - Repositório: <https://github.com/celestia-island/sysl>

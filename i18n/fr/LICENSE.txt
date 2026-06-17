@@ -2,7 +2,7 @@
                            Version 1.0
                             Juin 2026
 
-Copyright (c) 2026 langyo <langyo.china@gmail.com>
+Copyright (c) 2026 langyo <sysl.contact@celestia.world>
 
 Il est par la présente accordé l'autorisation de reproduire et de distribuer
 le présent document de licence, non modifié, aux fins de la concession de

@@ -130,6 +130,6 @@ SySL のバージョン更新プロセスについては、[GOVERNANCE.md](./GOV
 
 ## 連絡先
 
-- 著作者: langyo <langyo.china@gmail.com>
+- 著作者: langyo <sysl.contact@celestia.world>
 - 組織: [Celestia Island](https://github.com/celestia-island)
 - リポジトリ: <https://github.com/celestia-island/sysl>

@@ -128,6 +128,6 @@ Bug reports, corrections, and suggestions for future versions of SySL are welcom
 
 ## Contact
 
-- Author: langyo <langyo.china@gmail.com>
+- Author: langyo <sysl.contact@celestia.world>
 - Organization: [Celestia Island](https://github.com/celestia-island)
 - Repository: <https://github.com/celestia-island/sysl>

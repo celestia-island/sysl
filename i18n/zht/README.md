@@ -130,6 +130,6 @@ SySL 版本更新的流程詳見 [GOVERNANCE.md](./GOVERNANCE.md)。
 
 ## 聯絡方式
 
-- 作者：langyo <langyo.china@gmail.com>
+- 作者：langyo <sysl.contact@celestia.world>
 - 組織：[Celestia Island](https://github.com/celestia-island)
 - 儲存庫：<https://github.com/celestia-island/sysl>

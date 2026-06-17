@@ -3,7 +3,7 @@
                            버전 1.0
                           2026년 6월
 
-Copyright (c) 2026 langyo <langyo.china@gmail.com>
+Copyright (c) 2026 langyo <sysl.contact@celestia.world>
 
 본 라이선스 문서 자체를 소프트웨어 라이선스 부여 목적으로 수정 없이
 복제 및 배포할 수 있는 권한을 이로써 부여합니다.

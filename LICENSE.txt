@@ -2,7 +2,7 @@
                           Version 1.0
                          June 2026
 
-Copyright (c) 2026 langyo <langyo.china@gmail.com>
+Copyright (c) 2026 langyo <sysl.contact@celestia.world>
 
 Permission is hereby granted to reproduce and distribute this license
 document itself, unmodified, for the purpose of licensing software.
@@ -177,6 +177,20 @@ must say so.
         apply), such that the permitted uses are as broad as possible
         under any applicable legal theory.
 
+   5.4  CONSIDERATION. The Author's consideration for this contract
+        includes (i) the copyright and patent grants in Sections 3 and
+        4, (ii) the covenant not to assert any claim, in copyright,
+        contract, or otherwise, against You for using the Software in
+        accordance with this license, and (iii) the provision of the
+        original AI_DISCLOSURE documentation. Your consideration is
+        compliance with the disclosure obligations in Section 2. If a
+        court of competent jurisdiction finds that this contract lacks
+        consideration, the Author's disclosure requirements in Section
+        2 shall nevertheless be construed as the Author's publicly
+        stated expectations for the use of the Software. Nothing in
+        this license shall be construed as the Author asserting rights
+        the Author does not possess.
+
 6. DISCLAIMER OF WARRANTY
 
    6.1  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY
@@ -279,8 +293,8 @@ must say so.
         doubt, distributing under Apache-2.0 or MIT does not discharge
         the disclosure obligations — they travel with the SySL-originated
         code regardless of the license wrapper applied to the combined
-        work. A Licensor who wishes to release AI-generated Software
-        without disclosure obligations should not use SySL.
+        work. The SySL is not suitable for Licensors who wish to release
+        AI-generated Software without disclosure obligations.
 
    10.2 Compatibility with other licenses shall be evaluated on a
         case-by-case basis. The Author may publish compatibility

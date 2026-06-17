@@ -2,7 +2,7 @@
                           第 1.0 版
                         2026 年 6 月
 
-版權所有 (c) 2026 langyo <langyo.china@gmail.com>
+版權所有 (c) 2026 langyo <sysl.contact@celestia.world>
 
 特此授予複製及散布本協議文件本身（未經修改）之許可，用於軟體授權之目的。
 

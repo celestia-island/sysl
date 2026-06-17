@@ -130,6 +130,6 @@ SySL 버전 업데이트 절차는 [GOVERNANCE.md](./GOVERNANCE.md)에 문서화
 
 ## 연락처
 
-- 저작자: langyo <langyo.china@gmail.com>
+- 저작자: langyo <sysl.contact@celestia.world>
 - 단체: [Celestia Island](https://github.com/celestia-island)
 - 저장소: <https://github.com/celestia-island/sysl>

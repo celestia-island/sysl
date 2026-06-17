@@ -130,6 +130,6 @@ SySL متوفرة باللغات التالية. النسخة الإنجليزي
 
 ## الاتصال
 
-- المؤلف: langyo <langyo.china@gmail.com>
+- المؤلف: langyo <sysl.contact@celestia.world>
 - المنظمة: [Celestia Island](https://github.com/celestia-island)
 - المستودع: <https://github.com/celestia-island/sysl>
