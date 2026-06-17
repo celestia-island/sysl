@@ -64,7 +64,7 @@ These norms are not restrictions on freedom. They are the foundation of a new so
 
          (b) which Model or Models were used, if any.
 
-         A Contribution that makes only incidental or supplemental use of an AI model (such as minor formatting adjustments or brief text completions) may satisfy the disclosure obligations of this Section through the associated commit message alone, without requiring disclosure in the source file itself.
+         Only the primary AI models on which the Software's main body depends must be disclosed in the LICENSE file (see Section 2.2). Models used by contributors — regardless of the size or nature of their contributions — may instead be disclosed solely in the associated commit messages.
 
    2.4  OBJECT CODE NOTICE. If You distribute the Software or a Derivative Work solely in object code or executable form, You must include the notice required by Section 2.1 in a location visible to end users (such as an "About" dialog or accompanying documentation).
 
@@ -211,7 +211,7 @@ To apply the Synthetic Source License to your work, attach the following boilerp
 
     AI MODEL DISCLOSURE: Complete the MODEL DISCLOSURE section at the end of this LICENSE file. See Section 2.2 of the License.
 
-Complete the MODEL DISCLOSURE section at the end of this LICENSE file. List the primary AI models used to generate the Software. For each model, include the model name, the organization that provides the model, and the vendor's official website URL. No separate file is required. See Section 2.2 of the License for the full requirement.
+Complete the MODEL DISCLOSURE section at the end of this LICENSE file. List the primary AI models on which the Software's main body depends. For each model, include the model name, the organization that provides the model, and the vendor's official website URL. No separate file is required. See Section 2.2 of the License for the full requirement.
 
 To license your software under "SySL-1.0 or any later version," you may include the phrase "or (at your option) any later version" in the boilerplate notice above. If you do not include this phrase, your software is licensed only under Version 1.0.
                            MODEL DISCLOSURE
@@ -221,7 +221,7 @@ Human Author:
   [Name of the human who directed the AI generation]
 
 AI Models Used:
-  List the primary AI models used to generate the Software. For each model, include the model name, the organization that provides the model, and the vendor’s official website URL. Models used only incidentally by contributors (e.g., for minor formatting adjustments) may be disclosed in commit messages instead.
+  List the primary AI models on which the Software’s main body depends. For each model, include the model name, the organization that provides the model, and the vendor’s official website URL. Other models used by contributors may be disclosed in commit messages instead.
 
   [Model Name] — [Vendor / Organization] — [Vendor Website URL]
 
