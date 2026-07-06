@@ -98,5 +98,8 @@ SySL は、二つの独立した法理論の下で執行可能となるように
 
 著作者は SySL の公式改訂版を公表することがあります。ライセンスの第16条を参照してください。
 
+## 導入
+
 ### 誰が SySL を使用していますか？
 
+[Celestia Island](https://github.com/celestia-island) のほぼすべてのプロジェクトが SySL を主要ライセンスとして使用しています。リポジトリの完全なリストは[組織ページ](https://github.com/celestia-island)をご覧ください。

@@ -172,3 +172,4 @@ The Author may publish official revised versions of SySL. See Section 16 of the 
 
 ### Who is using SySL?
 
+Nearly all projects under [Celestia Island](https://github.com/celestia-island) use SySL as their primary license. See the full list of repositories on the [organization page](https://github.com/celestia-island).

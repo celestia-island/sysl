@@ -106,7 +106,6 @@ SySL 저작자는 일본법이 계약 기반 소프트웨어 라이선스에 대
 
 ## 도입
 
-### 누가 SySL을 사용하고 있나요?
+### 누가 SySL을 사용하나요?
 
-### 제 프로젝트를 도입자 목록에 추가하려면 어떻게 하나요?
-
+[Celestia Island](https://github.com/celestia-island)의 거의 모든 프로젝트가 SySL을 기본 라이선스로 사용합니다. 전체 저장소 목록은 [조직 페이지](https://github.com/celestia-island)에서 확인하세요.

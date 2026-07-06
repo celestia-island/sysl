@@ -132,4 +132,4 @@ SySL 设计为在两种独立的法律理论下均可执行：
 
 ### 谁在使用 SySL？
 
- 生态系统项目。
+[Celestia Island](https://github.com/celestia-island) 旗下的几乎所有项目都将 SySL 作为主要许可证。完整仓库列表请查看[组织页面](https://github.com/celestia-island)。

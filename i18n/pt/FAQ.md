@@ -106,7 +106,6 @@ O Autor pode publicar versões revisadas oficiais da SySL. Consulte a Seção 16
 
 ## Adoção
 
-### Quem está usando a SySL?
+### Quem usa a SySL?
 
-### Como adiciono meu projeto à lista de adotantes?
-
+Quase todos os projetos sob a [Celestia Island](https://github.com/celestia-island) usam SySL como sua licença principal. Veja a lista completa de repositórios na [página da organização](https://github.com/celestia-island).
