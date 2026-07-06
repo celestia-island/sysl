@@ -100,5 +100,8 @@ SySL 設計為可依據兩種獨立的法律理論執行：
 
 作者可能發布 SySL 的官方修訂版本。請參閱授權條款第 16 條。
 
+## 採用
+
 ### 誰在使用 SySL？
 
+[Celestia Island](https://github.com/celestia-island) 旗下的幾乎所有專案都將 SySL 作為主要授權條款。完整倉庫列表請查看[組織頁面](https://github.com/celestia-island)。
