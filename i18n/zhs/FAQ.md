@@ -132,4 +132,12 @@ SySL 设计为在两种独立的法律理论下均可执行：
 
 ### 谁在使用 SySL？
 
- 生态系统项目。
+[Celestia Island](https://github.com/celestia-island) 旗下的几乎所有项目都将 SySL 作为主要许可证，包括：
+
+- [**Hikari**](https://github.com/celestia-island/hikari) — WASM 原生 UI 框架与设计系统
+- [**Tairitsu**](https://github.com/celestia-island/tairitsu) — WASM Component Model 运行时
+- [**Lagrange**](https://github.com/celestia-island/lagrange) — WASI 渲染的 Markdown 静态站点生成器
+- [**Entelecheia**](https://github.com/celestia-island/entelecheia) — 工业级 AI 控制的多智能体平台
+- [**Evernight**](https://github.com/celestia-island/evernight) — 跨平台远程控制与工业协议代理
+- [**ARIS**](https://github.com/celestia-island/aris) — 工业 IoT 网关嵌入式操作系统
+- [**Noa**](https://github.com/celestia-island/noa) — AI 原生分布式版本控制系统

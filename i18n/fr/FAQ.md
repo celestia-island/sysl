@@ -104,5 +104,12 @@ L'Auteur peut publier des versions révisées officielles de la SySL. Voir la Se
 
 ### Qui utilise la SySL ?
 
-### Comment ajouter mon projet à la liste des adoptants ?
+Presque tous les projets sous [Celestia Island](https://github.com/celestia-island) utilisent SySL comme licence principale, notamment :
 
+- [**Hikari**](https://github.com/celestia-island/hikari) — Framework UI natif WASM et système de conception
+- [**Tairitsu**](https://github.com/celestia-island/tairitsu) — Runtime WASM Component Model
+- [**Lagrange**](https://github.com/celestia-island/lagrange) — Générateur de sites statiques Markdown rendu par WASI
+- [**Entelecheia**](https://github.com/celestia-island/entelecheia) — Plateforme multi-agents pour le contrôle IA industriel
+- [**Evernight**](https://github.com/celestia-island/evernight) — Contrôle à distance multiplateforme et courtier de protocole
+- [**ARIS**](https://github.com/celestia-island/aris) — OS embarqué pour passerelles IoT industrielles
+- [**Noa**](https://github.com/celestia-island/noa) — Système de contrôle de version distribué natif AI

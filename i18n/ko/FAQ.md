@@ -104,9 +104,16 @@ SySL 저작자는 일본법이 계약 기반 소프트웨어 라이선스에 대
 
 저작자는 SySL의 공식 개정 버전을 발행할 수 있습니다. 라이선스 제16조를 참조하십시오.
 
-## 도입
+## Adoption
 
-### 누가 SySL을 사용하고 있나요?
+### Who is using SySL?
 
-### 제 프로젝트를 도입자 목록에 추가하려면 어떻게 하나요?
+Nearly all projects under [Celestia Island](https://github.com/celestia-island) use SySL as their primary license, including:
 
+- [**Hikari**](https://github.com/celestia-island/hikari) — WASM-native UI framework and design system
+- [**Tairitsu**](https://github.com/celestia-island/tairitsu) — WASM Component Model runtime
+- [**Lagrange**](https://github.com/celestia-island/lagrange) — WASI-rendered Markdown static site generator
+- [**Entelecheia**](https://github.com/celestia-island/entelecheia) — Multi-agent platform for industrial AI control
+- [**Evernight**](https://github.com/celestia-island/evernight) — Cross-platform remote control and protocol broker
+- [**ARIS**](https://github.com/celestia-island/aris) — Embedded OS for industrial IoT gateways
+- [**Noa**](https://github.com/celestia-island/noa) — AI-native distributed version control system
