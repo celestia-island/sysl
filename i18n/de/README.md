@@ -50,6 +50,7 @@ SySL ist der erste Schritt: eine Lizenz, die ehrlich darüber ist, was der Code 
 So verwenden Sie SySL für Ihr Projekt:
 
 1. Kopieren Sie `LICENSE.txt` in das Wurzelverzeichnis Ihres Repositorys.
+2. Dokumentieren Sie die KI-Herkunft Ihres Codes (siehe §2), einschließlich:
    - Welche KI-Modelle verwendet wurden
    - Ungefähr verbrauchte Token
    - Den Anteil von KI-generiertem zu menschengeschriebenem Code

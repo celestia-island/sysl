@@ -49,9 +49,10 @@ La SySL est la première étape : une licence qui est honnête sur ce qu'est le 
 Pour utiliser la SySL pour votre projet :
 
 1. Copiez `LICENSE.txt` à la racine de votre dépôt.
- - Quels modèles d'IA ont été utilisés
- - Le nombre approximatif de jetons consommés
- - La proportion de code généré par IA par rapport au code écrit par un humain
+2. Documentez la provenance IA de votre code (voir §2), notamment :
+   - Quels modèles d'IA ont été utilisés
+   - Le nombre approximatif de jetons consommés
+   - La proportion de code généré par IA par rapport au code écrit par un humain
 3. Ajoutez un badge à votre README :
 
 ```markdown

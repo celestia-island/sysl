@@ -51,9 +51,10 @@ SySL es el primer paso: una licencia honesta sobre qué es el código, quién lo
 Para usar SySL en su proyecto:
 
 1. Copie `LICENSE.txt` en la raíz de su repositorio.
- - Qué modelos de IA se utilizaron
- - Tokens aproximados consumidos
- - La proporción de código generado por IA frente a código escrito por humanos
+2. Documente la proveniencia de IA de su código (véase §2), incluyendo:
+   - Qué modelos de IA se utilizaron
+   - Tokens aproximados consumidos
+   - La proporción de código generado por IA frente a código escrito por humanos
 3. Añada una insignia a su README:
 
 ```markdown
