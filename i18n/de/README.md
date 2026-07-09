@@ -110,7 +110,6 @@ Projekte, die SySL übernommen haben:
 | [shittim-chest](https://github.com/celestia-island/shittim-chest) | KI-Plattform-Webshell | 2026-06 |
 | [evernight](https://github.com/celestia-island/evernight) | Plattformübergreifende Fernsteuerungsbibliothek | 2026-06 |
 
-
 ## Philosophie
 
 SySL basiert auf der Überzeugung, dass **Transparenz keine Freiheitsbeschränkung ist — sie ist eine Voraussetzung für Vertrauen**.
@@ -126,8 +125,6 @@ Der Text der Synthetic Source License ist urheberrechtlich geschützt durch lang
 ## Mitwirken
 
 Fehlermeldungen, Korrekturen und Vorschläge für zukünftige Fassungen der SySL sind willkommen. Bitte eröffnen Sie ein Issue oder einen Pull Request unter <https://github.com/celestia-island/sysl>.
-
-Der Prozess für SySL-Versionsaktualisierungen ist in [GOVERNANCE.md](./GOVERNANCE.md) dokumentiert.
 
 ## Kontakt
 

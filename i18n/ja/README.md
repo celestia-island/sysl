@@ -110,7 +110,6 @@ SySL を採用したプロジェクト：
 | [shittim-chest](https://github.com/celestia-island/shittim-chest) | AIプラットフォームWebシェル | 2026-06 |
 | [evernight](https://github.com/celestia-island/evernight) | クロスプラットフォームリモートコントロールライブラリ | 2026-06 |
 
-
 ## 理念
 
 SySL は、**透明性は自由に対する制限ではなく、信頼の前提条件である**という信念に基づいています。
@@ -126,8 +125,6 @@ SySL は、AI生成コードで何ができるかを制限しません。それ�
 ## 貢献
 
 SySL の将来のバージョンに対するバグ報告、修正、提案を歓迎します。<https://github.com/celestia-island/sysl> でIssueまたはプルリクエストを作成してください。
-
-SySL のバージョン更新プロセスについては、[GOVERNANCE.md](./GOVERNANCE.md) に文書化されています。
 
 ## 連絡先
 
