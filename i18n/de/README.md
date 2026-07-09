@@ -99,17 +99,6 @@ SySL is available in the following languages. The English version is legally bin
 | Deutsch | [README.md](../../i18n/de/README.md) | [LICENSE.txt](../../i18n/de/LICENSE.txt) | [FAQ.md](../../i18n/de/FAQ.md) | [COMPARISON.md](../../i18n/de/COMPARISON.md) |
 | Português | [README.md](../../i18n/pt/README.md) | [LICENSE.txt](../../i18n/pt/LICENSE.txt) | [FAQ.md](../../i18n/pt/FAQ.md) | [COMPARISON.md](../../i18n/pt/COMPARISON.md) |
 | العربية | [README.md](../../i18n/ar/README.md) | [LICENSE.txt](../../i18n/ar/LICENSE.txt) | [FAQ.md](../../i18n/ar/FAQ.md) | [COMPARISON.md](../../i18n/ar/COMPARISON.md) |
-
-## Adoptierende
-
-Projekte, die SySL übernommen haben:
-
-| Projekt | Beschreibung | Seit |
-|---------|-------------|------|
-|  | Multi-Agent-KI-Orchestrierungsplattform | 2026-06 |
-| [shittim-chest](https://github.com/celestia-island/shittim-chest) | KI-Plattform-Webshell | 2026-06 |
-| [evernight](https://github.com/celestia-island/evernight) | Plattformübergreifende Fernsteuerungsbibliothek | 2026-06 |
-
 ## Philosophie
 
 SySL basiert auf der Überzeugung, dass **Transparenz keine Freiheitsbeschränkung ist — sie ist eine Voraussetzung für Vertrauen**.

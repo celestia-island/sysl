@@ -99,17 +99,6 @@ SySL is available in the following languages. The English version is legally bin
 | Deutsch | [README.md](../../i18n/de/README.md) | [LICENSE.txt](../../i18n/de/LICENSE.txt) | [FAQ.md](../../i18n/de/FAQ.md) | [COMPARISON.md](../../i18n/de/COMPARISON.md) |
 | Português | [README.md](../../i18n/pt/README.md) | [LICENSE.txt](../../i18n/pt/LICENSE.txt) | [FAQ.md](../../i18n/pt/FAQ.md) | [COMPARISON.md](../../i18n/pt/COMPARISON.md) |
 | العربية | [README.md](../../i18n/ar/README.md) | [LICENSE.txt](../../i18n/ar/LICENSE.txt) | [FAQ.md](../../i18n/ar/FAQ.md) | [COMPARISON.md](../../i18n/ar/COMPARISON.md) |
-
-## 도입 프로젝트
-
-SySL을 도입한 프로젝트:
-
-| 프로젝트 | 설명 | 도입 시기 |
-|---------|-------------|-------|
-|  | 멀티 에이전트 AI 오케스트레이션 플랫폼 | 2026-06 |
-| [shittim-chest](https://github.com/celestia-island/shittim-chest) | AI 플랫폼 웹 셸 | 2026-06 |
-| [evernight](https://github.com/celestia-island/evernight) | 크로스 플랫폼 원격 제어 라이브러리 | 2026-06 |
-
 ## 철학
 
 SySL은 **투명성은 자유에 대한 제한이 아니라 신뢰의 전제 조건**이라는 신념에 기반을 둡니다.
