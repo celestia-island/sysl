@@ -26,7 +26,6 @@ SySL llena este vacío. Opera tanto como una licencia de derechos de autor (si e
 
 ## ¿Por qué es importante esto?
 
-
 En 2026, los modelos de IA generan rutinariamente bases de código completas. Ya existen proyectos reales donde la IA genera el 100 % del código fuente—aplicaciones, bibliotecas y sistemas completos, construidos por individuos que dirigen modelos de IA en lugar de escribir código a mano.
 
 Esto no es una hipótesis. El software generado por IA ya está aquí. El marco legal necesita ponerse al día.
@@ -51,9 +50,10 @@ SySL es el primer paso: una licencia honesta sobre qué es el código, quién lo
 Para usar SySL en su proyecto:
 
 1. Copie `LICENSE.txt` en la raíz de su repositorio.
- - Qué modelos de IA se utilizaron
- - Tokens aproximados consumidos
- - La proporción de código generado por IA frente a código escrito por humanos
+2. Documente la proveniencia de IA de su código (véase §2), incluyendo:
+   - Qué modelos de IA se utilizaron
+   - Tokens aproximados consumidos
+   - La proporción de código generado por IA frente a código escrito por humanos
 3. Añada una insignia a su README:
 
 ```markdown
@@ -115,8 +115,6 @@ El texto de la Licencia de Código Sintético está protegido por derechos de au
 ## Contribuciones
 
 Se aceptan informes de errores, correcciones y sugerencias para futuras versiones de SySL. Por favor, abra un issue o pull request en <https://github.com/celestia-island/sysl>.
-
-El proceso para las actualizaciones de versión de SySL está documentado en [GOVERNANCE.md](./GOVERNANCE.md).
 
 ## Contacto
 

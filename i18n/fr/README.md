@@ -26,7 +26,6 @@ La SySL comble ce vide. Elle fonctionne à la fois comme une licence de droit d'
 
 ## Pourquoi est-ce important ?
 
-
 Ce n'est pas une hypothèse. Les logiciels générés par IA sont là. Le cadre juridique doit rattraper son retard.
 
 La SySL est la première étape : une licence qui est honnête sur ce qu'est le code, qui l'a fait et quelles sont les règles.
@@ -49,9 +48,10 @@ La SySL est la première étape : une licence qui est honnête sur ce qu'est le 
 Pour utiliser la SySL pour votre projet :
 
 1. Copiez `LICENSE.txt` à la racine de votre dépôt.
- - Quels modèles d'IA ont été utilisés
- - Le nombre approximatif de jetons consommés
- - La proportion de code généré par IA par rapport au code écrit par un humain
+2. Documentez la provenance IA de votre code (voir §2), notamment :
+   - Quels modèles d'IA ont été utilisés
+   - Le nombre approximatif de jetons consommés
+   - La proportion de code généré par IA par rapport au code écrit par un humain
 3. Ajoutez un badge à votre README :
 
 ```markdown
@@ -113,8 +113,6 @@ Le texte de la Licence de Source Synthétique est protégé par le droit d'auteu
 ## Contribuer
 
 Les signalements de bogues, les corrections et les suggestions pour les futures versions de la SySL sont les bienvenus. Veuillez ouvrir une issue ou une pull request à l'adresse <https://github.com/celestia-island/sysl>.
-
-Le processus de mise à jour des versions de la SySL est documenté dans [GOVERNANCE.md](./GOVERNANCE.md).
 
 ## Contact
 

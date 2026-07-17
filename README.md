@@ -53,9 +53,10 @@ To use SySL for your project:
 
 1. **File patents first** (strongly recommended): if your AI-directed software contains novel, non-obvious inventions, file patent applications *before* publishing. The patent grant in §4 only has legal force if you hold issued patents. Without patents, §4 is a gentleman's agreement — still useful as a norm, but not legally enforceable. See [§4.3–4.5](./LICENSE.txt) for details.
 2. Copy `LICENSE.txt` into your repository root.
- - Which AI models were used
- - Approximate tokens consumed
- - The proportion of AI-generated vs. human-written code
+3. Document the AI provenance of your code (see §2), including:
+   - Which AI models were used
+   - Approximate tokens consumed
+   - The proportion of AI-generated vs. human-written code
 4. Add a badge to your README:
 
 ```markdown

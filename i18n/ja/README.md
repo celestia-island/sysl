@@ -50,6 +50,7 @@ SySL は最初の一歩です：コードが何であり、誰がそれを作り
 あなたのプロジェクトで SySL を使用するには：
 
 1. `LICENSE.txt` をリポジトリのルートにコピーします。
+2. コードの AI 由来を記録します（第2節を参照）。以下を含みます：
    - どのAIモデルが使用されたか
    - おおよその消費トークン数
    - AI生成と人間が書いたコードの割合
@@ -98,18 +99,6 @@ SySL is available in the following languages. The English version is legally bin
 | Deutsch | [README.md](../../i18n/de/README.md) | [LICENSE.txt](../../i18n/de/LICENSE.txt) | [FAQ.md](../../i18n/de/FAQ.md) | [COMPARISON.md](../../i18n/de/COMPARISON.md) |
 | Português | [README.md](../../i18n/pt/README.md) | [LICENSE.txt](../../i18n/pt/LICENSE.txt) | [FAQ.md](../../i18n/pt/FAQ.md) | [COMPARISON.md](../../i18n/pt/COMPARISON.md) |
 | العربية | [README.md](../../i18n/ar/README.md) | [LICENSE.txt](../../i18n/ar/LICENSE.txt) | [FAQ.md](../../i18n/ar/FAQ.md) | [COMPARISON.md](../../i18n/ar/COMPARISON.md) |
-
-## 採用プロジェクト
-
-SySL を採用したプロジェクト：
-
-| プロジェクト | 説明 | 採用時期 |
-|---------|-------------|-------|
-|  | マルチエージェントAIオーケストレーションプラットフォーム | 2026-06 |
-| [shittim-chest](https://github.com/celestia-island/shittim-chest) | AIプラットフォームWebシェル | 2026-06 |
-| [evernight](https://github.com/celestia-island/evernight) | クロスプラットフォームリモートコントロールライブラリ | 2026-06 |
-
-
 ## 理念
 
 SySL は、**透明性は自由に対する制限ではなく、信頼の前提条件である**という信念に基づいています。
@@ -125,8 +114,6 @@ SySL は、AI生成コードで何ができるかを制限しません。それ�
 ## 貢献
 
 SySL の将来のバージョンに対するバグ報告、修正、提案を歓迎します。<https://github.com/celestia-island/sysl> でIssueまたはプルリクエストを作成してください。
-
-SySL のバージョン更新プロセスについては、[GOVERNANCE.md](./GOVERNANCE.md) に文書化されています。
 
 ## 連絡先
 
