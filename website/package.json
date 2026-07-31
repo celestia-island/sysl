@@ -1,6 +1,6 @@
 {
   "name": "sysl-website",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "type": "module",
   "scripts": {
@@ -10,16 +10,16 @@
     "typecheck": "vue-tsc --noEmit"
   },
   "dependencies": {
-    "marked": "^18",
-    "vue": "^3",
-    "vue-router": "^4"
+    "marked": "^*",
+    "vue": "^*",
+    "vue-router": "^*"
   },
   "devDependencies": {
-    "@types/node": "^22",
-    "@vitejs/plugin-vue": "^5",
-    "sass": "^1.100.0",
-    "typescript": "^5",
-    "vite": "^6",
-    "vue-tsc": "^2"
+    "@types/node": "^*",
+    "@vitejs/plugin-vue": "^*",
+    "sass": "^*",
+    "typescript": "^*",
+    "vite": "^*",
+    "vue-tsc": "^*"
   }
 }
