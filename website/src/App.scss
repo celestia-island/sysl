@@ -1,0 +1,23 @@
+// Root app styles (moved from App.vue SFC styles).
+main {
+  min-height: calc(100vh - var(--header-height));
+}
+
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  z-index: 200;
+  padding: var(--sp-2) var(--sp-4);
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  font-size: var(--text-sm);
+  text-decoration: none;
+  border: 1px solid var(--border-strong);
+  border-radius: 0 0 var(--radius) 0;
+
+  &:focus-visible {
+    top: 0;
+    outline: 2px solid var(--link-color);
+  }
+}

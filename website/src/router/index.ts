@@ -6,7 +6,7 @@ const router = createRouter({
     {
       path: "/",
       name: "home",
-      component: () => import("@/views/HomeView.vue"),
+      component: () => import("@/views/HomeView"),
       meta: { title: "SySL — Synthetic Source License" },
     },
     {
@@ -16,13 +16,13 @@ const router = createRouter({
     {
       path: "/faq",
       name: "faq",
-      component: () => import("@/views/FaqView.vue"),
+      component: () => import("@/views/FaqView"),
       meta: { title: "FAQ — SySL" },
     },
     {
       path: "/compare",
       name: "compare",
-      component: () => import("@/views/CompareView.vue"),
+      component: () => import("@/views/CompareView"),
       meta: { title: "Comparison — SySL" },
     },
   ],

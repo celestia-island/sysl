@@ -1,19 +1,4 @@
-<script setup lang="ts">
-const year = new Date().getFullYear();
-</script>
-
-<template>
-  <footer class="footer" role="contentinfo">
-    <div class="footer__inner">
-      <span>&copy; {{ year }} langyo · Celestia Island</span>
-      <span>
-        <a href="mailto:sysl.contact@celestia.world">sysl.contact@celestia.world</a>
-      </span>
-    </div>
-  </footer>
-</template>
-
-<style scoped lang="scss">
+// Site footer styles (moved from AppFooter.vue SFC styles).
 .footer {
   border-top: 1px solid var(--border-color);
   padding: var(--sp-6) 0;
@@ -44,4 +29,3 @@ const year = new Date().getFullYear();
     outline-offset: 2px;
   }
 }
-</style>

@@ -1,0 +1,87 @@
+// Comparison view styles (moved from CompareView.vue SFC styles; the former
+// scoped :deep(.table-scroll …) selectors became plain descendants — the
+// .table-scroll wrapper is generated inside this view's own v-html output).
+.compare-topbar {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: var(--sp-3) var(--sp-6);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.compare-center {
+  display: flex;
+  justify-content: center;
+  padding: 0 var(--sp-6) var(--sp-16);
+}
+
+.compare-prose {
+  flex: 0 1 auto;
+  max-width: 1080px;
+  min-width: 0;
+}
+
+// --- Table scroll wrapper: sticky header row + sticky first column ---
+.table-scroll {
+  overflow: auto;
+  max-height: 75vh;
+  margin-bottom: var(--sp-6);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+}
+
+.table-scroll table {
+  display: table;
+  width: max-content;
+  max-width: none;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: var(--text-sm);
+  margin: 0;
+}
+
+.table-scroll th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  font-weight: 700;
+  padding: var(--sp-2) var(--sp-3);
+  background: var(--bg-secondary);
+  border-bottom: 1px solid var(--border-strong);
+  white-space: nowrap;
+}
+
+.table-scroll td {
+  padding: var(--sp-2) var(--sp-3);
+  border-bottom: 1px solid var(--border-color);
+  color: var(--text-secondary);
+}
+
+// Sticky first column (row labels)
+.table-scroll td:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  background: var(--bg-secondary);
+  white-space: nowrap;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+// Corner cell (first header + first column)
+.table-scroll th:first-child {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  background: var(--bg-secondary);
+}
+
+// Hover highlight
+.table-scroll tbody tr:hover td {
+  background: var(--table-stripe);
+}
+
+.table-scroll tbody tr:hover td:first-child {
+  background: var(--bg-tertiary);
+}

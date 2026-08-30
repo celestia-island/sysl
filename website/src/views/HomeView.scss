@@ -1,0 +1,225 @@
+// License home view styles (moved from HomeView.vue SFC styles).
+.license-page {
+  padding: 0 var(--sp-6) var(--sp-16);
+}
+
+// --- Meta bar ---
+.license-meta {
+  max-width: var(--content-max);
+  margin: 0 auto var(--sp-4);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-3);
+  padding: var(--sp-3) 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.license-meta__version {
+  font-size: var(--text-sm);
+  color: var(--text-tertiary);
+  white-space: nowrap;
+}
+
+.license-meta__actions {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+}
+
+// --- Meta buttons (copy / print) ---
+.meta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-1);
+  padding: var(--sp-1) var(--sp-2);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius);
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+  background: var(--bg-secondary);
+  font-family: inherit;
+  transition: color var(--t-fast), border-color var(--t-fast);
+
+  &:hover {
+    color: var(--text-primary);
+    border-color: var(--text-tertiary);
+  }
+  &:focus-visible {
+    outline: 2px solid var(--link-color);
+    outline-offset: 2px;
+  }
+}
+
+.meta-btn__label {
+  @media (max-width: 640px) {
+    display: none;
+  }
+}
+
+.license-notice {
+  max-width: var(--content-max);
+  margin: 0 auto var(--sp-6);
+  font-size: var(--text-sm);
+  color: var(--text-tertiary);
+  font-style: italic;
+}
+
+// --- Language switcher ---
+.lang-switcher {
+  position: relative;
+}
+
+.lang-switcher__trigger {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  padding: var(--sp-1) var(--sp-3);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius);
+  font-size: var(--text-sm);
+  color: var(--text-primary);
+  background: var(--bg-secondary);
+  font-family: inherit;
+  transition: border-color var(--t-fast);
+
+  &:hover { border-color: var(--text-tertiary); }
+  &:focus-visible { outline: 2px solid var(--link-color); outline-offset: 2px; }
+}
+
+.lang-switcher__arrow {
+  color: var(--text-tertiary);
+}
+
+.lang-switcher__dropdown {
+  position: absolute;
+  top: calc(100% + var(--sp-1));
+  right: 0;
+  min-width: 160px;
+  list-style: none;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  padding: var(--sp-1);
+  margin: 0;
+  z-index: 50;
+
+  li { list-style: none; }
+}
+
+.lang-switcher__option {
+  display: block;
+  width: 100%;
+  padding: var(--sp-2) var(--sp-3);
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+  border-radius: var(--radius-sm);
+  text-align: left;
+  transition: background var(--t-fast), color var(--t-fast);
+
+  &:hover, &:focus-visible {
+    background: var(--bg-tertiary);
+    color: var(--text-primary);
+    outline: none;
+  }
+  &--active { color: var(--text-primary); font-weight: 600; }
+}
+
+// --- License text ---
+.license-center {
+  display: flex;
+  justify-content: center;
+}
+
+.license-text {
+  max-width: var(--content-max);
+  width: 100%;
+  font-size: var(--text-sm);
+  line-height: 1.9;
+  color: var(--text-primary);
+}
+
+// --- Paragraph blocks ---
+.lb-para {
+  margin: 0 0 var(--sp-4);
+  text-indent: 2em;
+
+  &:last-child { margin-bottom: 0; }
+}
+
+// Blank line spacing (structural, collapsed to 0 – paragraphs own their margins)
+.lb-blank {
+  height: 0;
+}
+
+// Section rule (separator line)
+.lb-rule {
+  color: transparent;
+  border-bottom: 1px solid var(--border-strong);
+  height: 0;
+  overflow: hidden;
+  margin: var(--sp-5) 0;
+  user-select: all;
+}
+
+// Centered title block
+.lb-center {
+  text-align: center;
+  margin: var(--sp-6) 0 var(--sp-2);
+  font-size: var(--text-base);
+  font-weight: 600;
+}
+
+.license-text--rtl {
+  .lb-para {
+    text-align: right;
+    direction: rtl;
+  }
+  .lb-center {
+    text-align: center;
+    direction: rtl;
+  }
+}
+
+// --- Responsive ---
+@media (max-width: 768px) {
+  .license-text {
+    font-size: 0.8rem;
+    line-height: 1.7;
+  }
+}
+
+@media (max-width: 640px) {
+  .license-meta {
+    flex-wrap: wrap;
+    gap: var(--sp-2);
+  }
+
+  .license-meta__actions {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+}
+
+// --- Print: only show license text ---
+@media print {
+  .license-page {
+    padding: 0;
+  }
+
+  .license-center {
+    display: block;
+  }
+
+  .license-text {
+    font-family: serif;
+    font-size: 11pt;
+    line-height: 1.6;
+    color: #000;
+  }
+
+  .lb-rule {
+    color: transparent;
+    border-bottom: 1px solid #000;
+  }
+}

@@ -1,0 +1,59 @@
+// Language switcher styles (moved from LanguageSwitcher.vue SFC styles).
+.lang-switcher {
+  position: relative;
+}
+
+.lang-switcher__trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-2);
+  padding: var(--sp-1) var(--sp-3);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius);
+  font-size: var(--text-sm);
+  color: var(--text-primary);
+  background: var(--bg-secondary);
+  font-family: inherit;
+  transition: border-color var(--t-fast);
+
+  &:hover { border-color: var(--text-tertiary); }
+  &:focus-visible { outline: 2px solid var(--link-color); outline-offset: 2px; }
+}
+
+.lang-switcher__arrow {
+  color: var(--text-tertiary);
+}
+
+.lang-switcher__dropdown {
+  position: absolute;
+  top: calc(100% + var(--sp-1));
+  right: 0;
+  min-width: 160px;
+  list-style: none;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  padding: var(--sp-1);
+  margin: 0;
+  z-index: 50;
+
+  li { list-style: none; }
+}
+
+.lang-switcher__option {
+  display: block;
+  width: 100%;
+  padding: var(--sp-2) var(--sp-3);
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+  border-radius: var(--radius-sm);
+  text-align: left;
+  transition: background var(--t-fast), color var(--t-fast);
+
+  &:hover, &:focus-visible {
+    background: var(--bg-tertiary);
+    color: var(--text-primary);
+    outline: none;
+  }
+  &--active { color: var(--text-primary); font-weight: 600; }
+}

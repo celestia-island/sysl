@@ -1,6 +1,7 @@
-<script setup lang="ts">
-import { ref, computed } from "vue";
-import LanguageSwitcher from "@/components/LanguageSwitcher.vue";
+// FAQ view (converted from FaqView.vue → TSX + FaqView.scss).
+import { computed, ref } from "vue";
+import { defineComponent } from "vue";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
 import { renderMarkdown } from "@/composables/useMarkdown";
 import { useLangStore } from "@/composables/useLangStore";
 
@@ -15,8 +16,16 @@ import ru from "../../../i18n/ru/FAQ.md?raw";
 import de from "../../../i18n/de/FAQ.md?raw";
 import pt from "../../../i18n/pt/FAQ.md?raw";
 import ar from "../../../i18n/ar/FAQ.md?raw";
+import "./FaqView.scss";
 
-const langs = [
+interface FaqLang {
+  code: string;
+  label: string;
+  md: string;
+  rtl?: boolean;
+}
+
+const langs: FaqLang[] = [
   { code: "en", label: "English", md: en },
   { code: "zhs", label: "简体中文", md: zhs },
   { code: "zht", label: "繁體中文", md: zht },
@@ -30,30 +39,26 @@ const langs = [
   { code: "ar", label: "العربية", md: ar, rtl: true },
 ];
 
-const active = ref(useLangStore().state.code);
-const activeLang = computed(() => langs.find((l) => l.code === active.value)!);
-const html = computed(() => renderMarkdown(activeLang.value.md));
-</script>
+export default defineComponent({
+  name: "FaqView",
+  setup() {
+    const active = ref(useLangStore().state.code);
+    const activeLang = computed(() => langs.find((l) => l.code === active.value)!);
+    const html = computed(() => renderMarkdown(activeLang.value.md));
 
-<template>
-  <div class="page-topbar">
-    <LanguageSwitcher :languages="langs" v-model="active" />
-  </div>
-  <div
-    class="page-wrapper prose"
-    role="article"
-    :dir="activeLang.rtl ? 'rtl' : 'ltr'"
-    :lang="activeLang.code"
-    v-html="html"
-  ></div>
-</template>
-
-<style scoped>
-.page-topbar {
-  max-width: var(--content-max);
-  margin: 0 auto;
-  padding: var(--sp-3) var(--sp-6);
-  display: flex;
-  justify-content: flex-end;
-}
-</style>
+    return () => (
+      <>
+        <div class="page-topbar">
+          <LanguageSwitcher languages={langs} modelValue={active.value} onUpdate:modelValue={(v: string) => (active.value = v)} />
+        </div>
+        <div
+          class="page-wrapper prose"
+          role="article"
+          dir={activeLang.value.rtl ? "rtl" : "ltr"}
+          lang={activeLang.value.code}
+          innerHTML={html.value}
+        ></div>
+      </>
+    )
+  },
+})

@@ -1,0 +1,8 @@
+// FAQ view styles (moved from FaqView.vue SFC styles).
+.page-topbar {
+  max-width: var(--content-max);
+  margin: 0 auto;
+  padding: var(--sp-3) var(--sp-6);
+  display: flex;
+  justify-content: flex-end;
+}
