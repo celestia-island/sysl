@@ -1,1 +1,90 @@
-name: Validate on: push: branches: [master, dev] pull_request: branches: [master, dev] jobs: validate: runs-on: ubuntu-latest steps: - uses: actions/checkout@v4 - name: Check required files exist run: | set -e # English source files (mandatory) for f in LICENSE.txt README.md FAQ.md COMPARISON.md badge.svg i18n/README.md; do test -f "$f" || { echo "MISSING: $f"; exit 1; } done echo "All English source files present." - name: Check translations exist for all supported languages run: | set -e LANGS="zhs zht ja ko fr es ru de pt ar" for lang in $LANGS; do for f in LICENSE.txt README.md FAQ.md; do path="i18n/${lang}/${f}" test -f "$path" || { echo "MISSING: $path"; exit 1; } done done echo "All translations present for $LANGS." - name: Check LICENSE.txt section structure run: | set -e # Verify all 15 sections are present in the English LICENSE for i in $(seq 1 15); do grep -q "^${i}\." LICENSE.txt || { echo "MISSING section ${i} in LICENSE.txt"; exit 1; } done echo "All 15 sections present in LICENSE.txt." - name: Check LICENSE has required clauses run: | set -e grep -q "DISCLOSURE OF AI GENERATION" LICENSE.txt || { echo "MISSING: Disclosure clause"; exit 1; } grep -q "CONTRACT STATUS" LICENSE.txt || { echo "MISSING: Contract status clause"; exit 1; } grep -q "PATENT GRANT" LICENSE.txt || { echo "MISSING: Patent grant clause"; exit 1; } grep -q "RECIPROCAL DISCLOSURE" LICENSE.txt || { echo "MISSING: Reciprocal disclosure clause"; exit 1; } echo "All required clauses present." - name: Check no placeholder text in English source run: | set -e ! grep -iq "TODO\|FIXME\|PLACEHOLDER\|TBD" LICENSE.txt || { echo "Found placeholder text in LICENSE.txt"; exit 1; } echo "No placeholder text found." - name: Check translation files are not empty run: | set -e LANGS="zhs zht ja ko fr es ru de pt ar" for lang in $LANGS; do for f in LICENSE.txt README.md FAQ.md; do path="i18n/${lang}/${f}" lines=$(wc -l < "$path") test "$lines" -gt 10 || { echo "TOO SHORT: $path ($lines lines)"; exit 1; } done done echo "All translations have reasonable size."
+name: Validate
+
+# Reconstructed 2026-10-24: the previous file was this whole workflow flattened
+# onto a single line, so GitHub never registered it and the validation has not
+# run since 2026-07-17 (structural audit P1-S-5). The checks below are the same
+# semantic set, rewritten as YAML, with two repairs:
+#
+#   * the section sweep now looks for `### N.` and covers all 16 sections of
+#     SySL-1.0 (it used to look for a bare `N.` and stop at 15 — neither the
+#     pattern nor the count matched the license any more);
+#   * `dev` is dropped from both triggers (AGENTS [[change]]: dev is retired).
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    name: Validate the license tree
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Check required files exist
+        run: |
+          set -e
+          # English source files (mandatory)
+          for f in LICENSE.txt README.md FAQ.md COMPARISON.md badge.svg i18n/README.md; do
+            test -f "$f" || { echo "MISSING: $f"; exit 1; }
+          done
+          echo "All English source files present."
+
+      - name: Check translations exist for all supported languages
+        run: |
+          set -e
+          LANGS="zhs zht ja ko fr es ru de pt ar"
+          for lang in $LANGS; do
+            for f in LICENSE.txt README.md FAQ.md; do
+              path="i18n/${lang}/${f}"
+              test -f "$path" || { echo "MISSING: $path"; exit 1; }
+            done
+          done
+          echo "All translations present for $LANGS."
+
+      - name: Check LICENSE.txt section structure
+        run: |
+          set -e
+          # SySL-1.0 carries 16 numbered sections, each a `### N. TITLE` heading.
+          for i in $(seq 1 16); do
+            grep -qE "^### ${i}\. " LICENSE.txt || { echo "MISSING section ${i} in LICENSE.txt"; exit 1; }
+          done
+          echo "All 16 sections present in LICENSE.txt."
+
+      - name: Check LICENSE has required clauses
+        run: |
+          set -e
+          grep -q "DISCLOSURE OF AI GENERATION" LICENSE.txt || { echo "MISSING: Disclosure clause"; exit 1; }
+          grep -q "CONTRACT STATUS" LICENSE.txt || { echo "MISSING: Contract status clause"; exit 1; }
+          grep -q "PATENT GRANT" LICENSE.txt || { echo "MISSING: Patent grant clause"; exit 1; }
+          grep -q "RECIPROCAL DISCLOSURE" LICENSE.txt || { echo "MISSING: Reciprocal disclosure clause"; exit 1; }
+          echo "All required clauses present."
+
+      - name: Check no placeholder text in English source
+        run: |
+          set -e
+          ! grep -iq "TODO\|FIXME\|PLACEHOLDER\|TBD" LICENSE.txt || { echo "Found placeholder text in LICENSE.txt"; exit 1; }
+          echo "No placeholder text found."
+
+      - name: Check translation files are not empty
+        run: |
+          set -e
+          LANGS="zhs zht ja ko fr es ru de pt ar"
+          for lang in $LANGS; do
+            for f in LICENSE.txt README.md FAQ.md; do
+              path="i18n/${lang}/${f}"
+              lines=$(wc -l < "$path")
+              test "$lines" -gt 10 || { echo "TOO SHORT: $path ($lines lines)"; exit 1; }
+            done
+          done
+          echo "All translations have reasonable size."
