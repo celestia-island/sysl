@@ -10,14 +10,14 @@
     "typecheck": "vue-tsc --noEmit"
   },
   "dependencies": {
-    "marked": "^*",
-    "vue": "^*",
-    "vue-router": "^*"
+    "marked": "^18",
+    "vue": "^3",
+    "vue-router": "^5"
   },
   "devDependencies": {
     "@types/node": "^*",
     "@vitejs/plugin-vue": "^*",
-    "@vitejs/plugin-vue-jsx": "^5.1.6",
+    "@vitejs/plugin-vue-jsx": "^5",
     "sass": "^*",
     "typescript": "^*",
     "vite": "^*",
